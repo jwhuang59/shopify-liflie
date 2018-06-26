@@ -43,9 +43,9 @@ Shopify liflie
 
 其他资源
 ---------------------
-- [Themes Documentation][http://help.shopify.com/themes]: Learn more about Liquid and theme templates.
-- [Liquid Cheat Sheet][https://www.shopify.ca/partners/shopify-cheat-sheet]
-- [Retail Tours][https://www.shopify.com/retailtour]: Sign up for a workshop in a city near you to learn all things Shopify.
+- [主题文档][http://help.shopify.com/themes].
+- [液体小抄][https://www.shopify.ca/partners/shopify-cheat-sheet].
+
 
 
 
