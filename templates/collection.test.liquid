@@ -1,0 +1,24 @@
+
+<!-- <div class="test" data-title="for-eyes"></div>
+<script type="text/javascript" src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+<script>
+var test = `{% paginate collection.products by 200 %}
+              {% for product in collection.products %}
+                {% for image in product.images limit:1 %}
+              	<li>
+                  	<a href={{ product.url }}><img src="{{ product.images.last | product_img_url: ' ' }}" /></a>
+              		<div class="product-detail">
+						<h2>{{ product.title }}</h2>
+						<p>{{ product.tags | last }}</p>
+                      <p></p>
+					</div>
+              	</li>
+
+                {% endfor %}
+              {% endfor %} 
+              {% endpaginate %}		
+			`
+$(".test").html(test)
+
+
+</script> -->

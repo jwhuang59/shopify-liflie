@@ -1,0 +1,149 @@
+
+<style>
+*{margin:0;padding:0;}
+body{font-family:MinionPro-Regular,MicroSoft YaHei,Arial,Sans-serif;}
+ul,ol,li{list-style:none;}
+img{border:none;vertical-align: middle;}
+a{text-decoration:none;}
+input,button,select,textarea,a{outline:none;}
+
+ @font-face{
+    font-family: 'MinionPro-Regular';
+    src : url('https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/MinionPro-Regular.otf');
+}
+  
+  @font-face{
+    font-family: 'Viacultura-SemiBold';
+    src : url('https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/Viacultura-SemiBold.otf');
+} 
+  
+  
+.search-bg{position:fixed;top:0;left:0;z-index:-1;}
+.wrapper-search{margin:0 14px;padding:16px 16px 100px 16px;}
+
+
+  .wrapper-search .search-title{width:680px;margin:0 auto;background: rgba(255,255,255,0.9);padding:20px;}
+  .wrapper-search .search-title h1{font-size:20px;color:#666;text-align:center;}  
+  .wrapper-search .search-title p{font-size:14px;color:#444;text-align:center;margin-bottom:30px;}  
+  .wrapper-search .search-title h2{font-size:14px;color:#444;text-align:center;font-weight:normal;margin-bottom:5px;}  
+  .wrapper-search .search-title .form-box{text-align:center;}
+  .wrapper-search .search-title .form-box .search{width:240px;height:25px;outline:none;border:none;border-bottom:1px solid #d6d6d6 !important;text-indent:5px;background:#e4e4e4}
+  .wrapper-search .search-title .form-box .btn-search{width:35px;height:26px;display:inline-block;background:url({{ 'allimg.png' | asset_img_url:'' }}) no-repeat -206px -484px !important;border:none;vertical-align:top;border-bottom:1px solid #d6d6d6 !important;cursor:pointer;margin-left:-5px;}
+  
+  .wrapper-search .search-result{width:680px;min-height:220px;padding:20px;margin:0 auto;background: rgba(255,255,255,0.9);margin-top:8px;} 
+  .wrapper-search .search-result h1{font-size:20px;color:#666;text-align:left;margin:0 0 15px 0} 
+  .wrapper-search .search-result p{font-size:15px;text-align:left;padding:8px 0;border-bottom:1px solid #ccc;}  
+  
+  .wrapper-search .search-result .allresult{margin-top:20px;}
+  .wrapper-search .search-result .result-details{margin:12px 0;border-bottom:1px solid #ccc;padding:0 0 12px 0}
+  .wrapper-search .search-result .result-details .result-image{width:20%;float:left;}
+  .wrapper-search .search-result .result-details .result-image img{width:100%;}  
+  .wrapper-search .search-result .result-details .result-news{width:79%;float:right;padding-left:1%;}
+  
+  .wrapper-search .search-result .result-details .result-news h3{font-weight:normal;margin:6px 0 0 0}
+  .wrapper-search .search-result .result-details .result-news h4{font-size:13px;color:#444;font-weight:normal;}
+  .wrapper-search .search-result .result-details .result-news h3 a{color:#897642;font-size:16px;transition:all 0.5s;}  
+  .wrapper-search .search-result .result-details .result-news h3 a:hover{color:#444;transition:all 0.5s;}  
+  .wrapper-search .search-result .result-details .result-news span{line-height:18px;height:54px;color:#444;font-size:14px;margin-top:28px;display:-webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;overflow: hidden;}  
+  
+  
+  @media screen and (min-width:667px) and (max-width:1024px){
+
+  
+    .wrapper-search .search-title{width:auto;} 
+    .wrapper-search .search-result{width:auto;} 
+    
+    
+    
+  }
+  
+  
+  @media screen and (min-width:300px) and (max-width:667px){
+
+.wrapper-search{padding:15px 10px;}
+    
+    .wrapper-search .search-title,.wrapper-search .search-result{width:auto;padding:15px;}  
+    
+    
+    .wrapper-search .search-title .form-box .search{width:200px;}
+    .wrapper-search .search-title p{font-size:12px;}
+    
+  .wrapper-search .search-result .result-details .result-image{width:30%;float:left;}
+  .wrapper-search .search-result .result-details .result-news{width:68%;float:right;padding-left:2%;}
+    .wrapper-search .search-result .result-details .result-news h3{margin:0}    
+  .wrapper-search .search-result .result-details .result-news h3 a{font-size:15px;}   
+    .wrapper-search .search-result .result-details .result-news span{line-height:17px;height:51px;margin-top:5px;font-size:13px;}
+    
+    
+    
+  }
+  
+  
+.wrapper-search .clear{clear:both;}
+.search-left{width:14px;background:#fff;position:fixed;bottom:0;top:0;left:0;z-index:99;}
+.search-right{width:14px;background:#fff;position:fixed;bottom:0;top:0;right:0;z-index:99;}
+
+  
+  
+  
+</style>
+
+<div class="wrapper-search">
+  
+  
+{% paginate search.results by 10 %}
+  
+  <div class="search-title">
+      <h1>您的关键字搜寻</h1>
+      <p>♦♦♦♦</p>
+      <h2>请输入其它关键字</h2>
+
+      <div class="form-box">
+          <form action="/search" method="get">
+              <input class="search" type="text" name="q" placeholder="关键字..." value="{{ search.terms | escape }}">
+              <input type="submit" value class="btn-search">
+          </form>
+      </div>
+  </div>
+  <div class="search-result">
+    <h1>搜寻结果</h1>
+	<p><strong></strong><label>条该关键字的搜寻结果: </label><span>{{ search.terms }}</span></p>
+    <div class="allresult">
+      {% for item in search.results %}
+         {% if item.featured_image %}
+      <div class="result-details">   
+        <div class="result-image">
+          <a href="{{ item.url }}" title="{{ item.title | escape }}">
+            {{ item.featured_image | img_url: 'small' | img_tag: item.featured_image.alt }}
+          </a>
+        </div>
+        <div class="result-news">
+            <h3>{{ item.title | link_to: item.url }}</h3>
+            <h4>{{ item.tags | join: ' · ' }}</h4>
+            <span>{{ item.metafields.description.des | strip_html | truncatewords: 30 | highlight: search.terms  }}</span>
+        </div>
+        <div class="clear"></div>
+		</div>
+          {% endif %}
+       {% endfor %}
+
+  </div>  
+  </div>
+{% endpaginate %}
+
+  
+<!-- {{ search.results_count}}
+  {{search.results_count}}
+   -->
+
+  </div>
+  <div class="search-left"></div>
+<div class="search-right"></div>
+<img class="search-bg" src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/poppy.jpg">
+<script type="text/javascript" src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+<script>
+  $("document").ready(function(){
+  	var num = $(".wrapper-search .search-result .result-details").length;
+    $(".wrapper-search .search-result p strong").html(num)
+  })
+</script>

@@ -1,0 +1,379 @@
+<style>
+*{margin:0;padding:0;}
+body{font-family:MicroSoft YaHei,Arial,Sans-serif;}
+ul,ol,li{list-style:none;}
+img{border:none;vertical-align: middle;}
+a{text-decoration:none;}
+input,button,select,textarea,a{outline:none;}
+
+.header-nav .left li:nth-child(1) a{color:#a7821d}
+  
+.details{margin:0 16px;background:#f7f2e9;position:relative;}
+.details .mobile{display:none;}
+.details .left{width:410px;height:530px;position:absolute;top:10px;left:16px;overflow:hidden;}
+.details .left .all{width:42px;height:42px;line-height:42px;background:#e5d1c2;font-size:16px;text-align:center;color:#333;position:absolute;top:0;left:0;z-index:999;}
+.details .left .all a,.details .right .content .float a{color:#333;}
+.details .left .products_items{width:32px;height:485px;text-align:center;font-size:16px;text-align:center;color:#333;background: -webkit-linear-gradient(#e5d1c2, #f7f2e9);background:linear-gradient(#e5d1c2, #f7f2e9);background:-o-linear-gradient(#e5d1c2, #f7f2e9);writing-mode:vertical-lr;padding-left:10px;cursor:pointer;position:absolute;top:45px;left:0;z-index:999;}
+.details .left .products_news{width:360px;height:530px;position:absolute;top:0;left:-320px;z-index:5;}
+.details .left .products_news .news-content{width:320px;height:auto;;float:left;background:#fefdfc;}
+.details .left .products_news .news-content .news-items{margin:8px 0 12px 8px;}
+.details .left .products_news .news-content .news-items h2{width:45%;color:#333;font-size:14px;text-align:left;display:inline-block;vertical-align:top}
+.details .left .products_news .news-content .news-items ul{width:45%;display:inline-block;}
+  .details .left .products_news .news-content .news-items ul li{height:18px;}
+.details .left .products_news .news-content .news-items ul li a{font-size:14px;color:#666;transition:all 0.5s;}
+.details .left .products_news .news-content .news-items ul li a:hover{background:#aca790;color:#fff;transition:all 0.5s;}
+
+  
+.details .left .products_news .btn-news{width:40px;height:40px;line-height:36px;float:right;display:block;font-size:42px;color:#897642;background:#e5d1c2;text-align:center;cursor:pointer;}
+
+
+.details .right{font-size:14px;margin-left:80px;position:relative;}
+.details .right .title{padding:10px 0;}
+.details .right .content .clear{clear:both;}
+.details .right .content .float{width:242px;padding:1em;margin:0 5px 5px 0;background:#fff;position: absolute;transition: all 1s;}
+.details .right h1{font-size:16px;line-height:25px;color:#555;}
+.details .right h2{color:#555;text-align:left;margin-bottom:5px;font-size:14px;font-weight:normal;}
+
+.details .right .content .float ul{margin:10px 0;}
+.details .right .content .float p{margin:10px 0;}
+.details .right .content .float a{color:#897642;}
+  .details .right .content .float>img{height:110px;}
+  
+.details .right .content .suggest,.details .right .content .none{height:442px;}
+.details .right .content .suggest h4{margin-bottom:5px;}
+  .details .right .content .type img,.details .right .content .msg img{cursor:pointer;}
+ .details .right .content .quality p a{width:30px;height:30px;background:url("http://cdn.hauschka.com/images/system/sys/hauschka_sprite.png") no-repeat -187px -100px;display:block;}
+  
+.details .right .content .pic{width:540px;height:470px;margin:0 0 5px 0;padding:0;background:#fff;position:absolute;left:355px;top:69px;transition:0s;z-index:1;}
+.details .right .content .pic .lb-grey{width:100%;height:100%;position:relative;overflow:hidden;}
+.details .right .content .pic .lb-grey .allimg{height:100%;position:absolute;left:0;top;top:0;}
+  
+.details .right .content .pic .lb-grey .allimg img{width:470px;height:470px;margin:0 35px;display:block;float:left;}
+  .details .right .content .pic .lb-grey .btn-left{width:12px;height:17px;background:url({{ 'arrow-left-grey.gif' | asset_img_url:'' }}) no-repeat center;position:absolute;top:50%;left:10px;margin-top:-5px;cursor:pointer;}
+  .details .right .content .pic .lb-grey .btn-right{width:12px;height:17px;background:url({{ 'arrow-right-grey.gif' | asset_img_url:'' }}) no-repeat center;position:absolute;top:50%;right:10px;margin-top:-5px;cursor:pointer;}
+  
+  .details .right .content .pic .type img,.details .right .content .pic .msg img{width:100%;}
+  
+  .details .right .content .price{height:220px;background:#e7dfd3;}
+  .details .right .content .price h2{font-size:15px;display:inline-block;margin:0;font-weight:bold;}
+ .details .right .content .price p{margin:0;color:#555;}
+  
+.details .right .content .none{height:442px;}
+
+.details .right .content .float ul li{background:url({{ 'bullet.gif' | asset_img_url:'' }}) no-repeat 0 0.6em;padding-left:1em;}
+
+  .details .right .content .color h2{font-size:15px;padding-left:20px;}
+.details .right .content .color .color-wrapper{width:180px;margin:0 auto;}
+  .details .right .content .color .color-wrapper li{background:none;padding:0}
+.details .right .content .color .color-wrapper li span{font-size:14px;text-align:center;color:#444;display:block;}
+.details .right .content .color .color-wrapper li p{height:16px;margin-top:5px;}
+
+
+  .video-wrapper{width:100%;height:100%;position:fixed;left:0;top:0;display:none;z-index:9999;}
+.video-wrapper .shade{width:100%;height:100%;cursor:pointer;background: url(http://cdn.hauschka.com/images//usa/en/background/overlay.png) repeat 0 0;opacity:0.9;position:absolute;left:0;top:0;z-index:99;display: none;}
+.video-wrapper .video-box{width:800px;height:500px;position:absolute;left:50%;top:50%;margin:-250px 0 0 -400px;z-index:999;transform: scale(0,0);-webkit-transform: scale(0,0);transition:all 0.5s ease-in-out;-webkit-transition:all 0.5s ease-in-out;}
+  
+  
+
+
+@media screen and (min-width:300px) and (max-width:768px){
+.details{padding:30px 0;margin:-10px 0 0 0;}
+.details .mobile{width:100%;height:40px;line-height:40px;display:block;background: -webkit-linear-gradient(#e5d1c2, #f7f2e9);background:linear-gradient(#e5d1c2, #f7f2e9);background:-o-linear-gradient(#e5d1c2, #f7f2e9);text-align:center;}
+.details .mobile a{color:#333;font-size:14px;background: url({{ 'arrow-right.gif' | asset_img_url:'' }}) no-repeat right;padding:0 2em 0 0;}
+.details .left{width:100%;height:auto;display:block;}
+.details .left .all,.details .left .products_items,.details .left .products_news .btn-news{display:none;}
+.details .left .products_news,.details .left{position:static;}
+
+.details .left .products_news{width:100%;height:auto;display:none;margin:0 auto;}
+.details .left .products_news .news-content{width:90%;margin:0 3%;padding:2%;}
+
+.details .right{margin:0 0 0 16px;}
+
+.details .left .products_news .news-content .news-items{width:50%;height:180px;float:left;margin:0;}
+.details .left .products_news .news-content .news-items h2{width:100%;display:block;}
+.details .left .products_news .news-content .news-items ul{width:100%;display:block;}
+
+.details .right{margin:0;}
+.details .right .title{padding:10px;}
+.details .right .content .float{width:88%;margin:0 3% 16px 3%;position:static;padding:3%;}
+.details .right .content .suggest,.details .right .content .none{height:auto;}
+.details .right .content .pic{position:static;}
+.details .right .content .pic .lb-grey .allimg img{width:50%;height:50%;margin:0}
+  
+  
+}
+
+</style>  
+  
+
+<div class="details">
+  	<div class="mobile">
+		<a>Find your product</a>
+	</div>
+	<div class="left">
+		<li class="all"><a href="/collections/all-products">全部</a></li>
+		<li class="products_items">搜寻您所需的产品</li>
+		<ul class="products_news">
+			<div class="news-content">
+				<div class="product-lines news-items">
+					<h2>产品类别</h2>
+					<ul>
+                      
+                      	{% for link in linklists.collection-part-1.links %}
+                    	<li>{{ link.title | link_to: link.url }}</li>
+                		{% endfor %} 
+                    
+					</ul>
+				</div>
+				<div class="care-for news-items">
+					<h2>护理区域</h2>
+					<ul>
+                      	{% for link in linklists.collection-part-2.links %}
+                    	<li>{{ link.title | link_to: link.url }}</li>
+                		{% endfor %} 
+					</ul>
+				</div>
+				<div class="care-steps news-items">
+					<h2>护理步骤</h2>
+					<ul>
+						{% for link in linklists.collection-part-3.links %}
+                    	<li>{{ link.title | link_to: link.url }}</li>
+                		{% endfor %} 
+					</ul>
+				</div>
+				<div class="skin-type news-items">
+					<h2>我的皮肤状态</h2>
+					<ul>
+						{% for link in linklists.collection-part-4.links %}
+                    	<li>{{ link.title | link_to: link.url }}</li>
+                		{% endfor %} 
+					</ul>
+				</div>
+			</div>
+			<a class="btn-news">×</a>
+		</ul>
+	</div>
+	<div class="right">
+		<div class="title">
+			<h1>{{ product.title | replace: '.',' · '}}</h1>
+			<h2>{{ product.tags | last }}</h2>
+		</div>
+		<div class="content">
+    		<div class="suggest float">{{ product.metafields.description.des }}</div> 
+          	<div class="pic float">
+                <div class="lb-grey">
+                    <div class="allimg">
+                      {% for image in product.images %}
+                          <img src={{  image.src  | img_url:'' }}>
+                      {% endfor %}
+                     </div>
+                    <div class="btn-left"></div>
+                    <div class="btn-right"></div>
+                </div>
+          	</div>
+          	<div class="none float"></div>
+            <div class="price float">
+                <h2>{{ product.title | replace: '.',' · '}}</h2>
+                <p>{% for variant in product.variants %} {{ variant.title }} {% endfor %}</p>
+                <p>{{ product.price | money_without_trailing_zeros }}</p>
+            </div>
+            <div class="color float">
+				<h2>颜色</h2>
+				<ul class="color-wrapper">
+				{% for option in product.options %}
+				  {% if option == "Color" or option == "Colour" %}
+				    {% assign index = forloop.index0 %}
+				    {% assign colorlist = '' %}
+				    {% assign color = '' %}
+				    {% for variant in product.variants %}
+				      {% capture color %}
+				        {{ variant.options[index] }}
+				      {% endcapture %}
+				      {% unless colorlist contains color %}
+				        <li>
+				        <span>{{color}}</span>
+						<p style="background:rgba({{ variant.barcode }}"></p>
+				        </li>
+				  
+				        {% capture tempList %}
+				          {{colorlist | append: color | append: ' '}}
+				        {% endcapture %}
+				        {% assign colorlist = tempList %}
+				      {% endunless %}
+				    {% endfor %}
+				  {% endif %}
+				{% endfor %}
+				</ul>
+            </div>
+			{{ product.description }}
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript" src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+<script>
+
+
+$("  .details .right .content .pic .lb-grey .allimg img:last").remove();
+var count = $(".details .right .content .pic .lb-grey .allimg img").length;
+var W = document.body.clientWidth || document.documentElement.clientWidth;
+  
+
+$(window).on("resize", function(){
+			resize();
+          
+			
+		})
+
+$(document).ready(function(){
+	resize();
+
+  
+})
+
+function lbGrey(){
+    var img_width = $(".details .right .content .pic .lb-grey").width();
+  	$(".details .right .content .pic .lb-grey .allimg").css({"width":img_width*count+"px"})
+      $(".details .right .content .pic .lb-grey .btn-right").click(function(){
+        
+        $(".details .right .content .pic .lb-grey .allimg").stop().animate({left:-img_width+"px"},500,function(){
+          $(this).css({"left":"0px"});
+          $(this).append($(".details .right .content .pic .lb-grey .allimg img:first"))
+        })
+      })
+
+      $(".details .right .content .pic .lb-grey .btn-left").click(function(){
+        
+        $(".details .right .content .pic .lb-grey .allimg").prepend($(".details .right .content .pic .lb-grey .allimg img:last"))
+        $(".details .right .content .pic .lb-grey .allimg").css({"left":-img_width}).stop().animate({left:"0px"},500)
+        
+      })
+  
+  }
+function resize(){ 
+  
+  var W = document.body.clientWidth || document.documentElement.clientWidth;
+  var c_height = $(".details .right .content .prompt").css("top")
+
+if(W < 768){
+		$(".details .right .content .none").css({"display":"none"})
+		$(".details .right .content").css({"height":"auto"})    
+        $(".details .right .content .pic .lb-grey").css({"width":W-60,"height":W-50})
+        $(".details .right .content .pic .lb-grey .allimg").css({"width":W*count,"height":W-50})
+        $(".details .right .content .pic ").css({"height":W-50,})
+        $(".details .right .content .pic .lb-grey .allimg img").css({"height":W-50,"width":W-50})
+        
+        lbGrey()
+        
+        
+	}else{
+    	
+      
+      (function(){
+        var pic_width = $(".details .right .content .pic").width(); 
+        $(".details .right .content .pic").css({"height":pic_width-70,}) 
+        $(".details .right .content .pic .lb-grey").css({"height":pic_width-70,"width":pic_width}) 	
+        $(".details .right .content .pic .lb-grey .allimg").css({"width":W*count,"height":pic_width-70})
+        $(".details .right .content .pic .lb-grey .allimg img").css({"height":pic_width-70,"width":pic_width-70})
+      	lbGrey()
+      
+      
+      })();
+           
+      
+
+		init();
+function init(){
+			var nodeWidth = $(".details .right .content .float").outerWidth(true),
+				colNum = parseInt( $(".details .right").width()/ nodeWidth ),
+				colSumHeight = [];
+				arr0 = [];
+			for (var i=0;i<colNum;i++) {
+				colSumHeight.push(0);
+			}
+			$(".details .right .content .float").each(function(n){
+				var $cur = $(this),
+					idx = 0,
+					minSumHeight = colSumHeight[0];
+				for (var i=0;i<colSumHeight.length;i++) {
+					if (minSumHeight > colSumHeight[i]) {
+						minSumHeight = colSumHeight[i];
+						idx = i;
+					}
+
+				}
+					$cur.css({
+						left: nodeWidth*idx,
+						top: minSumHeight+70
+					})
+					arr0[n] = colSumHeight[idx] + parseInt($cur.innerHeight()) +100;
+
+
+				colSumHeight[idx] = colSumHeight[idx] + $cur.outerHeight(true);
+				
+				
+
+			})
+				var maxHeight = Math.max.apply(null,arr0);
+								
+				$(".details .right .content").css({"height":maxHeight})
+
+		}
+		
+	}
+
+} 
+
+
+$(".details .left .products_items").click(function(){
+	$(".details .left .products_news").stop().animate({"left":"42px",},500)
+
+});
+
+
+$(".details .left .products_news .btn-news").click(function(){
+	
+	$(".details .left .products_news").stop().animate({"left":"-320px",},500)
+
+})
+
+
+$(".details .mobile").click(function(){
+	$(".details .left .products_news").stop().slideToggle();
+
+})
+
+
+var video1=document.getElementById("videoPlay1");
+var video2=document.getElementById("videoPlay2");
+$(".details .right .content .type img").click(function(){
+	$(".details .right .content .type .video-wrapper").fadeIn(300)
+	$(".details .right .content .type .video-wrapper .shade").fadeIn(300)
+	$(".details .right .content .type .video-wrapper .video-box").css({"transform":"scale(1,1)","-webkit-transform":"scale(1,1)","transition":"all 0.5s ease-in-out","-webkit-transition":"all 0.5s ease-in-out"})
+	video1.play();
+})
+
+$(".video-wrapper .shade").click(function(){
+	$(".details .right .content .type .video-wrapper").fadeOut(300)
+	$(".details .right .content .type .video-wrapper .shade").fadeOut(300)
+	$(".details .right .content .type .video-wrapper .video-box").css({"transform":"scale(0,0)","-webkit-transform":"scale(0,0)","transition":"all 0.5s ease-in-out","-webkit-transition":"all 0.5s ease-in-out"})
+	video1.pause()
+})
+
+$(".details .right .content .msg img").click(function(){
+	$(".details .right .content .msg .video-wrapper").fadeIn(300)
+	$(".details .right .content .msg .video-wrapper .shade").fadeIn(300)
+	$(".details .right .content .msg .video-wrapper .video-box").css({"transform":"scale(1,1)","-webkit-transform":"scale(1,1)","transition":"all 0.5s ease-in-out","-webkit-transition":"all 0.5s ease-in-out"})
+	video2.play();
+})
+
+$(".video-wrapper .shade").click(function(){
+	$(".details .right .content .msg .video-wrapper").fadeOut(300)
+	$(".details .right .content .msg .video-wrapper .shade").fadeOut(300)
+	$(".details .right .content .msg .video-wrapper .video-box").css({"transform":"scale(0,0)","-webkit-transform":"scale(0,0)","transition":"all 0.5s ease-in-out","-webkit-transition":"all 0.5s ease-in-out"})
+	video2.pause()
+})
+
+
+</script>

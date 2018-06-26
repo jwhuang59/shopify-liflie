@@ -1,0 +1,64 @@
+
+<div class="page-width">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+
+      <div class="rte">
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+<script type="text/javascript">
+
+
+  
+var W = document.body.clientWidth || document.documentElement.clientWidth;
+var H = document.documentElement.clientHeight || document.body.clientHeight;
+var index=0;
+  
+
+// 护理第四类目子页
+
+var x = 0;
+
+
+$(".know .know-content .part4 ul>li h1").click(function(){
+
+	x = $(this).parent(".know .know-content .part4 ul>li").index(); 
+	$("html,body").animate({scrollTop:$(".know .know-content .part4").offset().top},300)
+
+	if($(this).hasClass("on")){
+		$(this).removeClass("on");
+		$(".know .know-content .part4 ul>li .part4-content").stop().slideUp(300)
+
+	}else{
+		$(".know .know-content .part4 ul>li h1").removeClass("on")
+		$(this).addClass("on");
+		$(".know .know-content .part4 ul>li .part4-content").stop().slideUp(300);
+		$(".know .know-content .part4 ul>li").eq(x).children(".part4-content").stop().slideDown(300);
+	}
+})
+
+
+
+// 护理第六类目子页
+
+$(".know .content-left .left-news ul li a").click(function(){
+	index = $(this).parent("li").index();
+	$(this).parent("li").addClass("active").siblings().removeClass("active")
+	$(".know .content-left .left-title li").eq(index).fadeIn(100).siblings().fadeOut(100)
+	$(".know .content-right .allcontent").eq(index).fadeIn(100).siblings().fadeOut(100)
+	$(".know .content-left .pic-bg img").eq(index).fadeIn(100).siblings().fadeOut(100)
+})
+
+
+
+
+
+</script>
+</body>
+</html>

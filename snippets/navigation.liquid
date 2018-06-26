@@ -1,0 +1,7 @@
+{% if settings.nav_linklist != '' %}
+  <ul class="nav navbar-nav hoverMenuWrapper">
+    {% for l in linklists[settings.nav_linklist].links %}
+    {% include 'navigation-link' with 0 %}
+    {% endfor %}
+  </ul>       
+{% endif %}

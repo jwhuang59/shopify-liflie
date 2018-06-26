@@ -1,0 +1,74 @@
+<div class="page-width">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+      <div class="rte">
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+<script>
+
+var W = document.body.clientWidth || document.documentElement.clientWidth;
+
+
+var index = 0;
+$(".map-main .map-img map area").hover(function(){
+	index = $(this).index();
+	$(this).click(function(){
+		$(".map-main .selection-menu .websites").eq(index).fadeIn(300);
+		$(".map-main .bg-shade").css({"display":"block","z-index":"2"});
+		if(index == 2){
+			$(".map-main .selection-menu .websites").eq(index).css({"display":"none","padding":"0"});
+			$(".map-main .bg-shade").css({"display":"none","z-index":"-1"})
+
+		}
+	})
+
+
+	$(this).mousemove(function(){
+		var x = event.clientX;
+		var y = event.clientY;
+		$(".map-main .worldmap-name span").css({"left":x,"top":y-155});
+
+	})
+	
+	
+	$(".map-main .worldmap-name span").eq(index).css({"display":"block"})
+
+	},function(){
+		$(".map-main .worldmap-name span").eq(index).css({"display":"none"})
+
+	})
+
+
+$(".map-main .selection-menu .websites .region-name p").click(function(){
+	$(".map-main .selection-menu .websites").fadeOut(300);
+	$(".map-main .bg-shade").css({"display":"none","z-index":"-1"})
+})
+$(".map-main .bg-shade").click(function(){
+	$(".map-main .selection-menu .websites").fadeOut(300);
+	$(".map-main .bg-shade").css({"display":"none","z-index":"-1"})
+})
+
+
+$(".map-main .selection-menu .langholder .multiple-langs").hover(function(){
+	$(this).parent().find(".language-links").css({"display":"inline-block"});
+},function(){
+	$(this).parent().find(".language-links").css({"display":"none"});
+
+});
+$(".map-main .selection-menu .langholder .language-links").hover(function(){
+	$(this).css({"display":"inline-block"});
+},function(){
+	$(this).css({"display":"none"});
+
+});
+
+
+
+
+
+</script>

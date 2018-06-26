@@ -1,0 +1,532 @@
+
+
+<style>
+
+.header-nav .left li:nth-child(5) a {color: #a7821d;}
+.know{margin:0 14px;padding:0 0 100px 0;position:relative;}
+.know .content-left{width:100%;}
+.know .content-left .pic-bg{position:relative;}
+.know .content-left .pic-bg img{width:100%}
+
+.know .content-left .pic-bg .part1-news{position:absolute;left:50%;top:50%;transform: translate(-25%,-25%)}
+.know .content-left .pic-bg .part1-news h1{font-size:20px;color:#444;font-weight:normal;margin-bottom:20px;}
+.know .content-left .pic-bg .part1-news p{font-size:15px;color:#444;}
+
+.know .content-left .mainbox .main-news{width:800px;margin:20px auto 50px;}
+.know .content-left .mainbox .main-news .href-img{width:50%;float:left;}
+.know .content-left .mainbox .main-news .href-img img{margin:0 auto;display:block;}
+.know .content-left .mainbox .main-news .main-text{width:50%;padding:15px;box-sizing: border-box;float:left;}
+
+.know .content-left .mainbox .main-news .main-text h2{font-size:14px;color:#999;font-weight:normal;}
+.know .content-left .mainbox .main-news .main-text h3{font-size:18px;color:#444;margin-bottom:20px;font-weight:normal;}
+.know .content-left .mainbox .main-news .main-text p{font-size:15px;color:#444;margin-bottom:15px;}
+.know .content-left .mainbox .main-news .main-text span{height:28px;background: url("http://cdn.hauschka.com/images/system/sys/bullet.gif") no-repeat 0 6px;padding: 0 0 0 10px;display:block;}
+.know .content-left .mainbox .main-news .main-text a{height:20px;line-height:20px;font-size:14px;color:#ff7e7e;margin-bottom:15px;display: inline-block;padding:0 5px;transition:all 0.6s ease-in-out;}
+.know .content-left .mainbox .main-news .main-text a:hover{background:#ff7e7e;color:#fff;transition:all 0.6s ease-in-out;}
+
+.know .part1{width:285px;height:160px;padding:15px;background:rgba(255,255,255,0.9);position:absolute;top:16px;left:16px;z-index:9;}
+.know .part1 .part1-topnav{width:285px;position:absolute;top:15px;}
+.know .part1 .part1-bottomnav{padding:8px 0 0 0 ;border-top:1px dotted #bebebe;position:absolute;bottom:15px;}
+.know .part1 li{font-size:14px;display:inline;}
+.know .part1 li .active{color:#a7821d;}
+.know .part1 li a{color:#3e3d40;font-size:14px;transition:all 0.5s;}
+.know .part1 li a:hover{color:#a7821d;transition:all 0.5s;}
+
+
+
+
+
+
+@media screen and (min-width:667px) and (max-width:1024px){
+
+.know-left,.know-right{display:none;}
+
+.know .part1 .part1-topnav{position:static;}
+.know .part1{width:auto;height:auto;margin-bottom:5px;position:static;}
+.know .part1 .part1-topnav{width:100%;margin-bottom:20px;}
+.know .part1 .part1-bottomnav{position:static;}
+.know .part1 li{font-size:18px;}
+.know .part1 li a{font-size:18px;}
+.know .part1 .part1-bottomnav .part1-icon{background:none;padding:0;}
+.know .content-left{margin-top:16px;}
+
+
+.know .content-left .mainbox .main-news{width:auto;}
+
+
+
+}
+
+@media screen and (min-width:300px) and (max-width:667px){
+
+.know{padding:15px 10px;margin:0;}
+.know-left,.know-right{display:none;}
+
+.know .content-left{width:auto;float:none;}
+
+.know .part1 .part1-topnav{position:static;}
+.know .part1{width:auto;height:auto;margin-bottom:5px;position:static;}
+.know .part1 .part1-topnav{width:100%;margin-bottom:20px;}
+.know .part1 .part1-bottomnav{position:static;}
+.know .part1 li{font-size:16px;}
+.know .part1 li a{font-size:16px;} 
+.know .part1 .part1-bottomnav .part1-icon{background:none;padding:0;}
+.know .content-left{margin-top:16px;}
+.know .content-left .left-news{width:auto;padding-top:0;margin:20px 0;}
+.know .content-left .pic-bg{width:auto;float:none;margin:0;}
+
+.know .content-left .pic-bg .part1-news{width:auto;position:static;transform: translate(0,0);text-align:center;padding:15px 0;}
+.know .content-left .mainbox .main-news .href-img img{width:100%;}
+
+.know .content-left .mainbox .main-news{width:auto;}
+
+}
+
+
+
+
+@media screen and (min-width:300px) and (max-width:550px){
+
+
+.know .content-left .mainbox .main-news .href-img{width:auto;float:none;}
+.know .content-left .mainbox .main-news .href-img img{width:100%;}
+.know .content-left .mainbox .main-news .main-text{width:auto;float:none;padding:0;}
+
+
+}
+
+
+
+
+.know .clear{clear:both;}
+.know-left{width:14px;background:#fff;position:fixed;bottom:0;top:0;left:0;z-index:99;}
+.know-right{width:14px;background:#fff;position:fixed;bottom:0;top:0;right:0;z-index:99;}
+.know-bg{width:100%;height:100%;position:fixed;top:0;left:0;z-index:-1;}
+</style>
+<div class="know">
+<div class="part1">
+<ul class="part1-topnav">
+<li><a href="/pages/news-activity-and-msg">品牌快讯</a> /</li>
+<li><a href="/pages/news-awards" class="active">奖项荣誉</a></li>
+</ul>
+<div class="clear"></div>
+</div>
+<div class="content-left">
+<div class="pic-bg"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/header-awards.jpg" />
+<div class="part1-news">
+<h1>品牌奖项里程碑<br />品质独一无二</h1>
+<p>Dr.Hauschka德国世家产品拥有「NATRUE」认证，质量均由独立机构实验认证。</p>
+</div>
+</div>
+
+
+
+
+<div class="mainbox">
+<div class="main-news"><a class="href-img" href="{{ all_products['hydrating-foot-cream'].url }}"> <img src="http://cdn.hauschka.com/images/system/content_elements/news/awards/Oeko-Test-Aug-2017.jpg" /> </a>
+<div class="main-text">
+<h2>德国2017</h2>
+<h3>「{{ all_products['hydrating-foot-cream'].title }}」被「Öko-Test Testbericht」评定为非常优秀</h3>
+<p>有机测试评定报告中写道：「定期进行足部按摩不仅能够为您带来舒适的感受，还能够促进血液循环、滋养足部、放松肌肉、减缓疼痛。」</p>
+<a href="{{ all_products['hydrating-foot-cream'].url }}">立即探索「{{ all_products['hydrating-foot-cream'].title }}」</a></div>
+<div class="clear"></div>
+</div>
+<div class="main-news"><a class="href-img" href="{{ all_products['foundation'].url }}"> <img src="http://cdn.hauschka.com/images/system/content_elements/news/awards/Oeko-Test-Testberich-Foundation-2017.jpg" /> </a>
+<div class="main-text">
+<h2>德国2017</h2>
+<h3>「{{ all_products['foundation'].title }}」被「Öko-Test Testbericht」评定为非常优秀。</h3>
+<p>律动天然有机护肤品再次获得了认可。</p>
+<a href="{{ all_products['foundation'].url }}">立即探索「{{ all_products['foundation'].title }}」</a></div>
+<div class="clear"></div>
+</div>
+<div class="main-news"><a class="href-img" href="{{ all_products['lip-balm'].url }}"> <img src="http://cdn.hauschka.com/images/system/content_elements/news/awards/Stiftung-Warentset-2017.jpg" /> </a>
+<div class="main-text">
+<h2>德国2017</h2>
+<h3>「{{ all_products['lip-balm'].title }}」被「德国商品检验基金会」评选为值得推荐产品</h3>
+<p>在对35款产品进行有害矿物油含量检测后，德国商品检验基金会（Stiftung Warentest）做出了如下结论：「原则上，我们建议您在唇部使用天然美容护肤品」。</p>
+<a href="{{ all_products['lip-balm'].url }}">立即探索「{{ all_products['lip-balm'].title }}」</a></div>
+<div class="clear"></div>
+</div>
+<div class="main-news"><a class="href-img" href="{{ all_products['colour-correcting-powder'].url }}"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Best-New-Product-Awards-2017.jpg" /> </a>
+<div class="main-text">
+<h2>德国2017</h2>
+<h3>Vivaness–Germany 2017 Best New Product Awards</h3>
+<h3>「{{ all_products['colour-correcting-powder'].title }}」荣膺Vivaness博览会彩妆类最佳新品</h3>
+<p>第11届Vivaness国际天然美容护肤品博览会，于2017年2月15日至18日在德国纽伦堡隆重举行，参加博览会的业界人士将修容养肤迷彩蜜粉饼评选为彩妆类最佳新品。</p>
+<a href="{{ all_products['colour-correcting-powder'].url }}">立即探索「{{ all_products['colour-correcting-powder'].title }}」</a></div>
+<div class="clear"></div>
+</div>
+<div class="main-news"><a class="href-img" href="{{ all_products['hydrating-cream-mask'].url }}"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Reformprodukt-des-Jahres-2017.jpg" /> </a>
+<div class="main-text">
+<h2>德国2017</h2>
+<h3>「{{ all_products['hydrating-cream-mask'].title }}」被评选为2017年度健康产品</h3>
+<p>Stiftung Reformhaus-Fachakademie 的评委们将「律动密集补水修护面膜」评选为2017年度天然美容护肤品，在寒冷的季节中，这款产品仍可为干燥、敏感和缺乏再生力的皮肤提供理想的防护。</p>
+<a href="{{ all_products['hydrating-cream-mask'].url }}">立即探索「{{ all_products['hydrating-cream-mask'].title }}」</a></div>
+<div class="clear"></div>
+</div>
+<div class="main-news"><a class="href-img" href="{{ all_products['volume-mascara'].url }}"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Oeko-Test-Testbericht-Volume-Mascara-black.jpg" /> </a>
+<div class="main-text">
+<h2>德国2016</h2>
+<h3>「{{ all_products['volume-mascara'].title }}」被「Öko-Test Testbericht」评定为非常优秀</h3>
+<p>「天然美容化妆品-德国世家『花样招展羽扇睫毛膏』凭借其优质无瑕的成分为您打造完美的睫毛彩妆效果。」</p>
+<a href="{{ all_products['volume-mascara'].url }}">立即探索「{{ all_products['volume-mascara'].title }}」</a></div>
+<div class="clear"></div>
+</div>
+<div class="main-news"><a class="href-img" href="{{ all_products['night-serum'].url }}"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/NZ-Best-In-Beauty-2016.jpg" /> </a>
+<div class="main-text">
+<h2>纽西兰2016</h2>
+<h3>纽西兰最佳美容大奖(NZ Best In Beauty)</h3>
+<h3>「{{ all_products['night-serum'].title }}」荣获「最佳精华液奖」</h3>
+<p>五年来，纽西兰最佳美容大奖由《鲍尔》杂志（Bauer magazines）举办，评奖过程中由编辑们提名自己最喜爱的产品，由读者们选举出心中的最佳产品，即为获奖产品。</p>
+<a href="{{ all_products['night-serum'].url }}">立即探索「{{ all_products['night-serum'].title }}」</a></div>
+<div class="clear"></div>
+</div>
+<div class="main-news"><a class="href-img" href="{{ all_products['night-serum'].url }}"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/NZ-Best-In-Beauty-2016.jpg" /> </a>
+<div class="main-text">
+<h2>英国2016</h2>
+<h3>CEW美妆大奖(CEW Beauty Awards)</h3>
+<h3>「{{ all_products['night-serum'].title }}」荣获「最佳有机认证护肤新品」</h3>
+<p>CEW美妆大奖被誉为「美妆界的奥斯卡奖」，2006年，该奖项首次于英国颁发，以表彰杰出的产品创新和创造力。我们十分荣幸，德国世家「律动夜间修护精华」在2016年度CEW大奖中荣获「最佳认证有机肌肤护理新品」大奖。</p>
+<a href="{{ all_products['night-serum'].url }}">立即探索「{{ all_products['night-serum'].title }}」</a></div>
+<div class="clear"></div>
+</div>
+<div class="main-news"><a class="href-img" href="{{ all_products['lip-balm'].url }}"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Natural-Health-2016-International-Beauty-Awards.jpg" /> </a>
+<div class="main-text">
+<h2>英国2016</h2>
+<h3>《天然健康》国际美容奖</h3>
+<h3>Natural Health International Beauty Awards</h3>
+<p>在《天然健康》国际美容奖由杂志编辑和美容界专业人士组成的专家评审团将评审不同的类别的产品，读者也可以对部分类别的产品进行投票。创建的11年内，已有隶属40类的150款天然美容护肤品荣获该荣誉，奖项在业界素来享有盛名。</p>
+<p>下列德国世家获奖产品由《天然健康》杂志的读者投票获奖。</p>
+<p>获奖产品</p>
+<span><a href="{{ all_products['lip-balm'].url }}">{{ all_products['lip-balm'].title }}</a></span> <span><a href="{{ all_products['hydrating-hand-cream'].url }}">{{ all_products['hydrating-hand-cream'].title }}</a></span>
+<p>推荐产品</p>
+<span><a href="{{ all_products['tinted-day-cream'].url }}">{{ all_products['tinted-day-cream'].title }}</a></span> <span><a href="{{ all_products['foundation'].url }}">{{ all_products['foundation'].title }}</a></span></div>
+<div class="clear"></div>
+</div>
+<div class="main-news"><a class="href-img" href="{{ all_products['night-serum'].url }}"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Beauty-Shortlist-Awards-2016.jpg" /> </a>
+<div class="main-text">
+<h2>英国2016</h2>
+<h3>英国「Beauty Shortlist」大奖</h3>
+<h3>Beauty Shortlist Awards</h3>
+<p>2005年，「The Beauty Shortlist」被评选为英国首席美容博客，该博客由美容专题记者Fiona Kloranides创建，「The Beauty Shortlist」作为最佳美容博客，于2016年3月举办了以「美之精华」为主题的五周年庆典。</p>
+<p>获奖产品</p>
+<p>「最佳夜疗产品」——德国世家「{{ all_products['night-serum'].title }}」</p>
+<p>「最佳国际天然/有机美容护肤品牌」-德国世家(Dr.Hauschka)/维蕾德(Weleda)</p>
+<a href="{{ all_products['night-serum'].url }}">立即探索「{{ all_products['night-serum'].title }}」</a></div>
+<div class="clear"></div>
+</div>
+<div class="main-news"><a class="href-img" href="{{ all_products['night-serum'].url }}"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Prix-de-Beaute-2016.jpg" /> </a>
+<div class="main-text">
+<h2>瑞士 2016</h2>
+<h3>「Annabelle-Prix de Beauté」大奖</h3>
+<p>德国世家在本次评选中，集两项荣誉及于一身：「律动夜间修护精华」同时荣获「天然美容护肤品」类别的「最佳信誉奖」和「最受欢迎奖」；「{{ all_products[''].title }}」荣获2016年度「『Prix de Beauté』最受读者欢迎面膜」称号。</p>
+<span><a href="{{ all_products['night-serum'].url }}">{{ all_products['night-serum'].title }}</a></span> <span><a href="{{ all_products['clarifying-clay-mask'].url }}">{{ all_products['clarifying-clay-mask'].title }}</a></span></div>
+<div class="clear"></div>
+</div>
+<div class="main-news"><a class="href-img" href="{{ all_products['rose-nurturing-body-cream'].url }}"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/ELLE-South-Africa-Beauty-Awards-2016.jpg" /> </a>
+<div class="main-text">
+<h2>南非2016</h2>
+<h3>ELLE–南非美容大奖(ELLE South Africa Beauty Awards)</h3>
+<p>德国世家「{{ all_products['rose-nurturing-body-cream'].title }}」荣获南非《ELLE》杂志美容专题编辑部颁发的2016年度ELLE南非美容大奖。</p>
+<a href="{{ all_products['rose-nurturing-body-cream'].url }}">立即探索「{{ all_products['rose-nurturing-body-cream'].title }}」</a></div>
+<div class="clear"></div>
+</div>
+<div class="main-news"><a class="href-img" href="{{ all_products['night-serum'].url }}"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Best-New-Product-Awards-2016.jpg" /> </a>
+<div class="main-text">
+<h2>德国2016</h2>
+<h3>Vivaness国际天然美容护肤品博览会「最佳新品奖」</h3>
+<p>第十届Vivaness国际天然美容护肤品博览会于2016年2月10日至13日于德国纽伦堡举行，德国世家「Balancing Teint Powder」被参加Vivaness博览会的业界人士评选为美妆类最佳新品，市场部负责人Elena Dowedeit领取了该奖项。</p>
+</div>
+<div class="clear"></div>
+</div>
+<div class="main-news"><a class="href-img" href="{{ all_products['night-serum'].url }}"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Reformprodukt-des-Jahres-2016.jpg" /> </a>
+<div class="main-text">
+<h2>德国2016</h2>
+<h3>健康有机品经营专门学院基金会(Stiftung Reformhaus-Fachakademie)</h3>
+<h3>「{{ all_products['night-serum'].title }}」荣获天然护肤品类「年度创新产品奖」</h3>
+<p>评审评价：「健康有机品店(Reformhaus®)的商品生产商总是乐于创新，天然美容护肤品类『年度创新产品奖』的获得者–德国世家『{{ all_products['night-serum'].title }}』，以苹果花和苹果果实精华，让肌肤在夜间放松、调理，同时为肌肤补充清新活力。」</p>
+<a href="{{ all_products['night-serum'].url }}">立即探索「{{ all_products['night-serum'].title }}」</a></div>
+<div class="clear"></div>
+</div>
+<div class="main-news"><a class="href-img" href="{{ all_products['rose-day-cream'].url }}"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/ELLE-South-Africa-Beauty-Awards-2015.jpg" /> </a>
+<div class="main-text">
+<h2>南非2015</h2>
+<h3>「{{ all_products['rose-day-cream'].title }}」荣获ELLE南非–美容大奖ELLE South Africa Beauty Awards</h3>
+<p>皮肤学专家Dilshaad Asmal博士评价：「德国世家律动玫瑰舒缓滋养霜是一款有滋养、补湿功效的补湿型日霜产品。」</p>
+<a href="{{ all_products['rose-day-cream'].url }}">立即探索「{{ all_products['rose-day-cream'].title }}」 </a></div>
+<div class="clear"></div>
+</div>
+
+
+
+
+
+<div class="main-news"><a class="href-img" href="{{ all_products['cleansing-cream'].url }}"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Reformprodukt-des-Jahres-2015.jpg" /> </a>
+<div class="main-text">
+<h2>德国2015</h2>
+<h3>健康有机品经营专门学院基金会(Stiftung Reformhaus-Fachakademie)</h3>
+<h3>「{{ all_products['cleansing-cream'].title }}」荣获天然护肤品类「年度创新产品奖」</h3>
+<p>评审给予这款律动醒润清洁膏高度评价：「这款产品的决胜优势在于其蕴含的精选成分和其全面性的护肤理念。」</p>
+<a href="{{ all_products['cleansing-cream'].url }}">立即探索「{{ all_products['cleansing-cream'].title }}」 </a></div>
+<div class="clear"></div>
+</div>
+<div class="main-news"><a class="href-img" href="{{ all_products['lavender-sandalwood-calming-body-wash'].url }}"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Ultimate-Natural-Beauty-Bible-Award-2015.jpg" /> </a>
+<div class="main-text">
+<h2>英国2015</h2>
+<h3>「终极天然美容圣经」奖Ultimate Natural Beauty Bible Award</h3>
+<h3>德国世家7款产品荣获「终极天然美容圣经」奖项</h3>
+<p>《终极天然美容圣经》一书向读者介绍了「自然」的美丽信仰，其作者为著名记者Josephine Fairly和她的同事Sarah Stacey，2015年度有7款德国世家产品获得「终极天然美容圣经」奖项。</p>
+<p>立即探索：</p>
+
+<span><a href="{{ all_products['lavender-sandalwood-calming-body-wash'].url }}">{{ all_products['lavender-sandalwood-calming-body-wash'].title }} </a></span> <span><a href="{{ all_products['cleansing-cream'].url }}">{{ all_products['cleansing-cream'].title }} </a></span><span> <a href="{{ all_products['revitalising-mask'].url }}">{{ all_products['revitalising-mask'].title }} </a></span> <span><a href="{{ all_products['neem-nail-and-cuticle-oil'].url }}">{{ all_products['neem-nail-and-cuticle-oil'].title }} </a></span> <span><a href="{{ all_products['regenerating-neck-and-decollete-cream'].url }}">{{ all_products['regenerating-neck-and-decollete-cream'].title }} </a></span><span> <a href="{{ all_products['regenerating-eye-cream'].url }}">{{ all_products['regenerating-eye-cream'].title }} </a></span><span> <a href="{{ all_products['after-sun'].url }}">{{ all_products['after-sun'].title }} </a></span></div>
+<div class="clear"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="main-news"><a class="href-img" href="/products/concealer/"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Oeko-Test-Testberich-10-2015.jpg" /> </a>
+<div class="main-text">
+<h2>德国2015</h2>
+<h3>「果芯养肤遮瑕棒」被「Öko-Test Testbericht」评定为非常优秀</h3>
+<p>德国世家天然美容护肤品遥遥领先，所有经认证的参评产品均被评定为『非常优秀』。</p>
+<a href="/products/concealer/">立即探索「果芯养肤遮瑕棒」 </a></div>
+<div class="clear"></div>
+</div>
+
+
+
+<div class="main-news"><a class="href-img" href="/products/regenerating-eye-cream/"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Anti-Ageing-Beauty-Bible-Awards-2015.jpg" /> </a>
+<div class="main-text">
+<h2>英国2015</h2>
+<h3>「抗衰老美容圣经」最佳再生眼霜奖Anti-Ageing Beauty Bible Awards</h3>
+<p>英国「抗衰老美容圣经」是促进再生护肤领域的美容圣经，德国世家在2015年度成为该奖项的获奖者之一，德国世家「再生修护眼霜.律动护肤」获得了「再生眼霜」类的最高荣誉。</p>
+<a href="/products/regenerating-eye-cream/">立即探索「再生修护眼霜.律动护肤」 </a></div>
+<div class="clear"></div>
+</div>
+
+
+
+
+<div class="main-news"><a class="href-img" href="/products/night-serum/"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Pure-Beauty-Awards-2015.jpg" /> </a>
+<div class="main-text">
+<h2>英国2015</h2>
+<h3>「夜间修护精华.律动护肤」荣获「纯美奖」银奖Pure Beauty Awards</h3>
+<p>德国世家「夜间修护精华.律动护肤」荣获2015年度「纯美奖」天然美容护肤品银奖「最佳面部护理产品」荣誉。</p>
+<a href="/products/night-serum/">立即探索「夜间修护精华.律动护肤」 </a></div>
+<div class="clear"></div>
+</div>
+
+
+
+<div class="main-news"><a class="href-img" href="/products/hydrating-foot-cream/"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Top-100-des-Women-2015.jpg" /> </a>
+<div class="main-text">
+<h2>英国2015</h2>
+<h3>《女性杂志》百名排行榜「最佳足部护理霜」Top 100 des Women Magazine’s</h3>
+<p>德国世家「足部保湿霜.律动护肤」荣获2015年度英国《女性杂志》百名排行榜「最佳足部护理霜」称誉，由专家组成的评委团称赞该产品为一款优质精品。</p>
+<a href="/products/hydrating-foot-cream/">立即探索「足部保湿霜.律动护肤」 </a></div>
+<div class="clear"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="main-news"><a class="href-img" href="/products/eye-balm/"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Top-100-des-Women-2015.jpg" /> </a>
+<div class="main-text">
+<h2>英国2015</h2>
+<h3>《天然健康》国际美容奖「最佳国际品牌」Natural Health International Beauty Awards</h3>
+<p>德国世家荣获2015年度《天然健康》国际美容奖「国际品牌」类第一名，「眼部养护膏.律动护肤」获得「十分推荐」称誉。</p>
+<a href="/products/eye-balm/">立即探索「眼部养护膏.律动护肤」 </a></div>
+<div class="clear"></div>
+</div>
+
+
+
+<div class="main-news"><a class="href-img" href="/products/sage-mint-deodorant"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Natural-Health-International-Beauty-2015.jpg" /> </a>
+<div class="main-text">
+<h2>德国2015</h2>
+<h3>「薄荷鼠尾草香体露.律动护肤」被「Öko-Test Testbericht」评定为非常优秀</h3>
+<p>评审中，只有完美无瑕的产品才将被评定为『非常优秀』，律动薄荷鼠尾草香体露的上一代产品鼠尾草香体乳，也曾获得『非常优秀』的荣誉。</p>
+<a href="/products/sage-mint-deodorant">立即探索「薄荷鼠尾草香体露.律动护肤」 </a></div>
+<div class="clear"></div>
+</div>
+
+
+
+<div class="main-news"><a class="href-img" href="/products/almond-soothing-body-wash/"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Oeko-Test-Testbericht-06-2015.jpg" /> </a>
+<div class="main-text">
+<h2>英国2015</h2>
+<h3>「杏仁舒缓沐浴乳.律动护肤」荣获英国「Beauty Shortlist」奖</h3>
+<p>德国世家「杏仁舒缓沐浴乳.律动护肤」荣获2015年度英国著名美容博客「Beauty Shortlist」奖项中，「非常值得推荐」的殊荣。</p>
+<a href="/products/almond-soothing-body-wash/">立即探索「杏仁舒缓沐浴乳.律动护肤」 </a></div>
+<div class="clear"></div>
+</div>
+
+
+
+<div class="main-news"><a class="href-img" href="/products/revitalising-mask/"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Beauty-Shortlist-Awards-2015.jpg" /> </a>
+<div class="main-text">
+<h2>英国2015</h2>
+<h3>「活力醒肤面膜.律动护肤」荣获《Tatler》美容大奖</h3>
+<p>德国世家「活力醒肤面膜.律动护肤」在由英国著名美容杂志《Tatler》举办的2015年度美容大奖中荣获了「非常值得推荐」的称誉。</p>
+<a href="/products/revitalising-mask/">立即探索「活力醒肤面膜.律动护肤」 </a></div>
+<div class="clear"></div>
+</div>
+
+
+
+<div class="main-news"><a class="href-img" href="/products/rose-nurturing-bath-essence/"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Tatler-Beauty-Awards-2015.jpg" /> </a>
+<div class="main-text">
+<h2>瑞士2014</h2>
+<h3>「玫瑰滋养沐浴精华.律动护肤」荣获「Annabelle-Prix de Beauté」两项大奖</h3>
+<p>德国世家「玫瑰滋养沐浴精华.律动护肤」在「Annabelle-Prix de Beauté」评选中，同时荣获了天然美容护肤品类别的「最佳信誉奖」和「最受欢迎奖」。</p>
+<a href="/products/rose-nurturing-bath-essence/">立即探索「玫瑰滋养沐浴精华.律动护肤」 </a></div>
+<div class="clear"></div>
+</div>
+
+
+
+<div class="main-news"><a class="href-img" href="/products/almond-soothing-bath-essence/"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Prix-de-Beaute-2014.jpg" /> </a>
+<div class="main-text">
+<h2>德国2014</h2>
+<h3>「杏仁舒缓盆浴精油.律动护肤」被「Öko-Test Testbericht」评定为非常优秀</h3>
+<p>「杏仁舒缓盆浴精油.律动护肤」的大部分成分都具有舒缓功效，在必要添加剂中绝不含有害物质，以确保您拥有健康的沐浴享受。」</p>
+<a href="/products/almond-soothing-bath-essence/">立即探索「杏仁舒缓盆浴精油.律动护肤」 </a></div>
+<div class="clear"></div>
+</div>
+
+
+
+<div class="main-news"><a class="href-img" href="/products/cleansing-cream/"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Oeko-Test-Testbericht-12-2014.jpg" /> </a>
+<div class="main-text">
+<h2>美国2014</h2>
+<h3>「醒润清洁膏.律动护肤」荣获《Jones》杂志最佳美容奖Jones‘Magazine:Best in Beauty Award</h3>
+<p>德国世家「醒润清洁膏.律动护肤」荣获了由美国《Jones》杂志颁发的「最佳美容奖」，获奖理由为：作为一款具有开创性产品和皮肤护理方式，「醒润清洁膏.律动护肤」能够协助肌肤恢复青春活力，带给持久美丽。</p>
+<a href="/products/cleansing-cream/">立即探索「醒润清洁膏.律动护肤」 </a></div>
+<div class="clear"></div>
+</div>
+
+
+
+<div class="main-news"><a class="href-img" href="/products/rose-nurturing-body-cream/"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Jones-Magazine-05-2014.jpg" /> </a>
+<div class="main-text">
+<h2>美国2014</h2>
+<h3>「玫瑰滋养润体霜.律动护肤」荣获「Big Day」美容大奖</h3>
+<p>德国世家「玫瑰滋养润体霜.律动护肤」备受欢迎：「这款舒缓护体霜不仅拥有迷人的芳香，它还能够在刮风、恶劣的天气中为皮肤提供有效的防护。」</p>
+<a href="/products/rose-nurturing-body-cream/">立即探索「玫瑰滋养润体霜.律动护肤」 </a></div>
+<div class="clear"></div>
+</div>
+
+
+
+<div class="main-news"><a class="href-img" href="/products/lavender-sandalwood-calming-body-wash/"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Big-Day-Beauty-Awards-05-2014.jpg" /> </a>
+<div class="main-text">
+<h2>德国2014</h2>
+<h3>「薰衣草檀香镇静沐浴乳.律动护肤」被「Öko-Test Testbericht」评定为非常优秀</h3>
+<p>「有机护肤品拥有最佳的皮肤适应性……经认证的天然美容护肤品更具安全可靠的质量保证。」</p>
+<a href="/products/lavender-sandalwood-calming-body-wash/">立即探索「薰衣草檀香镇静沐浴乳.律动护肤」 </a></div>
+<div class="clear"></div>
+</div>
+
+
+
+
+
+<div class="main-news"><a class="href-img" href="/products/kajal-eyeliner/"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Oeko-Test-Testbericht-01-2014.jpg" /> </a>
+<div class="main-text">
+<h2>美国2013</h2>
+<h3>《疾病预防健康》美容大奖</h3>
+<h3>「花样顾盼眼线笔」荣获彩妆类「最佳眼部产品」奖(Prevention Beauty Awards)</h3>
+<p>「这款无人工合成成分的花样顾盼眼线笔拥有长久持妆功效，我们与来自读者中的测试者们意见相同，这款花样顾盼眼线笔的色彩鲜明、无突兀感，同时还能够保持在几小时内不脱妆。」</p>
+<a href="/products/kajal-eyeliner/">立即探索「花样顾盼眼线笔」 </a></div>
+<div class="clear"></div>
+</div>
+
+
+
+<div class="main-news"><a class="href-img" href="/products/coverstick/"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Prevention-Beauty-Award-10-2013.jpg" /> </a>
+<div class="main-text">
+<h2>美国2013</h2>
+<h3>ELLE美国美妆绿星奖(ELLE Beauty Green Stars)</h3>
+<p>德国世家「Translucent Make-up」和「舒敏遮瑕棒」双双获得了美国「ELLE美妆绿星奖」，评委们给予高度评价：「德国世家『Translucent Make-up』蕴含具锁水功效的夏威夷果油和牛油果油，能够为无暇护理皮肤的顾客创造光滑、均匀的肤色；与某些刺激性遮瑕笔不同，德国世家遮瑕笔能够在有效遮瑕的同时减缓暗疮等皮肤现象，还可避免皮肤变得干燥。」</p>
+<a href="/products/coverstick/">立即探索「舒敏遮瑕棒」 </a></div>
+<div class="clear"></div>
+</div>
+
+
+
+
+<div class="main-news"><a class="href-img" href="/products/almond-soothing-body-cream/"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/ELLE-Beauty-Green-Stars.jpg" /> </a>
+<div class="main-text">
+<h2>美国2013</h2>
+<h3>《Jones》最佳美容护肤奖Jones Magazine Best in Beauty Skin Care Award</h3>
+<p>德国世家在《Jones》杂志举办的「最佳美容护肤奖」竞争中获得两项荣誉：杏仁舒缓润体霜.律动护肤凭借柔和、平滑和舒缓的特质，荣获「有益生态探索奖」；醒润清洁膏.律动护肤凭借「有效洁肤、柔和焕肤」的特质，荣获「编辑选择奖」。</p>
+<span><a href="/products/almond-soothing-body-cream/">杏仁舒缓润体霜.律动护肤 </a></span><span> <a href="/products/cleansing-cream/">醒润清洁膏.律动护肤 </a></span></div>
+<div class="clear"></div>
+</div>
+
+
+
+
+<div class="main-news"><a class="href-img" href="/products/rose-nurturing-body-wash/"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Jones-Magazine-05-2013.jpg" /> </a>
+<div class="main-text">
+<h2>荷兰2013</h2>
+<h3>「德国世家沐浴乳」荣获「Astir」美妆大奖「最佳绿色产品」</h3>
+<p>评委评价：「德国世家沐浴乳」中蕴含天然的护肤油类。这些成分能够深度滋养肌肤，在沐浴后，您甚至不必继续使用身体乳液。」</p>
+<a href="/products/rose-nurturing-body-wash/">立即探索「德国世家沐浴乳」 </a></div>
+<div class="clear"></div>
+</div>
+
+
+
+<div class="main-news"><a class="href-img" href="/products/regenerating-body-cream/"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Beauty-Astir-Best-Eco-2013.jpg" /> </a>
+<div class="main-text">
+<h2>爱沙尼亚2012</h2>
+<h3>「再生修护润体霜.律动护肤」荣获《Anne&amp;Stiil》美容大奖</h3>
+<p>读者评价：「这款产品使德国世家更加完美」。来自《Anne&amp;Stiil》杂志的评委团将「再生修护润体霜.律动护肤」评选为「最佳身体护理产品」第二名。</p>
+<a href="/products/regenerating-body-cream/">立即探索「再生修护润体霜.律动护肤」</a></div>
+<div class="clear"></div>
+</div>
+
+
+
+<div class="main-news"><a class="href-img" href="/products/soothing-cleansing-milk/"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Anne-Stiil-Beauty-Award-2012.jpg" /> </a>
+<div class="main-text">
+<h2>加拿大2012</h2>
+<h3>《Châtelaine》百大最佳美容奖「优秀洁面乳奖」Top Beauty 100 Châtelaine</h3>
+<p>由美容界专家组成的评审团将德国世家「深层清洁泥面膜.律动护肤」评选为「《Châtelaine》杂志百大最佳美容奖获奖产品。</p>
+<a href="/products/soothing-cleansing-milk/">立即探索「深层清洁泥面膜.律动护肤」</a></div>
+<div class="clear"></div>
+</div>
+
+
+
+<div class="main-news"><a class="href-img" href="/products/almond-soothing-body-cream/"> <img src="https://cdn.hauschka.com/images/system/content_elements/news/awards/Clin-doeil-Beauty-Fashion_2012.jpg" /> </a>
+<div class="main-text">
+<h2>加拿大2012</h2>
+<h3>「杏仁舒缓润体霜.律动护肤」荣获《Clin d'oeil》美容时尚大奖Clin d'oeil Beauty&amp;Fashion Awards</h3>
+<p>德国世家「杏仁舒缓润体霜.律动护肤」被《Clin d'oeil》杂志的专业评审团评选为「《Clin d'oeil》杂志美容时尚大奖」获奖产品。</p>
+<a href="/products/almond-soothing-body-cream/">立即探索「杏仁舒缓润体霜.律动护肤」</a></div>
+<div class="clear"></div>
+</div>
+
+
+
+</div>
+</div>
+</div>
+<div class="know-left"></div>
+<div class="know-right"></div>
+<div class="know-bg"></div>

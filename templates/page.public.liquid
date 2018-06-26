@@ -1,0 +1,143 @@
+
+<div class="page-width">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+      <div class="rte">
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+<script>
+// 知识宝库
+  
+// 第二类目子页  
+  
+var H = document.documentElement.clientHeight;
+var W = document.body.clientWidth || document.documentElement.clientWidth;
+  
+$(".know .know-content .part2 .part2-topwrapper .part2-bottom a").on("click",function(){
+
+	$(".know .know-content").fadeOut(500);
+	setTimeout(function(){
+		$(".know .tran-box").css({"height":H-168-60})
+
+	},500)
+})
+
+$(".know .tran-box").click(function(){
+	$(".know .know-content").fadeIn(500)
+	$(this).css({"height":0})
+})
+
+
+
+$(".know .know-content .part2 .part2-bottomwrapper .part2-open").click(function(){
+
+		$(".know .know-content .part2 .part2-topwrapper .part2-allnames").stop().slideToggle(500);
+	
+
+})
+$(".know .know-content .part2 .part2-topwrapper .part2-allnames img").click(function(){
+		
+	$(".know .know-content .part2 .part2-topwrapper .part2-allnames").stop().slideToggle(500);
+})
+
+var index=0;
+
+var num = $(".know .know-content .part3 .part3-news .part3-bigwrapper li").length-1;
+funcW();
+  function funcW(){
+  		if(W > 1024){
+  			$(".know .know-content .part3 .part3-news .part3-bigwrapper").css({"width":315*(num+1)})
+        }else{
+        	$(".know .know-content .part3 .part3-news .part3-bigwrapper").css({"width":"auto"})
+        }
+  }
+  
+  
+  
+$(".know .know-content .part3 .part3-btnwrapper .prev").stop().click(function(){
+	index--;
+	
+	if(index == 0){
+		$(this).fadeOut(100)
+		
+	}else if(index != num){
+		$(".know .know-content .part3 .part3-btnwrapper .next").fadeIn(100)
+
+	}
+
+	$(".know .know-content .part3 .part3-news .part3-bigwrapper").stop().animate({"left":-315*index},500)
+
+	
+})
+
+
+	$(".know .know-content .part3 .part3-btnwrapper .next").stop().click(function(){
+		index++;
+		
+		if(index == num){
+			$(this).fadeOut(100)
+			
+
+		}else if(index != 0){
+
+			$(".know .know-content .part3 .part3-btnwrapper .prev").fadeIn(100)
+		}
+
+		$(".know .know-content .part3 .part3-news .part3-bigwrapper").stop().animate({"left":-315*index},500)
+
+	})
+	
+
+// 第一类目第一子页
+
+
+var x = 0;
+
+$(".know .know-content .part5 .lb-garden .garden-dots span").click(function(){
+	x = $(this).index();
+	$(this).addClass("active").siblings().removeClass("active")
+	$(".know .know-content .part5 .lb-garden .garden-pic li").eq(x).stop().fadeIn(500).siblings().fadeOut(500)
+	clearInterval(Time)
+})
+
+Time = setInterval(autoplay,5000)
+
+function autoplay(){
+	x++;
+	if(x == 15){
+		x = 0;
+
+	}
+	$(".know .know-content .part5 .lb-garden .garden-dots span").eq(x).addClass("active").siblings().removeClass("active")
+	$(".know .know-content .part5 .lb-garden .garden-pic li").eq(x).stop().fadeIn(500).siblings().fadeOut(500)
+
+}
+
+
+$(".know .know-content .accordion .box-content h1").click(function(){
+
+	x = $(this).parent(".know .know-content .box-content").index(); 
+	$("html,body").animate({scrollTop:$(".know .know-content .accordion").offset().top},300)
+
+	if($(this).hasClass("on")){
+		$(this).removeClass("on");
+		$(".know .know-content .box-content .content").stop().slideUp(300)
+
+	}else{
+		$(".know .know-content .accordion .box-content h1").removeClass("on")
+		$(this).addClass("on");
+		$(".know .know-content .box-content .content").stop().slideUp(300);
+		$(".know .know-content .box-content").eq(x).children(".content").stop().slideDown(300);
+	}
+})
+
+
+
+    
+    
+</script>

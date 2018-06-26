@@ -1,0 +1,141 @@
+
+<div class="page-width">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+
+      <div class="rte">
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.js"></script>
+<script type="text/javascript" src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+<script type="text/javascript">
+
+var W = document.body.clientWidth || document.documentElement.clientWidth;
+var H = document.documentElement.clientHeight || document.body.clientHeight;
+var index=0;
+
+//护理第五类目
+
+var i=0;
+
+$(".know .part1 .Menu p").click(function(){
+	
+	if($(this).find("span").hasClass("active")){
+		$(this).find("span").removeClass("active")
+		$(".know .part1-nav").slideUp(300)
+
+	}else{
+		$(this).find("span").addClass("active")
+		$(".know .part1-nav").slideDown(300)
+	}
+
+})
+
+$(window).scroll(function(){
+
+	if($(window).scrollTop() > $(".know .part3").offset().top - H*2/3 && document.documentElement.scrollTop || document.body.scrollTop >= $(".know .part3").offset().top - H*2/3){
+
+  		$(".know .part3").addClass("play_1")
+
+
+
+    }
+
+    if($(window).scrollTop() > $(".know .part4").offset().top - H*2/3 && document.documentElement.scrollTop || document.body.scrollTop >= $(".know .part4").offset().top - H*2/3){
+
+
+  		$(".know .part4 .part4-wrapper").addClass("play_2")
+
+
+    }
+
+	if($(window).scrollTop() > $(".know .play3").offset().top - H*2/3 && document.documentElement.scrollTop || document.body.scrollTop >= $(".know .play3").offset().top - H*2/3){
+
+
+		$(".know .play3 .part6-wrapper").addClass("play_3")
+
+
+	}
+
+})
+
+
+
+
+$(".know .part1 .part1-rightnav li").click(function(){
+	i=$(this).index();
+	$("html,body").animate({scrollTop:$(".know .screen").eq(i-1).offset().top},2000)
+})
+
+
+LB();
+
+function LB(){
+	if(W>667){
+		var part7_W = $(".know .part7 .part7-slider .slider-box").width();
+		var ul_W = $(".know .part7 .part7-slider .slider-box ul").width();
+		var num = parseInt(ul_W/part7_W)-1
+
+		$(".know .part7 .part7-slider .btn-right").click(function(){
+			i++
+
+			if(i == num+1){
+				i = 1
+				$(".know .part7 .part7-slider ul").css({"left":"0px"})		
+			}
+			$(".know .part7 .part7-slider ul").stop().animate({left:-i*part7_W},800)
+
+		})
+
+		$(".know .part7 .part7-slider .btn-left").click(function(){
+			i--
+			if(i == -1){
+				i = num-1
+				$(".know .part7 .part7-slider ul").css({"left":-num*part7_W})		
+			}
+			
+			$(".know .part7 .part7-slider ul").stop().animate({left:-i*part7_W},800)		
+		})
+
+	}else{
+		$(".know .part7 .part7-slider .slider-box ul li:last-child").remove();
+		$(".know .part7 .part7-slider .slider-box ul .slick:last-child").remove();
+		var swiper = new Swiper('.swiper-container', {
+			  slidesPerView: 1,
+			  spaceBetween:0,
+			  loop: true,
+			  pagination: {
+			    el: '.swiper-pagination',
+			    clickable: true,
+			  },
+			  navigation: {
+			    nextEl: '.swiper-button-next',
+			    prevEl: '.swiper-button-prev',
+			  },
+			});
+
+	}
+
+}
+
+
+
+$(".know .part7 .part7-slider ul li .show-text").click(function(){
+	$(".know .part7 .part7-slider ul li .hide-text").fadeOut(300);
+	$(this).parent().find(".hide-text").fadeIn(300)
+
+})
+
+$(".know .part7 .part7-slider ul li .hide-text span").click(function(){
+	$(".know .part7 .part7-slider ul li .hide-text").fadeOut(300);
+
+})
+
+</script>
+</body>
+</html>

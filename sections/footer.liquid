@@ -1,0 +1,129 @@
+<style>
+footer{width:100%;position:fixed;left:0px;bottom:0px;font-size:80%;z-index:999;background:url({{ 'allimg.png' | asset_img_url:'' }}) repeat-x 0 -10px;}
+.scroll-up{width: 39px; height: 39px; background: url({{ 'scroll-up.gif' | asset_img_url:'' }}) no-repeat ;display:none; position: fixed; bottom: 80px; left: 30px; z-index: 999; cursor: pointer; display: none;}
+.footer-left{float:left;margin-left:30px;}
+.footer-menu{display:none;}
+.footer-left li{line-height:60px;font-size:14px;margin-right:10px;float:left;}
+.footer-left li a{color:#897642;-webkit-transition:1s;transition:1s;}
+.footer-left li a:hover{color:#333;-webkit-transition:1s;transition:1s;}
+.footer-right{float:right;margin-right:2em;padding-top:20px;}
+.footer-right li{width:30px;height:20px;margin-right:3px;float:left;}
+.footer-right li a{width:30px;height:20px;display:block;}
+.footer-right li a:hover{opacity:0.8}
+  
+.footer-right li .fb{background:url({{ 'allimg.png' | asset_img_url:'' }}) no-repeat 0px -246px;}
+.footer-right li .wb{background:url({{ 'allimg.png' | asset_img_url:'' }}) no-repeat -32px -246px;}
+.footer-right li .wx{background:url({{ 'allimg.png' | asset_img_url:'' }}) no-repeat -64px -246px;}
+.footer-right li .xhs{background:url({{ 'allimg.png' | asset_img_url:'' }}) no-repeat -96px -246px;}
+.footer-right li .tm{background:url({{ 'allimg.png' | asset_img_url:'' }}) no-repeat -128px -246px;}
+
+
+
+@media screen and (min-width:667px) and (max-width:1024px){
+
+footer{position:fixed;}
+.footer-left{margin-left:15px;display:none;}
+
+.footer-menu{width:50%;display:block;float:left;}
+.footer-menu select{width:50%;height:20px;line-height:20px;outline:none;border:none;background:#eee;appearance: none;margin:1em 1em;-webkit-appearance: none;-webkit-tap-highlight-color: #fff;}
+/* .footer-menu select:focus{border:1px solid #897642;} */
+.footer-menu select option{color:#333;}
+
+.footer-right{margin-right:15px;padding-top:13px;}
+  
+
+}
+  
+    
+@media screen and (min-width:300px) and (max-width:667px){
+
+footer{position:inherit;}
+.scroll-up{display:none;bottom:40px;}
+.footer-left{display:none;float: none !important;}
+
+.footer-menu{display:block;}
+.footer-menu select{width:50%;height:20px;line-height:20px;outline:none;border:none;appearance: none;background:#eee;margin:1em 1em;-webkit-appearance: none;-webkit-tap-highlight-color: #fff;}
+
+.footer-menu select option{color:#333;}
+
+.footer-right{height:30px;float:none;margin:0;padding:0 0 0 15px;background:#fff;}
+.footer-right li a{display:inline-block;}
+
+}
+  
+
+</style>
+
+<footer>
+	<div class="scroll-up"></div>
+	<div class="footer-nav">
+		<ul class="footer-left">
+			{% for link in linklists.footer.links %}
+		    	<li>{{ link.title | link_to: link.url }}</li>
+		  	{% endfor %}
+		</ul>
+		<ul class="footer-menu">
+			<select onchange="window.location= this.value;">
+              		<option value="">Select...</option>
+              	{% for link in linklists.footer.links %}
+              		<option value={{ link.url}}>{{ link.title }}</option>
+              	{% endfor %}
+              
+              
+		    </select>
+		</ul>
+		<ul class="footer-right">
+          	<li><a href=" https://www.facebook.com/drhauschka/" target="_block" class="fb"></a></li>
+          	<li><a href="/" target="_block" class="wb"></a></li>
+          	<li><a href="/" target="_block" class="wx"></a></li>
+          	<li><a href="https://www.xiaohongshu.com/user/profile/5acdc2084eacab335f8f0789" target="_block" class="xhs"></a></li>
+			<li><a href="/" target="_block" class="tm"></a></li>
+			
+		</ul>
+	</div>
+</footer>
+
+<script type="text/javascript" src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+<script>
+var Width=document.body.clientWidth || document.documentElement.clientWidth;
+
+$("footer .scroll-up").click(function(){
+  $("html,body").animate({"scrollTop":0},500)
+
+})
+
+$(window).scroll(function(){
+
+  	if($(window).scrollTop() > 300 && document.documentElement.scrollTop || document.body.scrollTop >= 300){
+      $(".scroll-up").css({"display":"block",})
+
+    	}else{
+      $(".scroll-up").css({"display":"none",})
+    }
+
+
+  if(Width < 768 && Width > 320){ 
+    $("body").on("touchmove",function () {  
+      $('body').on('touchend',function(){
+        let scroll = $(document).scrollTop();  
+
+        if(scroll > 300){
+          $(".scroll-up").css({"display":"block",})
+
+        }else{
+          $(".scroll-up").css({"display":"none",})
+        }	  
+
+
+      })
+
+    });
+
+  }
+ 
+})
+
+
+   
+  
+</script>

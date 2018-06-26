@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<!--   {{content_for_header}} -->
+<title></title>
+</head>
+<body>
+<style>
+*{margin:0;padding:0;-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent;}
+*::selection{color:#fff;background:#93806f;}
+*::-moz-selection{color:#fff;background:#93806f;}
+body{font-family:Viacultura-SemiBold,MicroSoft YaHei,Arial;}
+ul,ol,li{list-style:none;}
+img{border:none;vertical-align: middle;}
+a{text-decoration:none;}
+input,button,select,textarea,a{outline:none;}
+  
+@font-face{
+font-family: 'MinionPro-Regular';
+src : url('https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/MinionPro-Regular.otf');
+}
+  
+@font-face{
+font-family: 'Viacultura-SemiBold';
+src : url('https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/Viacultura-SemiBold.otf');
+} 
+  
+</style>
+
+
+{% section 'header' %}
+
+
+{{content_for_layout}}
+
+{% section 'footer' %}
+
+</body>
+</html>

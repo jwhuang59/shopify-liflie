@@ -1,0 +1,53 @@
+{% comment %}
+  The contents of the product.liquid template can be found in /sections/product-template.liquid
+{% endcomment %}
+
+<!-- <p>{% for variant in product.variants %} {{ variant.title }}
+  
+  
+  {% endfor %}</p> -->
+
+
+
+<!-- {% for product_option in product.options_with_values %}
+  <label>
+    {{ product_option.values }}
+    
+  </label>
+{% endfor %} -->
+<!-- 
+ {% for value in product_option.color.values %}{{values}}{% endfor %} -->
+
+
+
+
+<ul>
+{% for option in product.options %}
+  {% if option == "Color" or option == "Colour" %}
+    {% assign index = forloop.index0 %}
+    {% assign colorlist = '' %}
+    {% assign color = '' %}
+    {% for variant in product.variants %}
+      {% capture color %}
+        {{ variant.options[index] }}
+      {% endcapture %}
+      {% unless colorlist contains color %}
+        <li>{{color}}</li>
+  <div style="width:200px;height:50px;background:rgba({{ variant.barcode }})"></div>
+  
+        {% capture tempList %}
+          {{colorlist | append: color | append: ' '}}
+        {% endcapture %}
+        {% assign colorlist = tempList %}
+      {% endunless %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+</ul>
+
+
+
+
+<!-- {% section 'product-template' %} -->
+
+

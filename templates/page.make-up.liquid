@@ -1,0 +1,4130 @@
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.css">
+
+<style type="text/css">
+*{margin:0;padding:0;}
+body{font-family:Viacultura-SemiBold,MicroSoft YaHei,Arial;}
+ul,ol,li{list-style:none;}
+img{border:none;vertical-align: middle;outline:none;}
+img[src=""],img:not([src]){opacity:0;}
+a{text-decoration:none;}
+input,button,select,textarea,a{outline:none;}
+
+@font-face{
+font-family: 'MinionPro-Regular';
+src : url('https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/MinionPro-Regular.otf');
+}
+  
+@font-face{
+font-family: 'Viacultura-SemiBold';
+src : url('https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/Viacultura-SemiBold.otf');
+} 
+.header-nav .left li:nth-child(2) a {color: #a7821d;}
+.nurse-content{width:100%;}
+.nurse-content .clear{clear:both;}
+.nurse-content .make-up .all-section{display:none;}
+.nurse-content .make-up .nursePart1{display:block;padding-bottom: 80px;}
+.nurse-content .make-up .nursePart2{background:#260027;padding-bottom:80px;}
+
+.nurse-content .nurse-header{width:100%;height:46px;background:#260027;}
+.nurse-content .nurse-header .header-makeup{text-align:center;position:relative;z-index:999;}
+.nurse-content .nurse-header .header-makeup>li{line-height:46px;padding:0 24px;display:inline-block;cursor:pointer;}
+.nurse-content .nurse-header .header-makeup>li a{color:#fff;font-size:20px;transition:all 0.6s;}
+.nurse-content .nurse-header .header-makeup li .active{color:#86c083;}
+.nurse-content .nurse-header .header-makeup li a:hover{color:#86c083;transition:all 0.6s;}
+.nurse-content .nurse-header .header-makeup li ul{width:100%;position:absolute;left:0;top:46px;background:#260027;display:none;}
+.nurse-content .nurse-header .header-makeup li ul li{display:inline-block;padding:0 15px;}
+.nurse-content .nurse-header .header-makeup li ul li a{font-size:16px;}
+.nurse-content .section1{width:100%;height:1050px;background:url("https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-Garten-Intro.jpg") center bottom no-repeat;background-size:cover;position:relative;overflow:hidden;margin-bottom:100px;}
+.nurse-content .section1 img{width:160px;height:160px;margin:200px auto 0;display: block;}
+.nurse-content .section1 .section1-content{width:590px;padding:60px 80px;margin:120px auto 0;background:#fff;text-align:center;}
+.nurse-content .section1 .section1-content h1{font-size:56px;color:#86c083;margin-bottom:60px;letter-spacing: 5px;}
+.nurse-content .section1 .section1-content p{line-height:42px;font-size:24px;color:#86c083;margin-bottom:24px;color:#666;}
+
+.nurse-content .section2{height:680px;background: linear-gradient(to bottom, rgba(255,237,233,0) 0%,rgba(255,237,233,0.15) 9%,rgba(255,237,233,1) 25%,rgba(255,237,233,1) 100%);text-align:center;margin-bottom:100px;position:relative;overflow:hidden;}
+.nurse-content .section2 h2{font-size:60px;color:#444;margin-bottom:50px;letter-spacing: 5px;font-weight:normal;}
+.nurse-content .section2 p{font-size:22px;color:#666;margin-bottom:80px;letter-spacing: 3px;}
+
+.nurse-content .section2 .section2-news{width:480px;height:160px;padding:40px;margin:0 auto;background:#fff;}
+.nurse-content .section2 .section2-news h3{font-size:30px;color:#86c083;margin-bottom:40px;letter-spacing: 3px;font-weight:normal;}
+.nurse-content .section2 .section2-news p{font-size:22px;color:#666;margin-bottom:30px;letter-spacing: 3px;}
+.nurse-content .section2 a{width:45px;height:45px;background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/btnMore.svg");background-size: 45px 45px;background-repeat: no-repeat;background-position: 50% 0;display:block;margin:80px auto 0;cursor:pointer;}
+
+.nurse-content .row{height:auto;;background: linear-gradient(to bottom, rgba(255,237,233,0) 0%,rgba(255,237,233,0) 25%,rgba(255,237,233,1) 100%);padding-bottom:80px;}
+.nurse-content .row a{background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/btnLess.svg");}
+.nurse-content .section2 .hidbox{display:none;}
+.nurse-content .section2 .open{display:block;}
+.nurse-content .section2 .hidbox .hidcontent{height:1900px;padding-top:240px;overflow:hidden;}
+.nurse-content .section2 .hidbox .hidbg{width:100%;height:1000px;background: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-Pigmente-PurpleRain.jpg") center top no-repeat;background-size: auto;position:absolute;top:0;z-index:-1;}
+.nurse-content .section2 .hidbox .hidcontent .hidimg1{width:55%;position:absolute;right:0;top:700px;z-index:2;}
+.nurse-content .section2 .hidbox .hidcontent .hidimg2{width:50%;position:absolute;left:0;top:950px;z-index:3;}
+.nurse-content .section2 .hidbox .hidcontent .hidimg3{width:52%;position:absolute;right:0;top:1300px;z-index:1;}
+.nurse-content .section2 .hidbox .hidcontent .hidimg4{width:55%;position:absolute;left:0;top:1850px;z-index:5;}
+.nurse-content .section2 .hidbox .hidcontent .hidimg img{width:100%;}
+.nurse-content .section2 .hidbox .hidcontent .hidtext{width:300px;padding:50px;background:#fff;position:absolute;z-index:9;}
+.nurse-content .section2 .hidbox .hidcontent .hidtext1 h4{font-size:30px;color:#ce0517;margin-bottom:30px;letter-spacing: 3px;font-weight:normal;}
+.nurse-content .section2 .hidbox .hidcontent .hidtext2 h4{font-size:30px;color:#e9837f;margin-bottom:30px;letter-spacing: 3px;font-weight:normal;}
+.nurse-content .section2 .hidbox .hidcontent .hidtext3 h4{font-size:30px;color:#b75d75;margin-bottom:30px;letter-spacing: 3px;font-weight:normal;}
+.nurse-content .section2 .hidbox .hidcontent .hidtext4 h4{font-size:30px;color:#d08052;margin-bottom:30px;letter-spacing: 3px;font-weight:normal;}
+
+.nurse-content .section2 .hidbox .hidcontent .hidtext p{line-height:28px;font-size:20px;color:#666;letter-spacing: 2px;margin:0;}
+.nurse-content .section2 .hidbox .hidcontent .hidtext1{left:25%;top:800px;}
+.nurse-content .section2 .hidbox .hidcontent .hidtext2{right:20%;top:1300px;}
+.nurse-content .section2 .hidbox .hidcontent .hidtext3{left:16%;top:1650px;}
+.nurse-content .section2 .hidbox .hidcontent .hidtext4{right:16%;top:2200px;}
+
+
+.nurse-content .section2 .hidbox .hidcontent .gradiantBlue{height:250px; width: 10%;z-index: 8;position: absolute;left: 50%;top:25%;background: linear-gradient(to bottom, rgba(250,241,240,0) 0%,rgba(250,241,240,0.35) 35%,rgba(79,109,130,1) 100%);}
+.nurse-content .section2 .hidbox .hidcontent .gradiantRose{height: 400px;width: 3%;z-index: 8;position: absolute;left: 44%;top:35%;background: linear-gradient(to bottom, rgba(250,241,240,0) 0%,rgba(236,119,125,1) 100%);}
+.nurse-content .section2 .hidbox .hidcontent .gradiantLilac{height: 600px;width: 6%;z-index: 110;position: absolute;left: 28%;top: 50%;background: linear-gradient(to bottom, rgba(120,47,107,1) 0%,rgba(120,47,107,0) 100%);}
+.nurse-content .section2 .hidbox .hidcontent .gradiantRose2{height: 300px;width: 1.5%;z-index: 100;position: absolute;right: 25%;top: 54%;background: linear-gradient(to bottom, rgba(250,241,240,0) 0%,rgba(236,119,125,1) 100%);}
+.nurse-content .section2 .hidbox .hidcontent .gradiantRose3{height: 350px;width: 10%;z-index: 50;position: absolute;right: 38%;top: 66%;background: linear-gradient(to bottom, rgba(250,241,240,0) 0%,rgba(236,119,125,1) 100%);}
+.nurse-content .section2 .hidbox .hidcontent .gradiantBrown{  height: 400px;  width: 10%;z-index: 8;position: absolute;left: 68%;top:54%;background: linear-gradient(to bottom, rgba(190,174,93,0) 0%,rgba(241,215,205,1) 41%,rgba(190,174,93,1) 100%);}
+
+
+.nurse-content .section3{text-align:center;margin:0 auto 60px;}
+.nurse-content .section3 .section3-news{width:620px;margin:0 auto;padding:30px;}
+.nurse-content .section3 .section3-news h2{font-size:30px;color:#444;margin-bottom:50px;letter-spacing: 3px;font-weight:normal;}
+.nurse-content .section3 .section3-news p{line-height:30px;font-size:20px;color:#666;letter-spacing: 2px;}
+.nurse-content .section3 .section3-wrapper{margin-top:60px;}
+.nurse-content .section3 .section3-wrapper .wrapper-video .video-box{width:100%;position:relative;top:0;left:0;float:left;margin-right:-100%;display:none;cursor:move;}
+.nurse-content .section3 .section3-wrapper .wrapper-video .video-box .video-row{width:100%;position:absolute;top:0;}
+.nurse-content .section3 .section3-wrapper .wrapper-video .video-box:hover .shade-bg{opacity:0;transition:all 0.6s ease-in-out;}
+.nurse-content .section3 .section3-wrapper .wrapper-video .show{display:block;}
+.nurse-content .section3 .section3-wrapper .wrapper-video .video-box .play{width:60px;height:60px;position:absolute;left:50%;top:40%;margin-left:-30px;cursor:pointer;z-index:2;}
+.nurse-content .section3 .section3-wrapper .wrapper-video .video-box img{width:100%;}
+.nurse-content .section3 .section3-wrapper .wrapper-video .video-box .video-text{width:100%;text-align:center;position:absolute;left:0;top:52%;z-index:2;cursor:default;}
+.nurse-content .section3 .section3-wrapper .wrapper-video .video-box .video-text h4{font-size:30px;color:#fff;font-weight:normal;}
+.nurse-content .section3 .section3-wrapper .wrapper-video .video-box .video-text p{font-size:20px;color:#fff;}
+.nurse-content .section3 .section3-wrapper .wrapper-video .video-box .shade-bg{width:100%;height:100%;background:#000;opacity:0.3;position:absolute;top:0;left:0;z-index:1;transition:all 0.6s ease-in-out;}
+
+.nurse-content .section3 .section3-wrapper .wrapper-video .video-box .videoPlay{opacity:0;}
+
+
+
+
+
+.nurse-content .section3 .section3-wrapper .videopage{width:1110px;overflow:hidden;margin:0 auto;padding:30px 0 0 0;}
+.nurse-content .section3 .section3-wrapper .videopage ul{width:1125px;position:relative;left:0;top:0;cursor:move;margin-bottom:60px;}
+.nurse-content .section3 .section3-wrapper .videopage ul li{width:360px;height:200px;margin-right:15px;float:left;position:relative;}
+.nurse-content .section3 .section3-wrapper .videopage ul li .play{width:40px;height:40px;position:absolute;left:50%;top:50%;margin:-20px 0 0 -20px;display:block;cursor:pointer;}
+.nurse-content .section3 .section3-wrapper .videopage ul li .video-img{width:100%;}
+.nurse-content .section3 .section3-wrapper .videopage ol{text-align:center;margin-top:30px;}
+.nurse-content .section3 .section3-wrapper .videopage ol li{width:6px;height:6px;border:2px solid #444;border-radius:5px;margin-right:8px;cursor:pointer;display:none;transition:all 0.6s;}
+.nurse-content .section3 .section3-wrapper .videopage ol li:hover{background:#444;transition:all 0.6s;}
+.nurse-content .section3 .section3-wrapper .videopage ol .active{background:#444;}
+
+
+.nurse-content .section4{text-align:center;margin:0 auto 80px;}
+.nurse-content .section4 .section4-news{width:600px;margin:0 auto;padding:0 30px;}
+.nurse-content .section4 .section4-news h3{font-size:30px;color:#444;margin-bottom:50px;letter-spacing: 3px;font-weight:normal;}
+.nurse-content .section4 .section4-news p{line-height:30px;font-size:20px;color:#666;letter-spacing: 2px;margin-bottom:30px;}
+
+
+
+
+.nurse-content .public-lb{position:relative;left:0;top:0;}
+.nurse-content .public-lb ul li{position:relative;top:0;left:0;cursor:move;}
+.nurse-content .public-lb ul li img{width:100%;}
+.nurse-content .public-lb ul .lis4-1 .textbox{width:20%;padding: 5% 3% 3% 3%;background: linear-gradient(to bottom, rgba(206,100,146,0) 0%,rgba(206,100,146,1) 69%,rgba(206,100,146,1) 100%);position:absolute;bottom:0px;right:8%;}
+.nurse-content .public-lb ul .lis4-1  .textbox p{font-size:30px;color:#fff;text-align:center}
+
+.nurse-content .public-lb ul .lis4-2 .textbox{width:100%;padding: 5% 0 5% 0;background: linear-gradient(to bottom, rgba(206,100,146,0) 0%,rgba(206,100,146,1) 69%,rgba(206,100,146,1) 100%);position:absolute;bottom:0px;left:0;}
+.nurse-content .public-lb ul .lis4-2 .textbox p{font-size:30px;color:#fff;text-align:center}
+.nurse-content .public-lb ul .lis4-3 .textbox{max-width:400px;padding:50px 100px;position:absolute;top:0;left:50%;margin-left:-300px;background:#fff;text-align:center;}
+.nurse-content .public-lb ul .lis4-3 .textbox h4{color:red;font-size:20px;margin-bottom:30px;}
+.nurse-content .public-lb ul .lis4-3 .textbox p{line-height:30px;color:#444;font-size:18px;}
+.nurse-content .public-lb ul .lis4-3 .textbox .red{color:red;margin-top:20px;font-size:24px;}
+
+.nurse-content .public-lb ul .lis4-4 .textbox{max-width:400px;padding:50px 100px;position:absolute;bottom:0;left:50%;margin-left:-300px;background:#fff;text-align:center;}
+.nurse-content .public-lb ul .lis4-4 .textbox h4{color:red;font-size:20px;margin-bottom:30px;}
+.nurse-content .public-lb ul .lis4-4 .textbox p{line-height:30px;color:#444;font-size:18px;}
+.nurse-content .public-lb ul .lis4-4 .textbox .red{color:red;margin-top:20px;font-size:24px;}
+.nurse-content .public-lb ul .lis4-5 .textbox{width:30%;padding: 5% 3% 3% 3%;background: linear-gradient(to bottom, rgba(206,100,146,0) 0%,rgba(206,100,146,1) 69%,rgba(206,100,146,1) 100%);position:absolute;bottom:0px;left:50%;margin-left:-18%;}
+.nurse-content .public-lb ul .lis4-5 .textbox h5{font-size:48px;color:#fff;text-align:center}
+.nurse-content .public-lb ul .lis4-5 .textbox p{font-size:30px;color:#fff;text-align:center}
+
+
+.nurse-content .public-lb ol{position:static;margin:40px auto;}
+.nurse-content .public-lb ol span{width:10px;height:10px;background:#444;border-radius:5px;margin-right:8px;cursor:pointer;display:inline-block;transition:all 0.6s;}
+.nurse-content .public-lb ol span:first-child{background:#444;}
+.nurse-content .public-lb ol span:hover{background:#444;transition:all 0.6s;}
+
+.nurse-content .public-lb .prev-btn{width:50px;height:100%;background: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/arrowWhiteLeft.svg") no-repeat center center;position:absolute;left:20px;top:0;cursor:pointer;transition:all 0.6s;margin:0;}
+.nurse-content .public-lb .next-btn{width:50px;height:100%;background:url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/arrowWhiteRight.svg") no-repeat center center;position:absolute;right:20px;top:0;cursor:pointer;transition:all 0.6s;margin:0;}
+
+
+
+
+.nurse-content .section5{text-align:center;margin:0 auto 80px;}
+.nurse-content .section5 h2{font-size:30px;color:#444;margin-bottom:50px;letter-spacing: 3px;font-weight:normal;}
+.nurse-content .section5 .section5-wrapper{position:relative;margin-bottom:50px;}
+.nurse-content .section5 .wrapper-box{width:1100px;cursor:move;margin:0 auto;position:relative;left:0;top:0;overflow:hidden;}
+.nurse-content .section5 .wrapper-box ul{width:1760px;}
+.nurse-content .section5 .wrapper-box ul li{width:200px;height:400px;float:left;}
+.nurse-content .section5 .wrapper-box ul li h3{height:70px;background:#260027;font-size:18px;color:#fff;text-align:center;font-weight:normal;padding-top:20px;}
+.nurse-content .section5 .wrapper-box ul li h3 span{font-size:16px;}
+.nurse-content .section5 .wrapper-box ul li img{width:100%;margin:26px 0;}
+.nurse-content .section5 .wrapper-box ul li p{height:50px;line-height:50px;background:#260027;font-size:14px;color:#fff;text-align:center;}
+.nurse-content .section5 .section5-wrapper .btn-left{background: url("https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/pfeile.png?4779480680870217649") no-repeat left;width: 30px;height: 60px;position:absolute;top:40%;left:45px;margin:-30px 0 0 0;cursor:pointer;outline:none;}
+.nurse-content .section5 .section5-wrapper .btn-right{background: url("https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/pfeile.png?4779480680870217649") no-repeat right;width: 30px;height: 60px;position:absolute;top:40%;right:45px;margin:-30px 0 0 0;cursor:pointer;outline:none;}
+.nurse-content .section5 .section5-wrapper .swiper-pagination0{position:static;margin-top:30px;}
+.nurse-content .section5 .section5-wrapper .swiper-pagination0 span{width:10px;height:10px;margin-right:8px;background:#444;}
+
+
+.nurse-content .section5 .videowrapper{width:50%;margin:0 auto;position:relative;}
+
+.nurse-content .section5 .videowrapper img{width:100%;display:block;}
+.nurse-content .section5 .videowrapper .play{width:60px;height:60px;position:absolute;left:50%;top:50%;margin:-30px 0 0 -30px;display:block;cursor:pointer;z-index:5;}
+.nurse-content .section5 .videowrapper .play img{width:100%;}
+.nurse-content .section5 .videowrapper .shade-bg{width:100%;height:100%;background:#000;opacity:0.3;position:absolute;top:0;left:0;z-index:1;transition:all 0.5s ease-in-out;z-index:2;}
+.nurse-content .section5 .videowrapper:hover .shade-bg{opacity:0;transition:all 0.5s ease-in-out;}
+
+
+
+.nurse-content .section5 .videowrapper .video-row4{position:absolute;top:0;left:0;}
+.nurse-content .section5 .videowrapper #videoPlay4{opacity:0;}
+
+
+
+.nurse-content .section5 .videowrapper .video-row5{position:absolute;top:0;left:0;}
+.nurse-content .section5 .videowrapper #videoPlay5{opacity:0;}
+
+
+.nurse-content .section5 .videowrapper .video-row6{position:absolute;top:0;left:0;}
+.nurse-content .section5 .videowrapper #videoPlay6{opacity:0;}
+
+
+.nurse-content .section5 .videowrapper .video-row7{position:absolute;top:0;left:0;}
+.nurse-content .section5 .videowrapper #videoPlay7{opacity:0;}
+
+
+
+
+.nurse-content .section5 .allvideo{width:120px;height:46px;line-height:46px;font-size:14px;background: none;border: 2px solid #260027;color:#260027;display:block;margin:50px auto 80px;transition:all 0.5s;}
+.nurse-content .section5 .allvideo:hover{background:#260027;color:#fff;transition:all 0.5s;}
+
+.nurse-content .section5 .section5-bgnews{position:relative;top:0;}
+.nurse-content .section5 .section5-bgnews img{width:100%;}
+.nurse-content .section5 .section5-bgnews .section5-text{width:640px;text-align:center;color:#fff;margin-bottom:20px;position:absolute;bottom:0;left:50%;margin-left:-320px;z-index:5;padding:30px 15px;}
+.nurse-content .section5 .section5-bgnews p{font-size:30px;margin-bottom:30px;}
+.nurse-content .section5 .section5-bgnews span{font-size:20px;}
+
+.nurse-content .section5 .section5-bgnews .shade-grad{width:100%;height:50%;background: -webkit-linear-gradient(top, rgba(38,0,39,0) 0%,rgba(38,0,39,1) 87%);background: linear-gradient(to bottom, rgba(38,0,39,0) 0%,rgba(38,0,39,1) 87%);position:absolute;bottom:0;z-index:2;}
+
+.nurse-content .section6{margin-bottom:80px;background: -webkit-linear-gradient(top, rgba(255,225,204,0) 0%,rgba(255,225,204,0.88) 23%,rgba(255,225,204,1) 30%,rgba(255,225,204,1) 100%);background: linear-gradient(to bottom, rgba(255,225,204,0) 0%,rgba(255,225,204,0.88) 23%,rgba(255,225,204,1) 30%,rgba(255,225,204,1) 100%);}
+.nurse-content .section6 .section6-wrapper{text-align:center;}
+.nurse-content .section6 h2{font-size:60px;color:#dfac8f;margin-bottom:50px;letter-spacing: 5px;font-weight:normal;}
+.nurse-content .section6 p{font-size:22px;color:#666;margin-bottom:80px;letter-spacing: 3px;padding:0 15px;}
+.nurse-content .section6 a{cursor:pointer;}
+
+.nurse-content .section6 .section6-news{width:480px;height:160px;padding:40px;margin:0 auto;background:#fff;}
+.nurse-content .section6 .section6-news h3{font-size:30px;color:#86c083;margin-bottom:40px;letter-spacing: 3px;font-weight:normal;}
+.nurse-content .section6 .section6-news p{font-size:22px;color:#666;margin-bottom:30px;letter-spacing: 3px;}
+.nurse-content .section6 a{width:45px;height:45px;background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/btnMore.svg");background-size: 45px 45px;background-repeat: no-repeat;background-position: 50% 0;display:block;margin:80px auto 0;padding-bottom:80px;}
+.nurse-content .section6-text{width:450px;padding:0 15px 30px;text-align:center;margin:0 auto;}
+.nurse-content .section6-text h3{font-size:30px;color:#dfac8f;margin-bottom:50px;letter-spacing: 3px;font-weight:normal;}
+.nurse-content .section6-text p{font-size:20px;color:#444;margin-bottom:50px;letter-spacing: 3px;font-weight:normal;}
+.nurse-content .section6-text p:nth-child(3){font-size:24px;}
+
+
+.nurse-content .section6-lb{margin-bottom:100px;}
+.nurse-content .section6-lb ul .lis4-1 .textbox,.nurse-content .section6-lb ul .lis4-2 .textbox,.nurse-content .section6-lb ul .lis4-5 .textbox{background: -webkit-linear-gradient(top, rgba(227,167,138,0) 0%,rgba(227,167,138,1) 100%);background: linear-gradient(to bottom, rgba(227,167,138,0) 0%,rgba(227,167,138,1) 100%);}
+
+
+
+
+.nurse-content .box-color0 ul .lis4-1 .textbox,.nurse-content .box-color0 ul .lis4-2 .textbox,.nurse-content .box-color0 ul .lis4-5 .textbox{background: -webkit-linear-gradient(top, rgba(171,60,79,0) 0%,rgba(171,60,79,1) 100%);background: linear-gradient(to bottom, rgba(171,60,79,0) 0%,rgba(171,60,79,1) 100%);}
+
+
+
+
+.nurse-content .section6 .section0-text{width:600px;padding:80px 15px 0;text-align:center;margin:0 auto;}
+
+
+
+.nurse-content .fuse{background: linear-gradient(to bottom, rgba(255,225,204,0) 0%,rgba(255,225,204,0.88) 23%,rgba(255,225,204,1) 30%,rgba(255,225,204,1) 100%);}
+.nurse-content .fuse.row{height:auto;background: linear-gradient(to bottom, rgba(255,225,204,0) 0%,rgba(255,225,204,0) 23%,rgba(255,225,204,0.5) 30%,rgba(255,225,204,1) 100%);padding-bottom:80px;position:relative;overflow:hidden;}
+.nurse-content .row a{background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/btnLess.svg");}
+.nurse-content .fuse .hidbox{display:none;}
+.nurse-content .fuse .open{display:block;}
+.nurse-content .fuse .hidbox .hidcontent{height:1500px;padding-top:240px;}
+.nurse-content .fuse .hidbox .hidbg{width:100%;height:1000px;background: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-Colours-Foundation.jpg") center top no-repeat;background-size: auto;position:absolute;top:0;z-index:-1;}
+.nurse-content .fuse .hidbox .hidcontent .hidimg1{width:55%;position:absolute;right:0;top:700px;z-index:2;}
+.nurse-content .fuse .hidbox .hidcontent .hidimg2{width:50%;position:absolute;left:0;top:950px;z-index:3;}
+.nurse-content .fuse .hidbox .hidcontent .hidimg3{width:52%;position:absolute;right:0;top:1300px;z-index:1;}
+.nurse-content .fuse .hidbox .hidcontent .hidimg4{width:55%;position:absolute;left:0;top:1850px;z-index:5;}
+.nurse-content .fuse .hidbox .hidcontent .hidimg img{width:100%;}
+.nurse-content .fuse .hidbox .hidcontent .hidtext{width:300px;padding:50px;background:#fff;position:absolute;z-index:9;}
+.nurse-content .fuse .hidbox .hidcontent .hidtext1 h4{font-size:30px;color:#ce0517;margin-bottom:30px;letter-spacing: 3px;font-weight:normal;}
+.nurse-content .fuse .hidbox .hidcontent .hidtext2 h4{font-size:30px;color:#e9837f;margin-bottom:30px;letter-spacing: 3px;font-weight:normal;}
+.nurse-content .fuse .hidbox .hidcontent .hidtext3 h4{font-size:30px;color:#b75d75;margin-bottom:30px;letter-spacing: 3px;font-weight:normal;}
+
+.nurse-content .fuse .hidbox .hidcontent .hidtext p{line-height:28px;font-size:20px;color:#666;letter-spacing: 2px;margin:0;}
+.nurse-content .fuse .hidbox .hidcontent .hidtext1{left:25%;top:800px;}
+.nurse-content .fuse .hidbox .hidcontent .hidtext2{right:20%;top:1300px;}
+.nurse-content .fuse .hidbox .hidcontent .hidtext3{left:16%;top:1450px;}
+
+
+.nurse-content .fuse .hidbox .hidcontent .gradiantRose{height: 400px;width: 5%;z-index: 8;position: absolute;left: 15%;top:30%;background: linear-gradient(to bottom, rgba(239,188,169,0) 0%,rgba(239,188,169,1) 100%);}
+.nurse-content .fuse .hidbox .hidcontent .gradiantSand{height: 600px;width: 6%;z-index: 110;position: absolute;right: 28%;top: 50%;background: linear-gradient(to bottom, rgba(230,200,166,0) 0%,rgba(230,200,166,1) 100%);}
+.nurse-content .fuse .hidbox .hidcontent .gradiantRose2{height: 300px;width: 3%;z-index: 100;position: absolute;left: 30%;top: 80%;background: linear-gradient(to bottom, rgba(239,188,169,1) 0%,rgba(239,188,169,0) 100%);}
+.nurse-content .fuse .hidbox .hidcontent .gradiantYellow{height: 500px;width: 15%;z-index: 50;position: absolute;left:50%;top:36%;margin-left:-7.5%;background: linear-gradient(to bottom, rgba(248,227,148,0) 0%,rgba(248,227,148,1) 100%);}
+
+
+
+
+.nurse-content .eyes{background: linear-gradient(to bottom, rgba(206,214,203,0) 0%,rgba(206,214,203,0.75) 29%,rgba(206,214,203,1) 100%);}
+.nurse-content .eyes.row{height:auto;background: linear-gradient(to bottom, rgba(206,214,203,0) 0%,rgba(206,214,203,0) 29%,rgba(206,214,203,1) 100%);padding-bottom:80px;position:relative;overflow:hidden;}
+.nurse-content .row a{background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/btnLess.svg");}
+.nurse-content .eyes .hidbox{display:none;}
+.nurse-content .eyes .open{display:block;}
+.nurse-content .eyes .hidbox .hidcontent{height:2100px;padding-top:240px;}
+.nurse-content .eyes .hidbox .hidbg{width:100%;height:1500px;background: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-Texture-Eyes.jpg") center top no-repeat;background-size: auto;position:absolute;top:0;z-index:-1;}
+.nurse-content .eyes .hidbox .hidcontent .hidimg1{width:55%;position:absolute;right:0;top:700px;z-index:2;}
+.nurse-content .eyes .hidbox .hidcontent .hidimg2{width:50%;position:absolute;left:0;top:850px;z-index:3;}
+.nurse-content .eyes .hidbox .hidcontent .hidimg3{width:58%;position:absolute;right:0;top:1200px;z-index:1;}
+.nurse-content .eyes .hidbox .hidcontent .hidimg4{width:54%;position:absolute;left:0;top:1450px;z-index:5;}
+.nurse-content .eyes .hidbox .hidcontent .hidimg img{width:100%;}
+.nurse-content .eyes .hidbox .hidcontent .hidtext{width:300px;padding:50px;background:#fff;position:absolute;z-index:9;}
+.nurse-content .eyes .hidbox .hidcontent .hidtext1 h4{font-size:30px;color:#8c72bb;margin-bottom:30px;letter-spacing: 3px;font-weight:normal;}
+.nurse-content .eyes .hidbox .hidcontent .hidtext2 h4{font-size:30px;color:#e9837f;margin-bottom:30px;letter-spacing: 3px;font-weight:normal;}
+.nurse-content .eyes .hidbox .hidcontent .hidtext3 h4{font-size:30px;color:#b75d75;margin-bottom:30px;letter-spacing: 3px;font-weight:normal;}
+
+.nurse-content .eyes .hidbox .hidcontent .hidtext p{line-height:28px;font-size:20px;color:#666;letter-spacing: 2px;margin:0;}
+.nurse-content .eyes .hidbox .hidcontent .hidtext1{left:50%;top:800px;margin-left:-150px;}
+.nurse-content .eyes .hidbox .hidcontent .hidtext2{left:16%;top:1300px;}
+.nurse-content .eyes .hidbox .hidcontent .hidtext3{right:16%;top:1850px;}
+
+
+.nurse-content .eyes .hidbox .hidcontent .gradiantRose{height: 400px;width: 5%;z-index: 8;position: absolute;right: 50%;top:50%;background: linear-gradient(to bottom, rgba(239,188,169,0) 0%,rgba(239,188,169,1) 100%);}
+.nurse-content .eyes .hidbox .hidcontent .gradiantLilac{height: 600px;width: 6%;z-index: 110;position: absolute;left: 35%;top: 50%;    background: linear-gradient(to bottom, rgba(120,47,107,0) 0%,rgba(99,45,114,1) 100%);}
+.nurse-content .eyes .hidbox .hidcontent .gradiantYellow{height: 500px;width: 15%;z-index: 7;position: absolute;left:30%;top:36%;background: linear-gradient(to bottom, rgba(248,227,148,0) 0%,rgba(248,227,148,1) 100%);}
+
+
+
+
+
+.nurse-content .chunbu{background: -webkit-linear-gradient(top, rgba(243,173,177,0) 0%,rgba(243,173,177,0.88) 23%,rgba(243,173,177,1) 30%,rgba(243,173,177,1) 100%);}
+.nurse-content .chunbu.row{height:auto;background: -webkit-linear-gradient(top, rgba(243,173,177,0) 0%,rgba(243,173,177,0) 23%,rgba(243,173,177,0) 30%,rgba(243,173,177,1) 100%);padding-bottom:80px;position:relative;overflow:hidden;}
+.nurse-content .row a{background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/btnLess.svg");}
+.nurse-content .chunbu .hidbox{display:none;}
+.nurse-content .chunbu .open{display:block;}
+.nurse-content .chunbu .hidbox .hidcontent{height:1450px;padding-top:240px;}
+.nurse-content .chunbu .hidbox .hidbg{width:100%;height:1500px;background: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-Texture-Lips.jpg") center top no-repeat;background-size: auto;position:absolute;top:0;z-index:-1;}
+.nurse-content .chunbu .hidbox .hidcontent .hidimg1{width:55%;position:absolute;right:0;top:900px;z-index:3;}
+.nurse-content .chunbu .hidbox .hidcontent .hidimg2{width:50%;position:absolute;left:0;top:1050px;z-index:2;}
+.nurse-content .chunbu .hidbox .hidcontent .hidimg3{width:50%;position:absolute;right:0;top:1400px;z-index:5;}
+.nurse-content .chunbu .hidbox .hidcontent .hidimg img{width:100%;}
+.nurse-content .chunbu .hidbox .hidcontent .hidtext{width:300px;padding:50px;background:#fff;position:absolute;z-index:9;}
+.nurse-content .chunbu .hidbox .hidcontent .hidtext1 h4{font-size:30px;color:#ce0517;margin-bottom:30px;letter-spacing: 3px;font-weight:normal;}
+.nurse-content .chunbu .hidbox .hidcontent .hidtext2 h4{font-size:30px;color:#e9837f;margin-bottom:30px;letter-spacing: 3px;font-weight:normal;}
+.nurse-content .chunbu .hidbox .hidcontent .hidtext3 h4{font-size:30px;color:#b75d75;margin-bottom:30px;letter-spacing: 3px;font-weight:normal;}
+
+.nurse-content .chunbu .hidbox .hidcontent .hidtext p{line-height:28px;font-size:20px;color:#666;letter-spacing: 2px;margin:0;}
+.nurse-content .chunbu .hidbox .hidcontent .hidtext1{left:15%;top:800px;}
+.nurse-content .chunbu .hidbox .hidcontent .hidtext2{right:15%;top:1400px;}
+.nurse-content .chunbu .hidbox .hidcontent .hidtext3{left:15%;top:1850px;}
+
+
+.nurse-content .chunbu .hidbox .hidcontent .gradiantRose{height: 400px;width: 7%;z-index: 8;position: absolute;left: 30%;top:50%;    background: linear-gradient(to bottom, rgba(254,124,124,0) 0%,rgba(254,124,124,1) 100%);}
+.nurse-content .chunbu .hidbox .hidcontent .gradiantRose2{height: 600px;width: 1.5%;z-index: 100;position: absolute;right: 20%;top: 54%;background: linear-gradient(to bottom, rgba(250,241,240,0) 0%,rgba(236,119,125,1) 100%);}
+.nurse-content .chunbu .hidbox .hidcontent .gradiantRose3{height: 500px;width: 15%;z-index: 10;position: absolute;right: 38%;top: 45%;background: linear-gradient(to bottom, rgba(250,241,240,0) 0%,rgba(236,119,125,1) 100%);}
+.nurse-content .chunbu .hidbox .hidcontent .gradiantLilac{height: 600px;width: 6%;z-index: 110;position: absolute;left: 32%;top: 90%;    background: linear-gradient(to bottom, rgba(99,45,114,1) 0%,rgba(99,45,114,0) 100%);}
+
+
+
+
+
+
+
+
+.nurse-content .hzs{    background: linear-gradient(to bottom, rgba(232,199,194,0) 0%,rgba(232,199,194,0.88) 23%,rgba(232,199,194,1) 30%,rgba(232,199,194,1) 100%);}
+.nurse-content .hzs.row{height:auto;background:transparent;padding-bottom:80px;position:relative;overflow:hidden;}
+.nurse-content .row a{background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/btnLess.svg");}
+.nurse-content .hzs .hidbox{display:none;}
+.nurse-content .hzs .open{display:block;}
+.nurse-content .hzs .hidbox .hidcontent{height:2600px;padding-top:260px;}
+.nurse-content .hzs .hidbox .hidbg{width:100%;height:1500px;background: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-BrushRange.jpg") center top no-repeat;background-size: auto;position:absolute;top:0;z-index:-1;}
+
+.nurse-content .hzs .hidbox .hidcontent .hidtext{width:300px;padding:50px;background:#fff;position:absolute;z-index:9;left:50%;top:700px;margin-left:-200px;}
+.nurse-content .hzs .hidbox .hidcontent .hidtext p{line-height:28px;font-size:20px;color:#666;letter-spacing: 2px;margin:0;}
+
+.nurse-content .hzs .hidbox .hidcontent .hidpro{width:100%;position:absolute;top:1350px;}
+.nurse-content .hzs .hidbox .hidcontent .hidpro h4{font-size:30px;color:#444;text-align:center;font-weight:normal;}
+.nurse-content .hzs .hidbox .hidcontent .hidpro p{font-size:24px;color:#666;text-align:center;}
+.nurse-content .hzs .hidbox .hidcontent .hidpro .hzs-pro1{text-align:right;margin:50px 0;}
+.nurse-content .hzs .hidbox .hidcontent .hidpro .hzs-pro2{text-align:left;margin:50px 0;}
+.nurse-content .hzs .hidbox .hidcontent .hidpro .hzs-pro3{text-align:right;margin:50px 0;}
+.nurse-content .hzs .hidbox .hidcontent .hidpro .hzs-pro4{text-align:left;margin:50px 0;}
+.nurse-content .hzs .hidbox .hidcontent .hidpro .hzs-pro5{text-align:right;margin:50px 0;}
+.nurse-content .hzs .hidbox .hidcontent .hidpro .hzs-pro6{text-align:left;margin:50px 0;}
+
+
+.nurse-content .section0-text{width:800px;text-align:center;margin:0 auto;}
+.nurse-content .section0-text h2{font-size:60px;color:#dfac8f;margin-bottom:50px;letter-spacing: 5px;font-weight:normal;}
+.nurse-content .section0-text  p{font-size:22px;color:#666;margin-bottom:80px;letter-spacing: 3px;padding:0 15px;}
+
+
+
+
+
+
+
+
+
+.nurse-content .public-lb .lis .textbox{width:20%;background: -webkit-linear-gradient(top, rgba(38,0,39,0) 0%,rgba(38,0,39,1) 87%);background: linear-gradient(to bottom, rgba(38,0,39,0) 0%,rgba(38,0,39,1) 87%);padding: 5% 3% 3% 3%;position:absolute;bottom:0px;}
+
+.nurse-content .public-lb .lis0 .textbox{left:10%;}
+.nurse-content .public-lb .lis1 .textbox{right:10%;}
+
+.nurse-content .public-lb .lis .textbox p{font-size:30px;color:#fff;text-align:center;margin-bottom:15px;}
+.nurse-content .public-lb .lis .textbox a{width:120px;height:46px;line-height:50px;margin:30px auto;color:#fff;border:2px solid #fff;text-align:center;cursor:pointer;transition:all 0.5s;font-size:15px;display:block;}
+.nurse-content .public-lb .lis .textbox a:hover{background:#fff;color:#000;transition:all 0.5s;}
+
+
+.nurse-content .part10{width:1024px;margin:0 auto;}
+.nurse-content .part10 .part10-left{width:48%;float:left;}
+
+.nurse-content .part10 .part10-right{width:48%;float:right;}
+
+.nurse-content .part10 h3{color:#444;font-size:30px;margin-bottom:30px;text-align:center;}
+
+.nurse-content .part10 .videowrapper{width:100%;margin:0 auto;position:relative;}
+.nurse-content .part10 .videowrapper img{width:100%;display:block;}
+.nurse-content .part10 .videowrapper .play{width:60px;height:60px;position:absolute;left:50%;top:50%;margin:-30px 0 0 -30px;display:block;cursor:pointer;z-index:5;}
+.nurse-content .part10 .videowrapper .play img{width:100%;}
+.nurse-content .part10 .videowrapper .shade-bg{width:100%;height:100%;background:#000;opacity:0.3;position:absolute;top:0;left:0;z-index:1;transition:all 0.5s ease-in-out;z-index:2;}
+.nurse-content .part10 .videowrapper:hover .shade-bg{opacity:0;transition:all 0.5s ease-in-out;}
+
+
+
+.nurse-content .part10 .videowrapper .video-row8{position:absolute;top:0;left:0;}
+.nurse-content .part10 .videowrapper #videoPlay8{opacity:0;}
+
+
+
+
+.nurse-content .part10 .videowrapper .video-row9{position:absolute;top:0;left:0;}
+.nurse-content .part10 .videowrapper #videoPlay9{opacity:0;}
+
+
+
+
+.nurse-content .part10 .part10-btn{width:120px;height:46px;line-height:50px;margin:50px auto 80px;color:#444;border:2px solid #260027;text-align:center;cursor:pointer;transition:all 0.5s;font-size:15px;display:block;}
+
+
+.nurse-content .part10 .part10-btn:hover{background:#260027;color:#fff;transition:all 0.5s;}
+
+.nurse-content .part10-footer{width:600px;height:70px;background: -webkit-linear-gradient(left, rgba(206,100,146,1) 0%,rgba(206,100,146,1) 27%,rgba(206,100,146,0) 100%);background: linear-gradient(to right, rgba(206,100,146,1) 0%,rgba(206,100,146,1) 27%,rgba(206,100,146,0) 100%);color:#fff;font-size:20px;margin:0 auto 50px;padding:30px 0 0 20px;cursor:pointer;}
+
+
+
+
+
+
+/* 第二部分 */
+
+
+.nurse-content .part2-1{height:900px;background:url("https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/MakeUp-Garten-Intro.jpg") center bottom no-repeat;}
+.nurse-content .part2-2{padding-top:50px;}
+.nurse-content .part-news{width:550px;text-align:center;margin:0 auto 50px;}
+.nurse-content .part-news h1{font-size:56px;color:#8c72bb;letter-spacing: 5px;margin-bottom:60px;}
+.nurse-content .part-news h2{font-size:32px;color:#e9837f;letter-spacing: 3px;margin-bottom:50px;}
+.nurse-content .part-news p{font-size:22px;color:#dfdfdf;margin-bottom:50px;}
+
+
+
+
+
+
+
+.nurse-content .hzs{    background: linear-gradient(to bottom, rgba(232,199,194,0) 0%,rgba(232,199,194,0.88) 23%,rgba(232,199,194,1) 30%,rgba(232,199,194,1) 100%);}
+.nurse-content .hzs.row{height:auto;background:transparent;padding-bottom:80px;position:relative;overflow:hidden;}
+.nurse-content .row>a{background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/btnLess.svg");}
+.nurse-content .hzs .hidbox{display:none;}
+.nurse-content .hzs .open{display:block;}
+.nurse-content .hzs .hidbox .hidcontent{height:2600px;padding-top:260px;}
+.nurse-content .hzs .hidbox .hidbg{width:100%;height:1500px;background: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-BrushRange.jpg") center top no-repeat;background-size: auto;position:absolute;top:0;z-index:-1;}
+
+.nurse-content .hzs .hidbox .hidcontent .hidtext{width:300px;padding:50px;background:#fff;position:absolute;z-index:9;left:50%;top:700px;margin-left:-200px;}
+.nurse-content .hzs .hidbox .hidcontent .hidtext p{line-height:28px;font-size:20px;color:#666;letter-spacing: 2px;margin:0;}
+
+.nurse-content .hzs .hidbox .hidcontent .hidpro{width:100%;position:absolute;top:1350px;}
+.nurse-content .hzs .hidbox .hidcontent .hidpro h4{font-size:30px;color:#444;text-align:center;font-weight:normal;}
+.nurse-content .hzs .hidbox .hidcontent .hidpro p{font-size:24px;color:#666;text-align:center;}
+.nurse-content .hzs .hidbox .hidcontent .hidpro .hzs-pro1{text-align:right;margin:50px 0;}
+.nurse-content .hzs .hidbox .hidcontent .hidpro .hzs-pro2{text-align:left;margin:50px 0;}
+.nurse-content .hzs .hidbox .hidcontent .hidpro .hzs-pro3{text-align:right;margin:50px 0;}
+.nurse-content .hzs .hidbox .hidcontent .hidpro .hzs-pro4{text-align:left;margin:50px 0;}
+.nurse-content .hzs .hidbox .hidcontent .hidpro .hzs-pro5{text-align:right;margin:50px 0;}
+.nurse-content .hzs .hidbox .hidcontent .hidpro .hzs-pro6{text-align:left;margin:50px 0;}
+
+
+.nurse-content .section0-text{width:800px;text-align:center;margin:0 auto;}
+.nurse-content .section0-text h2{font-size:60px;color:#dfac8f;margin-bottom:50px;letter-spacing: 5px;font-weight:normal;}
+.nurse-content .section0-text  p{font-size:22px;color:#666;margin-bottom:80px;letter-spacing: 3px;padding:0 15px;}
+
+
+
+.nurse-content .part2-2 .mz .part2-img{width:100%;height:750px;background: url("https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-International-MakeUp-Artist.jpg") center top no-repeat;background-size: auto;}
+.nurse-content .part2-2 .mz .part2-link0{width:45px;height:45px;background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/btnWhiteMore.svg");background-size: 45px 45px;background-repeat: no-repeat;background-position: 50% 0;display:block;margin:60px auto;cursor:pointer;}
+
+
+
+.nurse-content .part2-2 .row0 .part2-link0{background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/btnWhiteLess.svg");}
+.nurse-content .part2-2 .row0 .part2-img{height:1420px;}
+
+.nurse-content .mz.row0{height:auto;padding-bottom:80px;position:relative;overflow:hidden;}
+.nurse-content .row .part2-link0{background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/btnLess.svg");}
+.nurse-content .mz .hidbox{display:none;}
+.nurse-content .mz .open{display:block;}
+.nurse-content .mz .hidbox .hidcontent{height:1300px;padding-top:240px;background: linear-gradient(to bottom, rgba(38,0,39,0) 33%,rgba(102,64,38,0) 56%,rgba(224,187,36,1) 100%);}
+.nurse-content .mz .hidbox .hidbg{width:100%;height:1500px;background: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-Texture-Lips.jpg") center top no-repeat;background-size: auto;position:absolute;top:0;z-index:-1;}
+.nurse-content .mz .hidbox .hidcontent .hidimg1{width:55%;position:absolute;right:0;top:1200px;z-index:3;}
+.nurse-content .mz .hidbox .hidcontent .hidimg2{width:50%;position:absolute;left:0;top:1600px;z-index:2;}
+.nurse-content .mz .hidbox .hidcontent .hidimg3{width:50%;position:absolute;right:0;top:1900px;z-index:5;}
+.nurse-content .mz .hidbox .hidcontent .hidimg img{width:100%;}
+.nurse-content .mz .hidbox .hidcontent .hidtext{width:300px;padding:50px;background:#fff;position:absolute;z-index:9;text-align:center;}
+.nurse-content .mz .hidbox .hidcontent .hidtext1 h4{font-size:30px;color:#ce0517;margin-bottom:30px;letter-spacing: 3px;font-weight:normal;}
+.nurse-content .mz .hidbox .hidcontent .hidtext2 h4{font-size:30px;color:#e9837f;margin-bottom:30px;letter-spacing: 3px;font-weight:normal;}
+.nurse-content .mz .hidbox .hidcontent .hidtext3 h4{font-size:30px;color:#b75d75;margin-bottom:30px;letter-spacing: 3px;font-weight:normal;}
+
+.nurse-content .mz .hidbox .hidcontent .hidpro{width:280px;height:300px;background:#fff;position:absolute;z-index:12;}
+.nurse-content .mz .hidbox .hidcontent .hidpro .hidpro-news{height:48px;background:#86c083;text-align:center;padding:10px 0;}
+.nurse-content .mz .hidbox .hidcontent .hidpro h5{font-size:17px;color:#444;}
+.nurse-content .mz .hidbox .hidcontent .hidpro span{font-size:15px;color:#444;}
+.nurse-content .mz .hidbox .hidcontent .hidpro img{width:150px;display:block;margin:0 auto;}
+.nurse-content .mz .hidbox .hidcontent .hidpro .hidpro-link{width:150px;height: 48px;line-height: 48px;border:2px solid #260027;font-size: 14px;color: #260027;text-align: center;display:block;margin:15px auto;transition:all 0.6s;}
+.nurse-content .mz .hidbox .hidcontent .hidpro .hidpro-link:hover{border:2px solid #260027;background:#260027;color:#fff;transition:all 0.6s;}
+
+
+
+.nurse-content .mz .hidbox .hidcontent .hidtext p{line-height:28px;font-size:20px;color:#666;letter-spacing: 2px;margin:0;}
+.nurse-content .mz .hidbox .hidcontent .hidtext1{left:500px;top:1000px;}
+.nurse-content .mz .hidbox .hidcontent .hidtext2{right:280px;top:1650px;}
+.nurse-content .mz .hidbox .hidcontent .hidtext3{left:450px;top:2350px;}
+
+
+.nurse-content .mz .hidbox .hidcontent .hidpro1{left:920px;top:1000px;}
+.nurse-content .mz .hidbox .hidcontent .hidpro2{right:700px;top:1700px;}
+.nurse-content .mz .hidbox .hidcontent .hidpro3{left:870px;top:2350px;}
+
+
+
+
+.nurse-content .mz .hidbox .hidcontent .gradiantRose{height: 400px;width: 7%;z-index: 8;position: absolute;left: 52%;top:42%;transform:translate(-50%,0);  background: linear-gradient(to bottom, rgba(254,124,124,0) 0%,rgba(254,124,124,1) 100%);}
+.nurse-content .mz .hidbox .hidcontent .gradiantRose2{height: 500px;width: 7%;z-index: 10;position: absolute;right: 52%;top: 30%; transform:translate(-50%,0);    background: linear-gradient(to bottom, rgba(254,124,124,0) 0%,rgba(254,124,124,1) 100%);}
+.nurse-content .mz .hidbox .hidcontent .gradiantLilac{height: 600px;width: 7%;z-index: 10;position: absolute;right: 32%;top: 50%;    background: linear-gradient(to bottom, rgba(99,45,114,1) 0%,rgba(99,45,114,0) 100%);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nurse-content .part2-3{text-align:center;padding-top:30px;}
+.nurse-content .part2-3 h1{font-size:56px;color:#8c72bb;margin-bottom:30px;letter-spacing: 5px;}
+.nurse-content .part2-3 p{line-height:42px;font-size:20px;color:#dfdfdf;padding-bottom:30px;}
+
+
+.nurse-content .part2-3 .wrapper-video .video-box{width:100%;position:relative;top:0;left:0;float:left;margin-right:-100%;display:none;cursor:move;}
+.nurse-content .part2-3 .wrapper-video .video-box:hover .shade-bg{opacity:0;transition:all 0.6s ease-in-out;}
+.nurse-content .part2-3 .wrapper-video .show{display:block;}
+.nurse-content .part2-3 .wrapper-video .video-box .play{width:60px;height:60px;position:absolute;left:50%;top:40%;margin-left:-30px;cursor:pointer;z-index:2;}
+.nurse-content .part2-3 .wrapper-video .video-box img{width:100%;}
+.nurse-content .part2-3 .wrapper-video .video-box .video-text{width:100%;text-align:center;position:absolute;left:0;top:52%;z-index:2;cursor:default;}
+.nurse-content .part2-3 .wrapper-video .video-box .video-text h4{font-size:30px;color:#fff;font-weight:normal;}
+.nurse-content .part2-3 .wrapper-video .video-box .video-text p{font-size:20px;color:#fff;}
+.nurse-content .part2-3 .wrapper-video .video-box .shade-bg{width:100%;height:100%;background:#000;opacity:0.3;position:absolute;top:0;left:0;z-index:1;transition:all 0.6s ease-in-out;}
+
+
+
+.nurse-content .part2-3 .wrapper-video .video-box .video-hzrow{width:100%;position:absolute;top:0;left:0;}
+
+.nurse-content .part2-3 .wrapper-video .video-box .videoPlayhz{opacity:0;}
+
+
+
+
+
+
+
+
+
+
+
+.nurse-content .part2-3>.video-box{position:relative;top:0;}
+.nurse-content .part2-3 .videopage{width:1110px;overflow:hidden;margin:0 auto;padding:30px 0 0 0;}
+.nurse-content .part2-3 .videopage ul{width:2250px;position:relative;left:0;top:0;cursor:move;margin-bottom:60px;}
+.nurse-content .part2-3 .videopage ul li{width:360px;height:200px;margin-right:15px;float:left;position:relative;}
+.nurse-content .part2-3 .videopage ul li .play{width:40px;height:40px;position:absolute;left:50%;top:50%;margin:-20px 0 0 -20px;display:block;cursor:pointer;}
+.nurse-content .part2-3 .videopage ul li .video-img{width:100%;}
+.nurse-content .part2-3 .videopage ol{text-align:center;padding:50px 0;}
+.nurse-content .part2-3 .videopage ol li{width:6px;height:6px;border:2px solid #fff;border-radius:5px;margin-right:8px;cursor:pointer;transition:all 0.6s;display:none;}
+.nurse-content .part2-3 .videopage ol li:nth-child(1),.nurse-content .part2-3 .videopage ol li:nth-child(2){display:inline-block;}
+.nurse-content .part2-3 .videopage ol li:hover{background:#fff;transition:all 0.6s;}
+.nurse-content .part2-3 .videopage ol .active{background:#fff;}
+.nurse-content .part2-3 .video-box .btn-right{width:50px;height:100px;background: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/arrowWhiteRight.svg") no-repeat center center;position:absolute;right:0;top:40%;margin-top:-50px;cursor:pointer;}
+.nurse-content .part2-3 .video-box .btn-left{width:50px;height:100px;background: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/arrowWhiteLeft.svg") no-repeat center center;position:absolute;left:0;top:40%;margin-top:-50px;cursor:pointer;}
+
+
+
+
+
+
+
+.nurse-content .part2-4 .part4-img{width:100%;height:750px;background: url("https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-Looks-EffortlesBeauty.jpg") center top no-repeat;background-size: auto;}
+.nurse-content .part2-4 .allpart .part4-link0{width:45px;height:45px;background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/btnWhiteMore.svg");background-size: 45px 45px;background-repeat: no-repeat;background-position: 50% 0;display:block;margin:60px auto;z-index:999;cursor:pointer;}
+
+.nurse-content .part2-4 .part5-img{width:100%;height:750px;background: url("https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-Looks-MysteriousEyes.jpg") center top no-repeat;background-size: auto;}
+
+.nurse-content .part2-4 .allpart .part5-link0{width:45px;height:45px;background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/btnWhiteMore.svg");background-size: 45px 45px;background-repeat: no-repeat;background-position: 50% 0;display:block;margin:60px auto;z-index:999;cursor:pointer;}
+
+.nurse-content .part2-4 .part6-img{width:100%;height:750px;background: url("https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-Looks-BigSensation.jpg") center top no-repeat;background-size: auto;}
+
+.nurse-content .part2-4 .allpart .part6-link0{width:45px;height:45px;background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/btnWhiteMore.svg");background-size: 45px 45px;background-repeat: no-repeat;background-position: 50% 0;display:block;margin:60px auto;z-index:999;cursor:pointer;}
+
+.nurse-content .part2-4 .part7-img{width:100%;height:750px;background: url("https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-Looks-PureElegance.jpg") center top no-repeat;background-size: auto;}
+
+.nurse-content .part2-4 .allpart .part7-link0{width:45px;height:45px;background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/btnWhiteMore.svg");background-size: 45px 45px;background-repeat: no-repeat;background-position: 50% 0;display:block;margin:60px auto;z-index:999;cursor:pointer;}
+
+.nurse-content .part2-4 .part8-img{width:100%;height:750px;background: url("https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-Looks-YourNude.jpg") center top no-repeat;background-size: auto;}
+
+.nurse-content .part2-4 .allpart .part8-link0{width:45px;height:45px;background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/btnWhiteMore.svg");background-size: 45px 45px;background-repeat: no-repeat;background-position: 50% 0;display:block;margin:60px auto;z-index:999;cursor:pointer;}
+
+
+
+
+
+
+.nurse-content .part2-4 .row0{height:auto;position:relative;background:transparent;}
+.nurse-content .part2-4 .row0 .part4-link0{background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/btnWhiteLess.svg");}
+.nurse-content .part2-4 .row0 .part4-img{height:1420px;}
+
+.nurse-content .part2-4 .xxz .hidbox{display:none;}
+.nurse-content .part2-4 .xxz .open{display:block;}
+.nurse-content .part2-4 .xxz .open .LB-box{width:100%;position:absolute;top:800px;}
+.nurse-content .part2-4 .xxz .hidbox .part4LB{width:100%;height:550px;position:relative;left:0;overflow:hidden;}
+.nurse-content .part2-4 .xxz .hidbox .part4LB .swiper-wrapper{width:1140px;left:50%;margin-left:-570px;}
+.nurse-content .part2-4 .xxz .hidbox .part4LB .swiper-slide .slide-box{width:350px;height:450px;background: #fff;text-align:center;float:left;margin:0 15px;}
+.nurse-content .part2-4 .xxz .hidbox .part4LB .swiper-slide .slide-box h3{font-size:16px;font-weight:normal;margin:20px 0 50px 0;color:#e9837f;}
+.nurse-content .part2-4 .xxz .hidbox .part4LB .swiper-slide .slide-box h4{font-size:16px;font-weight:normal;margin-top:20px;color:#86c083;}
+.nurse-content .part2-4 .xxz .hidbox .part4LB .swiper-slide .slide-box b{font-size:30px;margin-bottom:20px;display:block;}
+.nurse-content .part2-4 .xxz .hidbox .part4LB .swiper-slide .slide-box p{line-height:30px;font-size:18px;margin:0 50px 20px 50px;box-sizing: border-box;}
+.nurse-content .part2-4 .xxz .hidbox .part4LB .swiper-slide .slide-box img{width:180px;height:180px;display:block;margin:20px auto;}
+.nurse-content .part2-4 .xxz .hidbox .part4LB .swiper-slide .slide-box a{width:150px;height: 48px;line-height: 48px;border:2px solid #260027;font-size: 14px;color: #260027;text-align: center;display:block;margin:0 auto;}
+
+.nurse-content .part2-4 .xxz .hidbox .part4LB .swiper-slide .slide-box .slide-pic{width:100%;height:100%;margin:0;}
+
+.nurse-content .part2-4 .xxz .hidbox .part4LB .part4LB-next{width:50px;height:100px;top:40%;right:0;background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/arrowWhiteRight.svg");background-size:200%;}
+.nurse-content .part2-4 .xxz .hidbox .part4LB .part4LB-prev{width:50px;height:100px;top:40%;left:0;background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/arrowWhiteLeft.svg");background-size:200%;}
+
+.nurse-content .part2-4 .xxz .hidbox .part4LB span{width:10px;height:10px;}
+.nurse-content .part2-4 .xxz .hidbox .part4LB .swiper-pagination-bullet-active{background:#fff;}
+.nurse-content .part2-4 .xxz .part4-text{padding:30px 0;background: linear-gradient(to bottom, rgba(233,131,127,0) 1%,rgba(233,131,127,0) 59%,rgba(233,131,127,0.8) 100%);}
+.nurse-content .part2-4 .xxz .part4-text .part4-link1{width:150px;height: 48px;line-height: 48px;border:2px solid #fff;font-size: 14px;color: #fff;text-align: center;display:block;margin:40px auto 60px;transition:all 0.6s;}
+
+.nurse-content .part2-4 .xxz .part4-text .part4-link1:hover{border:2px solid #fff;background:#fff;color:#260027;transition:all 0.6s;}
+.nurse-content .part2-4 .xxz .part4-text h2{font-size:36px;text-align:center;color:#e9837f;}
+.nurse-content .part2-4 .xxz .part4-text p{width:1000px;line-height:36px;font-size:20px;color:#fff;margin:30px auto 50px;text-align:center;}
+.nurse-content .part2-4 .xxz .part4-text img{display:block;margin:0 auto;}
+
+.nurse-content .part2-4 .xxz .part4-text .part4-link2{width:150px;height: 48px;line-height: 48px;border:2px solid #fff;font-size: 14px;color: #fff;text-align: center;display:block;margin:30px auto 60px;transition:all 0.6s;}
+
+.nurse-content .part2-4 .xxz .part4-text .part4-link2:hover{border:2px solid #fff;background:#fff;color:#260027;transition:all 0.6s;}
+
+
+
+
+
+
+.nurse-content .part2-4 .row0{height:auto;position:relative;background:transparent;}
+.nurse-content .part2-4 .row0 .part5-link0{background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/btnWhiteLess.svg");}
+.nurse-content .part2-4 .row0 .part5-img{height:1420px;}
+
+.nurse-content .part2-4 .yz .hidbox{display:none;}
+.nurse-content .part2-4 .yz .open{display:block;}
+.nurse-content .part2-4 .yz .open .LB-box{width:100%;position:absolute;top:800px;}
+.nurse-content .part2-4 .yz .hidbox .part5LB{width:100%;height:550px;position:relative;left:0;overflow:hidden;}
+.nurse-content .part2-4 .yz .hidbox .part5LB .swiper-wrapper{width:1140px;left:50%;margin-left:-570px;}
+.nurse-content .part2-4 .yz .hidbox .part5LB .swiper-slide .slide-box{width:350px;height:450px;background: #fff;text-align:center;float:left;margin:0 15px;}
+.nurse-content .part2-4 .yz .hidbox .part5LB .swiper-slide .slide-box h3{font-size:16px;font-weight:normal;margin:20px 0 50px 0;color:#e9837f;}
+.nurse-content .part2-4 .yz .hidbox .part5LB .swiper-slide .slide-box h4{font-size:16px;font-weight:normal;margin-top:20px;color:#86c083;}
+.nurse-content .part2-4 .yz .hidbox .part5LB .swiper-slide .slide-box b{font-size:30px;margin-bottom:20px;display:block;}
+.nurse-content .part2-4 .yz .hidbox .part5LB .swiper-slide .slide-box p{line-height:30px;font-size:18px;margin:0 50px 20px 50px;box-sizing: border-box;}
+.nurse-content .part2-4 .yz .hidbox .part5LB .swiper-slide .slide-box img{width:180px;height:180px;display:block;margin:20px auto;}
+.nurse-content .part2-4 .yz .hidbox .part5LB .swiper-slide .slide-box a{width:150px;height: 48px;line-height: 48px;border:2px solid #260027;font-size: 14px;color: #260027;text-align: center;display:block;margin:0 auto;}
+
+.nurse-content .part2-4 .yz .hidbox .part5LB .swiper-slide .slide-box .slide-pic{width:100%;height:100%;margin:0;}
+
+.nurse-content .part2-4 .yz .hidbox .part5LB .part5LB-next{width:50px;height:100px;top:40%;right:0;background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/arrowWhiteRight.svg");background-size:200%;}
+.nurse-content .part2-4 .yz .hidbox .part5LB .part5LB-prev{width:50px;height:100px;top:40%;left:0;background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/arrowWhiteLeft.svg");background-size:200%;}
+
+.nurse-content .part2-4 .yz .hidbox .part5LB span{width:10px;height:10px;}
+.nurse-content .part2-4 .yz .hidbox .part5LB .swiper-pagination-bullet-active{background:#fff;}
+.nurse-content .part2-4 .yz .part5-text{padding:30px 0;background: linear-gradient(to bottom, rgba(223,172,143,0) 1%,rgba(223,172,143,0) 59%,rgba(223,172,143,0.8) 100%);}
+.nurse-content .part2-4 .yz .part5-text .part5-link1{width:150px;height: 48px;line-height: 48px;border:2px solid #fff;font-size: 14px;color: #fff;text-align: center;display:block;margin:40px auto 60px;transition:all 0.6s;}
+
+.nurse-content .part2-4 .yz .part5-text .part5-link1:hover{border:2px solid #fff;background:#fff;color:#260027;transition:all 0.6s;}
+.nurse-content .part2-4 .yz .part5-text h2{font-size:36px;text-align:center;color:#e9837f;}
+.nurse-content .part2-4 .yz .part5-text p{width:1000px;line-height:36px;font-size:20px;color:#fff;margin:30px auto 50px;text-align:center;}
+.nurse-content .part2-4 .yz .part5-text img{display:block;margin:0 auto;}
+
+.nurse-content .part2-4 .yz .part5-text .part5-link2{width:150px;height: 48px;line-height: 48px;border:2px solid #fff;font-size: 14px;color: #fff;text-align: center;display:block;margin:30px auto 60px;transition:all 0.6s;}
+
+.nurse-content .part2-4 .yz .part5-text .part5-link2:hover{border:2px solid #fff;background:#fff;color:#260027;transition:all 0.6s;}
+
+
+
+
+
+
+.nurse-content .part2-4 .row0{height:auto;position:relative;background:transparent;}
+.nurse-content .part2-4 .row0 .part6-link0{background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/btnWhiteLess.svg");}
+.nurse-content .part2-4 .row0 .part6-img{height:1420px;}
+
+.nurse-content .part2-4 .fqz .hidbox{display:none;}
+.nurse-content .part2-4 .fqz .open{display:block;}
+.nurse-content .part2-4 .fqz .open .LB-box{width:100%;position:absolute;top:800px;}
+.nurse-content .part2-4 .fqz .hidbox .part6LB{width:100%;height:550px;position:relative;left:0;overflow:hidden;}
+.nurse-content .part2-4 .fqz .hidbox .part6LB .swiper-wrapper{width:1140px;left:50%;margin-left:-570px;}
+.nurse-content .part2-4 .fqz .hidbox .part6LB .swiper-slide .slide-box{width:350px;height:450px;background: #fff;text-align:center;float:left;margin:0 15px;}
+.nurse-content .part2-4 .fqz .hidbox .part6LB .swiper-slide .slide-box h3{font-size:16px;font-weight:normal;margin:20px 0 50px 0;color:#e9837f;}
+.nurse-content .part2-4 .fqz .hidbox .part6LB .swiper-slide .slide-box h4{font-size:16px;font-weight:normal;margin-top:20px;color:#86c083;}
+.nurse-content .part2-4 .fqz .hidbox .part6LB .swiper-slide .slide-box b{font-size:30px;margin-bottom:20px;display:block;}
+.nurse-content .part2-4 .fqz .hidbox .part6LB .swiper-slide .slide-box p{line-height:30px;font-size:18px;margin:0 50px 20px 50px;box-sizing: border-box;}
+.nurse-content .part2-4 .fqz .hidbox .part6LB .swiper-slide .slide-box img{width:180px;height:180px;display:block;margin:20px auto;}
+.nurse-content .part2-4 .fqz .hidbox .part6LB .swiper-slide .slide-box a{width:150px;height: 48px;line-height: 48px;border:2px solid #260027;font-size: 14px;color: #260027;text-align: center;display:block;margin:0 auto;}
+
+.nurse-content .part2-4 .fqz .hidbox .part6LB .swiper-slide .slide-box .slide-pic{width:100%;height:100%;margin:0;}
+
+.nurse-content .part2-4 .fqz .hidbox .part6LB .part6LB-next{width:50px;height:100px;top:40%;right:0;background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/arrowWhiteRight.svg");background-size:200%;}
+.nurse-content .part2-4 .fqz .hidbox .part6LB .part6LB-prev{width:50px;height:100px;top:40%;left:0;background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/arrowWhiteLeft.svg");background-size:200%;}
+
+.nurse-content .part2-4 .fqz .hidbox .part6LB span{width:10px;height:10px;}
+.nurse-content .part2-4 .fqz .hidbox .part6LB .swiper-pagination-bullet-active{background:#fff;}
+.nurse-content .part2-4 .fqz .part6-text{padding:30px 0;background: linear-gradient(to bottom, rgba(233,131,127,0) 1%,rgba(233,131,127,0) 59%,rgba(233,131,127,0.8) 100%);}
+.nurse-content .part2-4 .fqz .part6-text .part6-link1{width:150px;height: 48px;line-height: 48px;border:2px solid #fff;font-size: 14px;color: #fff;text-align: center;display:block;margin:40px auto 60px;transition:all 0.6s;}
+
+.nurse-content .part2-4 .fqz .part6-text .part6-link1:hover{border:2px solid #fff;background:#fff;color:#260027;transition:all 0.6s;}
+.nurse-content .part2-4 .fqz .part6-text h2{font-size:36px;text-align:center;color:#e9837f;}
+.nurse-content .part2-4 .fqz .part6-text p{width:1000px;line-height:36px;font-size:20px;color:#fff;margin:30px auto 50px;text-align:center;}
+.nurse-content .part2-4 .fqz .part6-text img{display:block;margin:0 auto;}
+
+.nurse-content .part2-4 .fqz .part6-text .part6-link2{width:150px;height: 48px;line-height: 48px;border:2px solid #fff;font-size: 14px;color: #fff;text-align: center;display:block;margin:30px auto 60px;transition:all 0.6s;}
+
+.nurse-content .part2-4 .fqz .part6-text .part6-link2:hover{border:2px solid #fff;background:#fff;color:#260027;transition:all 0.6s;}
+
+
+
+
+
+.nurse-content .part2-4 .row0{height:auto;position:relative;background:transparent;}
+.nurse-content .part2-4 .row0 .part7-link0{background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/btnWhiteLess.svg");}
+.nurse-content .part2-4 .row0 .part7-img{height:1420px;}
+
+.nurse-content .part2-4 .yyz .hidbox{display:none;}
+.nurse-content .part2-4 .yyz .open{display:block;}
+.nurse-content .part2-4 .yyz .open .LB-box{width:100%;position:absolute;top:800px;}
+.nurse-content .part2-4 .yyz .hidbox .part7LB{width:100%;height:550px;position:relative;left:0;overflow:hidden;}
+.nurse-content .part2-4 .yyz .hidbox .part7LB .swiper-wrapper{width:1140px;left:50%;margin-left:-570px;}
+.nurse-content .part2-4 .yyz .hidbox .part7LB .swiper-slide .slide-box{width:350px;height:450px;background: #fff;text-align:center;float:left;margin:0 15px;}
+.nurse-content .part2-4 .yyz .hidbox .part7LB .swiper-slide .slide-box h3{font-size:16px;font-weight:normal;margin:20px 0 50px 0;color:#e9837f;}
+.nurse-content .part2-4 .yyz .hidbox .part7LB .swiper-slide .slide-box h4{font-size:16px;font-weight:normal;margin-top:20px;color:#86c083;}
+.nurse-content .part2-4 .yyz .hidbox .part7LB .swiper-slide .slide-box b{font-size:30px;margin-bottom:20px;display:block;}
+.nurse-content .part2-4 .yyz .hidbox .part7LB .swiper-slide .slide-box p{line-height:30px;font-size:18px;margin:0 50px 20px 50px;box-sizing: border-box;}
+.nurse-content .part2-4 .yyz .hidbox .part7LB .swiper-slide .slide-box img{width:180px;height:180px;display:block;margin:20px auto;}
+.nurse-content .part2-4 .yyz .hidbox .part7LB .swiper-slide .slide-box a{width:150px;height: 48px;line-height: 48px;border:2px solid #260027;font-size: 14px;color: #260027;text-align: center;display:block;margin:0 auto;}
+
+.nurse-content .part2-4 .yyz .hidbox .part7LB .swiper-slide .slide-box .slide-pic{width:100%;height:100%;margin:0;}
+
+.nurse-content .part2-4 .yyz .hidbox .part7LB .part7LB-next{width:50px;height:100px;top:40%;right:0;background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/arrowWhiteRight.svg");background-size:200%;}
+.nurse-content .part2-4 .yyz .hidbox .part7LB .part7LB-prev{width:50px;height:100px;top:40%;left:0;background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/arrowWhiteLeft.svg");background-size:200%;}
+
+.nurse-content .part2-4 .yyz .hidbox .part7LB span{width:10px;height:10px;}
+.nurse-content .part2-4 .yyz .hidbox .part7LB .swiper-pagination-bullet-active{background:#fff;}
+.nurse-content .part2-4 .yyz .part7-text{padding:30px 0;    background: linear-gradient(to bottom, rgba(254,116,113,0) 1%,rgba(254,116,113,0) 59%,rgba(254,116,113,1) 100%);}
+.nurse-content .part2-4 .yyz .part7-text .part7-link1{width:150px;height: 48px;line-height: 48px;border:2px solid #fff;font-size: 14px;color: #fff;text-align: center;display:block;margin:40px auto 60px;transition:all 0.6s;}
+
+.nurse-content .part2-4 .yyz .part7-text .part7-link1:hover{border:2px solid #fff;background:#fff;color:#260027;transition:all 0.6s;}
+.nurse-content .part2-4 .yyz .part7-text h2{font-size:36px;text-align:center;color:#e9837f;}
+.nurse-content .part2-4 .yyz .part7-text p{width:1000px;line-height:36px;font-size:20px;color:#fff;margin:30px auto 50px;text-align:center;}
+.nurse-content .part2-4 .yyz .part7-text img{display:block;margin:0 auto;}
+
+.nurse-content .part2-4 .yyz .part7-text .part7-link2{width:150px;height: 48px;line-height: 48px;border:2px solid #fff;font-size: 14px;color: #fff;text-align: center;display:block;margin:30px auto 60px;transition:all 0.6s;}
+
+.nurse-content .part2-4 .yyz .part7-text .part7-link2:hover{border:2px solid #fff;background:#fff;color:#260027;transition:all 0.6s;}
+
+
+
+
+
+.nurse-content .part2-4 .row0{height:auto;position:relative;background:transparent;}
+.nurse-content .part2-4 .row0 .part8-link0{background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/btnWhiteLess.svg");}
+.nurse-content .part2-4 .row0 .part8-img{height:1420px;}
+
+.nurse-content .part2-4 .lz .hidbox{display:none;}
+.nurse-content .part2-4 .lz .open{display:block;}
+.nurse-content .part2-4 .lz .open .LB-box{width:100%;position:absolute;top:800px;}
+.nurse-content .part2-4 .lz .hidbox .part8LB{width:100%;height:550px;position:relative;left:0;overflow:hidden;}
+.nurse-content .part2-4 .lz .hidbox .part8LB .swiper-wrapper{width:1140px;left:50%;margin-left:-570px;}
+.nurse-content .part2-4 .lz .hidbox .part8LB .swiper-slide .slide-box{width:350px;height:450px;background: #fff;text-align:center;float:left;margin:0 15px;}
+.nurse-content .part2-4 .lz .hidbox .part8LB .swiper-slide .slide-box h3{font-size:16px;font-weight:normal;margin:20px 0 50px 0;color:#e9837f;}
+.nurse-content .part2-4 .lz .hidbox .part8LB .swiper-slide .slide-box h4{font-size:16px;font-weight:normal;margin-top:20px;color:#86c083;}
+.nurse-content .part2-4 .lz .hidbox .part8LB .swiper-slide .slide-box b{font-size:30px;margin-bottom:20px;display:block;}
+.nurse-content .part2-4 .lz .hidbox .part8LB .swiper-slide .slide-box p{line-height:30px;font-size:18px;margin:0 50px 20px 50px;box-sizing: border-box;}
+.nurse-content .part2-4 .lz .hidbox .part8LB .swiper-slide .slide-box img{width:180px;height:180px;display:block;margin:20px auto;}
+.nurse-content .part2-4 .lz .hidbox .part8LB .swiper-slide .slide-box a{width:150px;height: 48px;line-height: 48px;border:2px solid #260027;font-size: 14px;color: #260027;text-align: center;display:block;margin:0 auto;}
+
+.nurse-content .part2-4 .lz .hidbox .part8LB .swiper-slide .slide-box .slide-pic{width:100%;height:100%;margin:0;}
+
+.nurse-content .part2-4 .lz .hidbox .part8LB .part8LB-next{width:50px;height:100px;top:40%;right:0;background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/arrowWhiteRight.svg");background-size:200%;}
+.nurse-content .part2-4 .lz .hidbox .part8LB .part8LB-prev{width:50px;height:100px;top:40%;left:0;background-image: url("http://cdn.hauschka.com/images/system/drhauschkaMakeUp/arrowWhiteLeft.svg");background-size:200%;}
+
+.nurse-content .part2-4 .lz .hidbox .part8LB span{width:10px;height:10px;}
+.nurse-content .part2-4 .lz .hidbox .part8LB .swiper-pagination-bullet-active{background:#fff;}
+.nurse-content .part2-4 .lz .part8-text{padding:30px 0;    background: linear-gradient(to bottom, rgba(140,114,187,0) 1%,rgba(140,114,187,0) 59%,rgba(140,114,187,1) 100%);}
+.nurse-content .part2-4 .lz .part8-text .part8-link1{width:150px;height: 48px;line-height: 48px;border:2px solid #fff;font-size: 14px;color: #fff;text-align: center;display:block;margin:40px auto 60px;transition:all 0.6s;}
+
+.nurse-content .part2-4 .lz .part8-text .part8-link1:hover{border:2px solid #fff;background:#fff;color:#260027;transition:all 0.6s;}
+.nurse-content .part2-4 .lz .part8-text h2{font-size:36px;text-align:center;color:#e9837f;}
+.nurse-content .part2-4 .lz .part8-text p{width:1000px;line-height:36px;font-size:20px;color:#fff;margin:30px auto 50px;text-align:center;}
+.nurse-content .part2-4 .lz .part8-text img{display:block;margin:0 auto;}
+
+.nurse-content .part2-4 .lz .part8-text .part8-link2{width:150px;height: 48px;line-height: 48px;border:2px solid #fff;font-size: 14px;color: #fff;text-align: center;display:block;margin:30px auto 60px;transition:all 0.6s;}
+
+.nurse-content .part2-4 .lz .part8-text .part8-link2:hover{border:2px solid #fff;background:#fff;color:#260027;transition:all 0.6s;}
+
+
+
+.nurse-content .part2-4  .hidbox  span{opacity:0.5;background:#fff;}
+
+.nurse-content .part2-4 .lz .hidbox .part8LB .swiper-pagination-bullet-active{opacity:1;}
+
+
+
+.nurse-content .part0-title{width:auto;text-align:center;overflow:hidden;}
+.nurse-content .part0-title h1{font-size:72px;color:#fff;letter-spacing: 3px;margin-bottom:40px;}
+.nurse-content .part0-title p{font-size:30px;color:#fff;letter-spacing: 3px;margin-bottom:20px;}
+
+
+.nurse-content .part0-button{width:120px;height:46px;line-height:50px;margin:20px auto 100px;color:#fff;border:2px solid #fff;text-align:center;cursor:pointer;transition:all 0.5s;font-size:15px;}
+.nurse-content .part0-button:hover{background:#fff;color:#000;transition:all 0.5s;}
+.nurse-content .part0-footer{width:600px;height:70px;background: -webkit-linear-gradient(left, rgba(206,100,146,1) 0%,rgba(206,100,146,1) 27%,rgba(206,100,146,0) 100%);background: linear-gradient(to right, rgba(206,100,146,1) 0%,rgba(206,100,146,1) 27%,rgba(206,100,146,0) 100%);color:#fff;font-size:20px;margin:0 auto 50px;padding:30px 0 0 20px;cursor:pointer;}
+
+
+
+
+@media screen and (min-width:1110px) and (max-width:1500px){
+.nurse-content .section5 .wrapper-box{width:880px;}
+
+
+}
+
+@media screen and (min-width:750px) and (max-width:1110px){
+
+.nurse-content .section3 .section3-wrapper .videopage{width:735px;}
+.nurse-content .section3 .section3-wrapper .videopage ol li{display:inline-block;}
+.nurse-content .section3 .section3-wrapper .videopage ol li:nth-child(3){display:none;}
+
+.nurse-content .section5 .wrapper-box{width:660px;}
+
+
+
+/*第二部分*/
+
+.nurse-content .part2-3 .videopage{width:735px;}
+
+.nurse-content  .videopage ol li:nth-child(1),.nurse-content .part2-3 .videopage ol li:nth-child(2),.nurse-content .part2-3 .videopage ol li:nth-child(3){display:inline-block;}
+
+
+
+
+
+}
+
+
+@media screen and (min-width:530px) and (max-width:750px){
+
+.nurse-content .section5 .wrapper-box{width:440px;}
+
+
+.nurse-content .part2-3 .videopage{width:360px;}
+.nurse-content .part2-3 .videopage ol li{display:inline-block;}
+
+
+}
+@media screen and (min-width:300px) and (max-width:530px){
+
+.nurse-content .section5 .wrapper-box{width:220px;}
+
+
+
+.nurse-content .part2-3 .videopage{width:360px;}
+
+.nurse-content .part2-3 .videopage ol li{display:inline-block;}
+
+
+}
+
+
+
+@media screen and (min-width:360px) and (max-width:750px){
+
+.nurse-content .section3 .section3-wrapper .videopage{width:360px;}
+.nurse-content .section3 .section3-wrapper .videopage ol li{display:inline-block;}
+
+
+}
+
+@media screen and (min-width:300px) and (max-width:360px){
+
+.nurse-content .section3 .section3-wrapper .videopage{width:auto;}
+.nurse-content .section3 .section3-wrapper .videopage ol li{display:inline-block;}
+
+}
+
+
+
+
+
+
+@media screen and (min-width:1024px) and (max-width:1400px){
+.bg{width:auto;}
+
+
+
+
+}
+
+
+@media screen and (min-width:667px) and (max-width:1024px){
+.bg{width:auto;}
+
+.nurse-content .section1 .section1-content{width:500px;padding:60px;}
+
+.nurse-content .public-lb ul .lis4-1 .textbox,.nurse-content .public-lb ul .lis4-5 .textbox{width:92%;padding: 5% 4% 3% 4%;right:0;margin:0;left:0;}
+
+.nurse-content .public-lb ul .lis4-1 .textbox p,.nurse-content .public-lb ul .lis4-2 .textbox p,.nurse-content .public-lb ul .lis4-5 .textbox p{font-size:24px;}
+
+
+
+.nurse-content .public-lb .lis .textbox{width:auto;position:static;}
+
+.nurse-content .public-lb .lis .textbox p{font-size:24px;}
+.nurse-content .public-lb .lis .textbox a{width:200px;}
+
+
+.nurse-content .part10{width:auto;padding:0 15px;}
+
+
+
+
+
+}
+
+@media screen and (min-width:300px) and (max-width:667px){
+.bg{width:auto;}
+
+.nurse-content .section1{height:650px;}
+.nurse-content .section1 img{margin:80px auto 0;}
+.nurse-content .section1,.nurse-content .section2,.nurse-content .section3{margin-bottom:40px;}
+.nurse-content .section1 .section1-content{width:auto;padding:20px;margin:50px auto 0;}
+.nurse-content .section1 .section1-content h1{font-size:36px;margin-bottom:30px;}
+.nurse-content .section1 .section1-content p{line-height:26px;font-size:20px;}
+.nurse-content .section2 .section2-news,.nurse-content .section3 .section3-news{width:auto;padding:30px 20px;}
+.nurse-content .section2 h2{font-size:36px;}
+.nurse-content .section2 p{line-height:26px;font-size:20px;}
+.nurse-content .section3 .section3-wrapper .wrapper-video .video-box .video-text{display:none;]}
+.nurse-content .section3 .section3-wrapper .videopage ul{margin-bottom:30px;}
+
+
+.nurse-content .section4 .section4-news{width:auto;}
+
+.nurse-content .public-lb{height:100%;}
+.nurse-content .public-lb ul li .textbox{height:100%;}
+.nurse-content .public-lb ul .lis4-1 .textbox{width:100%;padding: 5% 0 5% 0;right:0;position:static;}
+.nurse-content .public-lb ul .lis4-2 .textbox{position:static;}
+.nurse-content .public-lb ul .lis4-3 .textbox,.nurse-content .public-lb ul .lis4-4 .textbox,.nurse-content .public-lb ul .lis4-5 .textbox{width:auto;position:static;margin:0 auto;padding:20px;}
+
+.nurse-content .public-lb ul .lis4-1 .textbox p,.nurse-content .public-lb ul .lis4-2 .textbox p,.nurse-content .public-lb ul .lis4-5 .textbox p{font-size:20px;}
+.nurse-content .public-lb ul .lis4-5 .textbox h5{font-size:30px;}
+.nurse-content .public-lb .prev-btn{left:0;}
+.nurse-content .public-lb .next-btn{right:0;}
+
+
+.nurse-content .section5 .section5-bgnews .section5-text{width:auto;position:static;margin:0;color:#444;}
+
+
+.nurse-content .section5 .videowrapper,.nurse-content .section6 .section6-news,.nurse-content .section6 .section6-text{width:auto;}
+
+.nurse-content .section5 .section5-bgnews .shade-grad{display:none;}
+
+
+.nurse-content .public-lb .lis .textbox{width:auto;position:static;}
+.nurse-content .public-lb .lis .textbox p{font-size:20px;}
+.nurse-content .public-lb .lis .textbox a{width:150px;}
+
+
+
+.nurse-content .part10{width:auto;padding:0 15px;}
+.nurse-content .part10 .part10-left{margin-bottom:20px;}
+.nurse-content .part10 .part10-left,.nurse-content .part10 .part10-right{width:auto;float:none;}
+.nurse-content .part10-footer{width:auto;}
+
+/*第二部分*/
+
+.nurse-content .part2-2{padding:0;}
+.nurse-content .part-news{width:auto;}
+
+.nurse-content .part2-2 .part2-img,.nurse-content .part2-4 .part3-img,.nurse-content .part2-4 .part4-img,.nurse-content .part2-4 .part5-img,.nurse-content .part2-4 .part6-img,.nurse-content .part2-4 .part7-img,.nurse-content .part2-4 .part8-img{max-height:300px;background-size:100%;}
+
+
+.nurse-content .part0-footer{width:auto;margin:0;}
+
+
+
+.nurse-content .section6 .section6-news{height:auto;}
+.nurse-content .section6-text{width:auto;}
+.nurse-content .section0-text{width:auto;padding:30px 15px;}
+  
+  
+  
+.nurse-content .section6{position:static !important;}
+
+.nurse-content .section6 .hidbox,.nurse-content .hidbox .hidcontent .hidtext{position:static !important;margin:0 0 50px 0 !important;}
+.nurse-content .hidbox .hidcontent .hidimg{width:100% !important;position:static !important;}
+.nurse-content .hidbox .hidcontent{height:1200px !important;padding-top:0 !important;}
+.nurse-content .hidbox .hidcontent .animColours{display:none !important;}
+  
+  .nurse-content .part2-3 .wrapper-video .video-box .video-text,.nurse-content .part2-4 .open .LB-box{display:none !important;}
+
+.nurse-content .part2-4 .part4-text p{width:auto !important;}
+.nurse-content .part2-4 .part4-text img{width:100% !important;}
+
+}
+
+
+.nurse-content .clear{clear:both;}
+  
+</style>
+<div class="nurse">
+<div class="nurse-content">
+<div class="nurse-header">
+<ul class="header-makeup">
+<li><a href="#drhauschka-make-up" class="active Top">德国世家彩妆系列</a>
+<ul>
+<li><a href="#a-beauty-all-your-own">珍视您的个人魅力</a></li>
+<li><a href="#portrait-ailar">Ailar 个人简介</a></li>
+<li><a href="#complexion">肤色</a></li>
+<li><a href="#portrait-verena">Verena 个人简介</a></li>
+<li><a href="#eyes">双眸</a></li>
+<li><a href="#portrait-anne">Anne 个人简介</a></li>
+<li><a href="#lips">唇部</a></li>
+<li><a href="#portrait-fernanda">Fernanda 个人简介</a></li>
+<li><a href="#brushes">化妆扫</a></li>
+</ul>
+</li>
+<li><a href="#applying-and-experimenting-with-make-up" class="Top">化妆与体验</a>
+<ul>
+<li><a href="#international-make-up-artist-karim-sattar">国际专业化妆师Karim Sattar</a></li>
+<li><a href="#tutorials">美妆教程</a></li>
+<li><a href="#five-easy-to-create-looks">学会五中不同妆容</a></li>
+<li><a href="#what-makes-you-beautiful">是什么使您容光焕发？</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="make-up">
+
+
+<div class="all-section nursePart1">
+<div class="section1"><img src="https://cdn.hauschka.com/images/system/drhauschkaMakeUp/MalveFormWhite.svg" />
+<div class="section1-content">
+<h1>德国世家彩妆系列</h1>
+<p>德国世家彩妆系列，将专属你的灵秀天姿尽现容妆之上。让你的美，由内到外，尽情盛放。你的个性，完美诠释，无需隐藏。你的光彩，独树一帜，卓荦芳华</p>
+<p>请探索更多新品</p>
+</div>
+</div>
+<div class="section2 scroll-top0">
+<h2>珍视你的个人魅力</h2>
+<p>你的美，独一无二</p>
+<div class="section2-news">
+<h3>色彩与质地中的灵感</h3>
+<p>不断探索你独有的美丽新元素，体验不同的色彩，随心情展现不同的魅力妆容。</p>
+</div>
+<div class="hidbox">
+<div class="hidbg"></div>
+<div class="hidcontent">
+<div class="hidimg1 hidimg"><img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-Pigmente-PurpleRain-MoodGroup.png" /></div>
+<div class="hidimg2 hidimg"><img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-Pigmente-PurpleRain-Anthyllis.png" /></div>
+<div class="hidimg3 hidimg"><img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-Pigmente-PurpleRain-PlainGroup.png" /></div>
+<div class="hidimg4 hidimg"><img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-Pigmente-PurpleRain-Women.png" /></div>
+<div class="hidtext1 hidtext">
+<h4>丰富的色彩</h4>
+<p>德国世家彩妆系列将「产品种类」与「色彩主题」完美地整合，融为一体。在天然化妆品领域（经国际认证），我们的彩妆系列品质杰出，独一无二。</p>
+</div>
+<div class="hidtext2 hidtext">
+<h4>独一无二的彩妆</h4>
+<p>所有产品中均蕴含精选配方成分，如药疗植物萃取精华、珍贵的天然蜡&amp;油、矿物质色素。使用时，细腻的产品质地能够将自然的彩妆色调与您的天然肤色融为一体，打造出专属于您的独特魅力。</p>
+</div>
+<div class="hidtext3 hidtext">
+<h4>疗伤绒毛花</h4>
+<p>疗伤绒毛花的形态可随环境而变，是一种适应性很强的植物。在任何环境中，它都能欣欣向荣的茁壮生长。凭借这种天然的适应力，疗伤绒毛花作为护肤成分，展现出卓越的平衡调节力。它能够增强皮肤的自我修复力，保持柔软弹性，充满活力生机。</p>
+</div>
+<div class="hidtext4 hidtext">
+<h4>纯正天然美妆</h4>
+<p>所有德国世家美妆产品均经国际天然&amp;有机美妆协会「NATRUE」进行品质认证，绝不含人工合成香料、色素及防腐剂。</p>
+</div>
+<div class="gradiantBlue animColours"></div>
+<div class="gradiantRose animColours"></div>
+<div class="gradiantLilac animColours"></div>
+<div class="gradiantRose2 animColours"></div>
+<div class="gradiantRose3 animColours"></div>
+<div class="gradiantBrown"></div>
+</div>
+</div>
+<a></a></div>
+<div class="section3">
+<div class="section3-news">
+<h2>从创意到完整的彩妆系列</h2>
+<p>来自科研部、研发部与产品管理部的工作人员将为您介绍德国世家彩妆系列的独特之处。</p>
+</div>
+<div class="section3-wrapper">
+<div class="wrapper-video">
+
+
+	<div class="video-box show">
+		<div class="video-row">
+			<span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span> 
+			<img class="video-img" src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault0.jpg" />
+			<div class="video-text">
+				<h4>充满热情的研发</h4>
+				<p>如何用「灵感」，「知识」与「经验」创造出独特的配方&amp;产品</p>
+			</div>
+			<div class="shade-bg"></div>
+		</div>
+		<video id="videoPlay0" class="videoPlay" controls="controls" width="100%" >
+            <source src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/czvideo-1.mp4" type="video/mp4">
+        </video>
+	</div>
+	<div class="video-box">
+		<div class="video-row">
+			<span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span> 
+			<img class="video-img" src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault1.jpg" />
+			<div class="video-text">
+				<h4>充满活力的色彩</h4>
+				<p>用「药疗植物萃取精华」与「矿物质色素」打造出闪耀的个性之美。</p>
+			</div>
+			<div class="shade-bg"></div>
+		</div>
+		<video id="videoPlay1" class="videoPlay" controls="controls" width="100%" >
+            <source src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/czvideo-2.mp4" type="video/mp4">
+        </video>
+	</div>
+
+
+	<div class="video-box">
+		<div class="video-row">
+			<span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span> 
+			<img class="video-img" src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault2.jpg" />
+			<div class="video-text">
+				<h4>完美无瑕的呈现</h4>
+				<p>德国世家彩妆系列外包装拥有崭新的外形与色彩。</p>
+			</div>
+			<div class="shade-bg"></div>
+		</div>
+		<video id="videoPlay2" class="videoPlay" controls="controls" width="100%" >
+            <source src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/czvideo-3.mp4" type="video/mp4">
+        </video>
+
+	</div>
+
+</div>
+<div class="clear"></div>
+<div class="videopage">
+<ul>
+<li><span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span> <img class="video-img" src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault0.jpg" /></li>
+<li><span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span> <img class="video-img" src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault1.jpg" /></li>
+<li><span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span> <img class="video-img" src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault2.jpg" /></li>
+</ul>
+<div class="clear"></div>
+<ol>
+<li class="active"></li>
+<li></li>
+<li></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section4 scroll-top1">
+<div class="section4-news">
+<h3>Ailar 个人简介</h3>
+<p>Ailar出生于伊朗。还是小女孩时，她便随父母移居到挪威。如今，她居住在奥斯陆与伦敦。</p>
+<p>我们问Ailar：是什么使你如此美丽？</p>
+</div>
+<div class="section4-lb public-lb">
+<div class="swiper-container">
+<ul class="swiper-wrapper">
+<li class="swiper-slide lis4-1"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-PortraitAilar-Slide01.jpg" />
+<div class="textbox">
+<p><i>「轻松的魅力带来美丽的光彩。」</i></p>
+</div>
+</li>
+<li class="swiper-slide lis4-2"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-PortraitAilar-Slide02.jpg" />
+<div class="textbox">
+<p><i>「尝试浓郁的色彩，带给我很多乐趣。」</i></p>
+</div>
+</li>
+<li class="swiper-slide lis4-3"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-PortraitAilar-Slide03.jpg" />
+<div class="textbox">
+<h4>什么使你如此美丽？</h4>
+<p>「我们的世界正变得更加匆忙。而我却希望保持一颗轻松的内心。『泰然自若』即是我的魅力之源。在职场上，我游历各地，有机会结识各种不同的人。这种生活丰富着我的人生。我满怀好奇之心，用乐观开放的态度对待不同的人与事物。」</p>
+<p class="red">1</p>
+</div>
+</li>
+<li class="swiper-slide lis4-4"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-PortraitAilar-Slide04.jpg" />
+<div class="textbox">
+<h4>什么令你如此美丽？</h4>
+<p>「我有规律的进行运动，保持饮食的均衡、健康。同时，我重视使用含天然成分的美容护肤品。外出时，彩妆是我最好的陪伴。无论是在俱乐部或是在派对中，我热爱充满激情的舞蹈。在家里拥有好心情时，我会在客厅里打开音乐，随之而舞。」</p>
+<p class="red">2</p>
+</div>
+</li>
+<li class="swiper-slide lis4-5"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-PortraitAilar-Slide05.jpg" />
+<div class="textbox">
+<p><i>德国世家的彩妆系列能完美匹配各种自然肤色，轻松驾驭各种唇色&amp; 瞳孔颜色</i></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="next-btn swiper-button-next"></div>
+<div class="prev-btn swiper-button-prev"></div>
+<ol class="swiper-pagination"></ol>
+</div>
+</div>
+<div class="section5 section-pro0">
+<h2>Ailar使用的彩妆产品</h2>
+<div class="section5-wrapper">
+<div class="wrapper-box swiper-container0">
+
+
+
+
+
+
+<ul class="swiper-wrapper">
+     {% for product in collections.makeup-part-1.products %}
+              <li class="swiper-slide">
+               <h3>{{product.title}}</h3>
+               <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                <a href={{product.url}}><p>查看产品</p></a>
+              </li>
+     {% endfor %} 
+
+    
+</ul>
+
+
+
+
+
+
+
+</div>
+<div class="btn-right swiper-button-next0"></div>
+<div class="btn-left swiper-button-prev0"></div>
+<div class="swiper-pagination0"></div>
+</div>
+<h2>精彩魅力妆</h2>
+
+
+<div class="videowrapper videowrapper4">
+
+		<div class="video-row4">	
+
+			<img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault00.jpg" /> 
+			<span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span>
+			<div class="shade-bg"></div>
+		</div>
+
+		<video id="videoPlay4" controls="controls" width="100%" >
+        	<source src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/czvideo-4.mp4" type="video/mp4">
+        </video>
+
+</div>
+<a href="#" class="allvideo">所有视频</a>
+<div class="section5-bgnews"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-Transition-ElisabethSigmund-01.jpg" />
+<div class="section5-text">
+<p><i>「人类需要两种美，内在美和外在美。」</i></p>
+<span>伊丽莎白•西格蒙德，德国世家的创建者之一</span></div>
+<div class="shade-grad"></div>
+</div>
+</div>
+<div class="section6 scroll-top2 fuse">
+<div class="section6-wrapper">
+<h2>底妆</h2>
+<p>均衡的肤色能够衬托出更加美丽的容颜。</p>
+<div class="section6-news">
+<h3>和谐</h3>
+<p>粉底、遮瑕和蜜粉，这些产品将使您的肤色光彩焕发。</p>
+</div>
+<div class="hidbox">
+<div class="hidbg"></div>
+<div class="hidcontent">
+<div class="hidimg1 hidimg"><img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-Colours-Foundation-MoodGroup.png" /></div>
+<div class="hidimg2 hidimg"><img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-Colours-Foundation-WhitchHazel.png" /></div>
+<div class="hidimg3 hidimg"><img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-Colours-Foundation-Mood.png" /></div>
+<div class="hidtext1 hidtext">
+<h4>均衡</h4>
+<p>我们的「果芯养肤」底妆系列能够完美修饰&amp;平滑肌肤，均匀肤质，改善表面粗糙，同时减缓暗疮等皮肤瑕疵以及泛红现象。</p>
+</div>
+<div class="hidtext2 hidtext">
+<h4>独特</h4>
+<p>德国世家的「粉底」与「遮瑕」系列之间，色调相互统一。质地轻柔，易涂抹，能够与你的自然肤色融为一体。精致的「蜜粉」与「腮红」能减少肌肤油光，令妆容持久，充满活力。</p>
+</div>
+<div class="hidtext3 hidtext">
+<h4>金缕梅的神奇力量</h4>
+<p>金缕梅遵从着自己独特的生长节奏。不同于其他灌木植物，它在冬季，临寒盛放，开放出芳香浓郁的黄色花朵，好似闪亮的小星星洒满枝头。而当夏季果实成熟之时，它的上萼会弹开，将种子抛洒至数米之外。</p>
+</div>
+<div class="gradiantRose animColours"></div>
+<div class="gradiantSand animColours"></div>
+<div class="gradiantRose2 animColours"></div>
+<div class="gradiantYellow"></div>
+</div>
+</div>
+<a></a></div>
+</div>
+
+
+
+
+
+<div class="section6-text scroll-top3 fusebottom">
+<h3>Verena 个人简介</h3>
+<p>Verena热爱她的花园和猫咪。她作为演员&amp;导演，居住在科隆。</p>
+<p>我们问Verena：什么使您如此美丽？</p>
+</div>
+<div class="section6-lb public-lb">
+<div class="swiper-container">
+<ul class="swiper-wrapper">
+<li class="swiper-slide lis4-1"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-PortraitVerena-Slide01.jpg" />
+<div class="textbox">
+<p><i>「我懂得珍爱自我」</i></p>
+</div>
+</li>
+<li class="swiper-slide lis4-2"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-PortraitVerena-Slide02.jpg" />
+<div class="textbox">
+<p><i>「我非常喜爱彩妆，也常常为自己化妆。彩妆，如同我的幽默感和乐观精神一样，也是属于我的一部分。」</i></p>
+</div>
+</li>
+<li class="swiper-slide lis4-3"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-PortraitVerena-Slide03.jpg" />
+<div class="textbox">
+<h4>什么使您如此美丽？</h4>
+<p>「我就是我，懂得如何珍爱自己。我认为必须先学会认清自身的极限，接受并且尊重TA，坦诚地面对自己和他人，这样会令我感到快乐。同时，也能从中获得自我认同——我相信，这一点每个人都能感受到。我并不喜欢静静地坐着。“动起来”，才是属于我的生活方式」</p>
+<p class="red">1</p>
+</div>
+</li>
+<li class="swiper-slide lis4-4"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-PortraitVerena-Slide04.jpg" />
+<div class="textbox">
+<h4>什么使您如此美丽？</h4>
+<p>「我喜欢简单积极的生活，从中得到休养生息。例如，替花园除草、翻土，就能帮助我恢复精力、获得能量。而最让我感到身心放松的时刻，就是静静凝视着熟睡中的猫咪。这时，我能让自己敞开心扉，放下一切。是的，这些都是让生活变得美丽的幸福时刻。」</p>
+<p class="red">2</p>
+</div>
+</li>
+<li class="swiper-slide lis4-5"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-PortraitVerena-Slide05.jpg" />
+<div class="textbox">
+<h5>平衡却不失个性</h5>
+<p><i>充满活力的光彩，轻盈柔和的质地。「果芯养肤」系列与你的自然肤色融合一体。</i></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="next-btn swiper-button-next"></div>
+<div class="prev-btn swiper-button-prev"></div>
+<ol class="swiper-pagination"></ol>
+</div>
+<div class="section5 section-pro1">
+<h2>Verena使用的彩妆产品</h2>
+<div class="section5-wrapper">
+<div class="wrapper-box swiper-container0">
+
+
+
+
+<ul class="swiper-wrapper">
+     {% for product in collections.makeup-part-2.products %}
+              <li class="swiper-slide">
+               <h3>{{product.title}}</h3>
+               <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                <a href={{product.url}}><p>查看产品</p></a>
+              </li>
+     {% endfor %} 
+
+    
+</ul>
+
+
+
+
+
+
+</div>
+<div class="btn-right swiper-button-next0"></div>
+<div class="btn-left swiper-button-prev0"></div>
+<div class="swiper-pagination0"></div>
+</div>
+<h2>无瑕肤色</h2>
+
+
+
+
+<div class="videowrapper videowrapper5">
+
+		<div class="video-row5">	
+			<img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault-1.jpg" /> 
+			<span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span>
+			<div class="shade-bg"></div>
+		</div>
+
+		<video id="videoPlay5" controls="controls" width="100%" >
+        	<source src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/czvideo-5.mp4" type="video/mp4">
+        </video>
+
+
+
+</div>
+<a href="#" class="allvideo">所有视频</a>
+<div class="section5-bgnews"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-Transition-ElisabethSigmund-02.jpg" />
+<div class="section5-text">
+<p><i>「彩妆应打造『和谐之美』，而非『改造之美』。」</i></p>
+<span>伊丽莎白•西格蒙德，德国世家的创建者之一</span></div>
+<div class="shade-grad"></div>
+</div>
+</div>
+<div class="section6 scroll-top4 eyes">
+<div class="section6-wrapper">
+<h2 style="color: #92a494;">眼妆</h2>
+<p>明亮或深邃，温暖或冷艳，珠光或哑光 – 这真可谓是一场「色彩」与「质地」间的光影游戏</p>
+<div class="section6-news">
+<h3>打开双眸，迎接新的灵感</h3>
+<p>眼影、眼线笔、眼线液和睫毛膏，这些产品将描绘出你独特的魅力。</p>
+</div>
+<div class="hidbox">
+<div class="hidbg"></div>
+<div class="hidcontent">
+<div class="hidimg1 hidimg"></div>
+<div class="hidimg2 hidimg"><img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-Texture-Eyes-MoodGroup.png" /></div>
+<div class="hidimg3 hidimg"><img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-Texture-Eyes-Euphrasia.png" /></div>
+<div class="hidimg4 hidimg"><img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-Texture-Eyes-Mood.png" /></div>
+<div class="hidtext1 hidtext">
+<h4>眼影</h4>
+<p>蓝宝石与翡翠，青金石与碧玺。德国世家「金石焕彩」眼影系列，以丝般柔滑质地，点亮你的双眸色彩。三色眼影组合，汲取自然灵感，精心调配出各种宝石色彩组。当然，你也可以按个人爱好与其它单色眼影搭配使用。</p>
+</div>
+<div class="hidtext2 hidtext">
+<h4>珍贵的植物蜡</h4>
+<p>眼线笔致力于打造完美的眼部轮廓。其成分中蕴含珍贵的木梨蜡和巴西棕榈蜡。特配的海绵刷头能打造出柔和的晕染效果。作为眼妆的最后一步，你可以选择使用「花样招展羽扇睫毛膏」或「花样丽姿纤长睫毛膏」。不仅能为眼部增添明丽的色彩，同时滋养、加固每一根睫毛。</p>
+</div>
+<div class="hidtext3 hidtext">
+<h4>温和、舒缓、减缓刺激：小米草</h4>
+<p>小米草，这位草地上的植物原住民，身高仅有10至30厘米高。形似小兰花，花开白色或浅紫。每逢花期，最特别的是它花朵上的黄色小斑，好似一双双闪闪发光的小眼睛。小米草萃取精华以其镇静、舒缓、消肿之功效而闻名。</p>
+</div>
+<div class="gradiantRose animColours"></div>
+<div class="gradiantLilac animColours"></div>
+<div class="gradiantYellow"></div>
+</div>
+</div>
+<a></a></div>
+</div>
+<div class="section6-text scroll-top5 eyesbottom">
+<h3 style="color: #92a494;">Anne 个人简介</h3>
+<p>Anne居住于阿姆斯特丹，正在接受职业护士培训。</p>
+<p>我们问Anne：什么使您如此美丽？</p>
+</div>
+<div class="section6-lb public-lb">
+<div class="swiper-container">
+<ul class="swiper-wrapper">
+<li class="swiper-slide lis4-1"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-PortraitAnne-Slide01.jpg" />
+<div class="textbox">
+<p><i>「『奉献』，让我的生活愈加美丽」</i></p>
+</div>
+</li>
+<li class="swiper-slide lis4-2"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-PortraitAnne-Slide02.jpg" />
+<div class="textbox">
+<p><i>「我喜欢让自己置身在大自然中，在那里，一切都如此美好」</i></p>
+</div>
+</li>
+<li class="swiper-slide lis4-3"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-PortraitAnne-Slide03.jpg" />
+<div class="textbox">
+<h4>什么使你如此美丽？</h4>
+<p>「小事情就可以带给我快乐：友善的言语，微微的一笑，或者清晨的阳光。不需要很多吗，我就可以拥有一个好心情。我相信美丽是「内在的心态」与「外部环境」的结合。为他人服务，让我感到充实。当我还是小孩子时，就向往成为一名护士。不久的将来，我终于可以从事这一行业——对我来说，这就是美好的事情」</p>
+<p class="red">1</p>
+</div>
+</li>
+<li class="swiper-slide lis4-4"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-PortraitAnne-Slide04.jpg" />
+<div class="textbox">
+<h4>什么使您如此美丽？</h4>
+<p>「我相信，回馈我们生活的世界，是一件很重要的事。因此，我愿意在私人生活和工作中、在与自然友好相处&amp;地球资源的使用过程中，担负起自身的责任。绿色是我最钟爱的颜色，也是我最喜爱的眼妆色彩。它能衬托出我的蓝眼睛和红头发，配以一点点睫毛膏和柔和的唇彩，就能带给我美的享受体验」</p>
+<p class="red">2</p>
+</div>
+</li>
+<li class="swiper-slide lis4-5"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-PortraitAnne-Slide05.jpg" />
+<div class="textbox">
+<h5>尽显整体之美</h5>
+<p><i>用丰富的色彩打造从「自然婉约妆」到「魅力晚宴妆」的多款妆容体验</i></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="next-btn swiper-button-next"></div>
+<div class="prev-btn swiper-button-prev"></div>
+<ol class="swiper-pagination"></ol>
+</div>
+<div class="section5 section-pro0">
+<h2>Anne使用的彩妆产品</h2>
+<div class="section5-wrapper">
+<div class="wrapper-box swiper-container0">
+
+
+<ul class="swiper-wrapper">
+     {% for product in collections.makeup-part-3.products %}
+              <li class="swiper-slide">
+               <h3>{{product.title}}</h3>
+               <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                <a href={{product.url}}><p>查看产品</p></a>
+              </li>
+     {% endfor %} 
+
+    
+</ul>
+
+
+
+
+</div>
+<div class="btn-right swiper-button-next0"></div>
+<div class="btn-left swiper-button-prev0"></div>
+<div class="swiper-pagination0"></div>
+</div>
+<h2>精彩睫毛妆</h2>
+<div class="videowrapper videowrapper6">
+
+	<div class="video-row6">
+		<img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault-2.jpg" /> <span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span>
+		<div class="shade-bg"></div>
+	
+	</div>
+	<video id="videoPlay6" controls="controls" width="100%" >
+	      <source src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/czvideo-6.mp4" type="video/mp4">
+	</video>
+
+
+
+
+
+</div>
+<a href="#" class="allvideo">所有视频</a>
+<div class="section5-bgnews"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-Transition-ElisabethSigmund-03.jpg" />
+<div class="section5-text">
+<p><i>「不仅仅是眉毛，人的整体面部结构亦是独一无二的，是我们『个性』的体现。」</i></p>
+<span>伊丽莎白•西格蒙德，德国世家的创建者之一</span></div>
+<div class="shade-grad"></div>
+</div>
+</div>
+
+
+<div class="section6 scroll-top6 chunbu">
+<div class="section6-wrapper">
+<h2 style="color: #ce0517;">唇妆</h2>
+<p>增添魅力，却不掩盖你的自然光泽</p>
+<div class="section6-news">
+<h3>从「柔和的光泽」到「浓郁的色彩」</h3>
+<p>花容滋润唇膏、玫瑰菁亮唇膏、浆果水光唇蜜满足你的各种唇色想象。</p>
+</div>
+<div class="hidbox">
+<div class="hidbg"></div>
+<div class="hidcontent">
+<div class="hidimg1 hidimg"><img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-Texture-Lips-MoodGroup.png" /></div>
+<div class="hidimg2 hidimg"><img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-Texture-Lips-Plant.png" /></div>
+<div class="hidimg3 hidimg"><img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-Texture-Lips-Plant-2.png" /></div>
+<div class=" hidtext hidtext1">
+<h4>透明、丰盈或闪亮</h4>
+<p>粉红色，浆果色，杏色，红色和棕色。每款主题色彩都拥有浅、中、深不同色调的唇膏以供挑选。这样，你就能够在保持自我风格的同时有所改变。玫瑰菁亮唇膏系列，精选六款玫瑰主题的鲜花色调，令双唇散发柔和的花瓣光泽。浆果水光唇蜜，果香四溢，水漾亮泽，亦有六款色调供选。</p>
+</div>
+<div class="hidtext2 hidtext">
+<h4>玫瑰花、玫瑰果和疗伤绒毛花</h4>
+<p>产品配方中蕴含荷荷巴油、杏仁油等珍贵的天然成分，不仅滋润双唇，亦有修护功效。精心萃取出的玫瑰花、玫瑰果和疗伤绒毛花等药疗植物精华将为双唇带来勃勃生机&amp;娇艳活力。</p>
+</div>
+<div class="hidtext3 hidtext">
+<h4>充满活力的玫瑰果</h4>
+<p>秋季，蔷薇果正在林中&amp;路边散发出夺目的鲜红光泽。积聚了一整个夏天的鲜活能量，此刻，它们饱满地高挂枝头，颗颗饱含维生素C和矿物质，再以德国世家独特的律动萃取工艺提取精心提取，滋养娇嫩双唇，令双唇尽显生机与活力。</p>
+</div>
+<div class="gradiantRose animColours"></div>
+<div class="gradiantRose2 animColours"></div>
+<div class="gradiantRose3"></div>
+<div class="gradiantLilac animColours"></div>
+</div>
+</div>
+<a></a></div>
+</div>
+
+
+<div class="section6-text scroll-top7 chunbubottom">
+<h3 style="color: #ce0517;">Fernanda 个人简介</h3>
+<p>Fernanda 出生于巴西，曾多年生活在爱尔兰，现居住于柏林。</p>
+<p>我们问Anne：什么使您如此美丽？</p>
+</div>
+<div class="section6-lb public-lb box-color0">
+<div class="swiper-container">
+<ul class="swiper-wrapper">
+<li class="swiper-slide lis4-1"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-PortraitFernanda-Slide01.jpg" />
+<div class="textbox">
+<p><i>「我喜欢轻松的感受」</i></p>
+</div>
+</li>
+<li class="swiper-slide lis4-2"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-PortraitFernanda-Slide02.jpg" />
+<div class="textbox">
+<p><i>「我用彩妆来表达自己的心情。在不同的心情、天气或场合之下，我会随时改变彩妆的浓淡与色彩。」</i></p>
+</div>
+</li>
+<li class="swiper-slide lis4-3"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-PortraitFernanda-Slide03.jpg" />
+<div class="textbox">
+<h4>什么使您如此美丽？</h4>
+<p>「心态非常重要。因此，我保持乐观的心情。我喜欢笑，并用轻松的心态迎接挑战。全情投入地完成每一件事，这样在生活中就拥有了很多充实的时刻。我坚信，人们能够感受并看到我从内而外散发出的光彩」</p>
+<p class="red">1</p>
+</div>
+</li>
+<li class="swiper-slide lis4-4"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-PortraitFernanda-Slide04.jpg" />
+<div class="textbox">
+<h4>什么使您如此美丽？</h4>
+<p>「我的生活节奏很快且充满活力。我喜欢多变的状态，因此，活动执行经理这个职位非常适合我。我享受与同事们一起实现创意，打造精彩的瞬间。我的职业与爱好常常互通。丰富多彩的生活让我从不感到无聊。」</p>
+<p class="red">2</p>
+</div>
+</li>
+<li class="swiper-slide lis4-5"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-PortraitFernanda-Slide05.jpg" />
+<div class="textbox">
+<h5>「红色」并非只是「红色」</h5>
+<p><i>德国世家的彩妆色调能够与您的天然唇色融合一体，打造出专属于您的独特魅力。</i></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="next-btn swiper-button-next"></div>
+<div class="prev-btn swiper-button-prev"></div>
+<ol class="swiper-pagination"></ol>
+</div>
+<div class="section5 section-pro0">
+<h2>Fernanda使用的彩妆产品</h2>
+<div class="section5-wrapper">
+<div class="wrapper-box swiper-container0">
+
+
+
+
+
+<ul class="swiper-wrapper">
+     {% for product in collections.makeup-part-4.products %}
+              <li class="swiper-slide">
+               <h3>{{product.title}}</h3>
+               <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                <a href={{product.url}}><p>查看产品</p></a>
+              </li>
+     {% endfor %} 
+
+    
+</ul>
+
+
+
+
+
+</div>
+<div class="btn-right swiper-button-next0"></div>
+<div class="btn-left swiper-button-prev0"></div>
+<div class="swiper-pagination0"></div>
+</div>
+<h2>魅力红唇妆</h2>
+
+
+
+<div class="videowrapper videowrapper7">
+
+	<div class="video-row7">
+		
+		<img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault-4.jpg" /> 
+		<span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span>
+		<div class="shade-bg"></div>
+
+	
+	</div>
+	<video id="videoPlay7" controls="controls" width="100%" >
+	      <source src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/czvideo-7.mp4" type="video/mp4">
+	</video>
+
+</div>
+<a href="#" class="allvideo">所有视频</a>
+<div class="section5-bgnews"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-Transition-ElisabethSigmund-04.jpg" />
+<div class="section5-text">
+<p><i>如今，一款美丽的彩妆也应具有相应的护肤功效。」</i></p>
+<span>伊丽莎白•西格蒙德，德国世家的创建者之一</span></div>
+<div class="shade-grad"></div>
+</div>
+</div>
+<div class="section6 scroll-top8 hzs">
+<div class="section6-wrapper">
+<h2 style="color: #fe7471;">化妆刷</h2>
+<p>适用于涂抹粉底、蜜粉、胭脂、眼影和唇膏。精致、精准，好用，易清洁。</p>
+<div class="section6-news">
+<h3>专业水平</h3>
+<p>化妆刷打造出完美的妆容。</p>
+</div>
+<div class="hidbox">
+<div class="hidbg"></div>
+<div class="hidcontent">
+<div class="hidtext1 hidtext">
+<p> 为搭配德国世家彩妆系列，我们选用了「珍贵木料」与「合成纤维软毛」为材质，研发出独特的德国世家系列化妆刷。它们便于使用，效果精准。用化妆刷上妆，会令粉底和唇膏的妆效加精致自然，妆容持久</p>
+</div>
+<div class="hidpro">
+<div class="hzs-pro1"><img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-BrushRange-PowderBrush.jpg" />
+<h4>蜜粉刷</h4>
+<p>斜角刷头打造均匀、空气感的定妆效果</p>
+</div>
+<div class="hzs-pro2"><img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-BrushRange-EyeshadowBlenderBrush.jpg" />
+<h4>眼影刷</h4>
+<p>适用于各种色调&amp;质地的眼影涂抹和晕染</p>
+</div>
+<div class="hzs-pro3"><img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-BrushRange-FoundationBrush.jpg" />
+<h4>粉底刷</h4>
+<p>粉底上妆的理想工具</p>
+</div>
+<div class="hzs-pro4"><img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-BrushRange-EyeDefinerBrush.jpg" />
+<h4>眼线刷</h4>
+<p>短款刷头，精准勾勒出对比色调</p>
+</div>
+<div class="hzs-pro5"><img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-BrushRange-BlusherBrush.jpg" />
+<h4>腮红刷</h4>
+<p>郁金香花型刷头。令色彩晕染更精准出色</p>
+</div>
+<div class="hzs-pro6"><img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_1/DrHauschka-MakeUp-BrushRange-LipBrush.jpg" />
+<h4>唇刷</h4>
+<p>打造完美唇妆</p>
+</div>
+</div>
+</div>
+</div>
+<a></a></div>
+</div>
+<div class="section0-text hzsbottom">
+<h2>展现您的整体之美</h2>
+<p>「自然妆」或「晚宴妆」- 究竟哪一款更适合今天的你？我们将分步为你展示德国世家的五款妆容。</p>
+</div>
+<div class="section6-lb public-lb">
+<div class="swiper-container">
+<ul class="swiper-wrapper">
+<li class="swiper-slide lis0 lis"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-TeaserLook-MysteriousEyes.jpg" />
+<div class="textbox">
+<p><i>魅惑电眼妆</i></p>
+<p><i>魅力深邃，极富表现力与神秘感。</i></p>
+<a href="#">To the Look</a></div>
+</li>
+<li class="swiper-slide lis0 lis"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-TeaserLook-PureElegance.jpg" />
+<div class="textbox">
+<p><i>纯净优雅妆 </i></p>
+<p><i>优雅、经典、容光焕发。</i></p>
+<a href="#">To the Look</a></div>
+</li>
+<li class="swiper-slide lis0 lis"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-TeaserLook-EffortlessBeauty.jpg" />
+<div class="textbox">
+<p><i>轻松休闲妆</i></p>
+<p><i>柔和、自然、清新。</i></p>
+<a href="#">To the Look</a></div>
+</li>
+<li class="swiper-slide lis0 lis"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-TeaserLook-BigSensation.jpg" />
+<div class="textbox">
+<p><i>亮丽风情妆</i></p>
+<p><i>极富表现力、现代感与创意 </i></p>
+<a href="#">To the Look</a></div>
+</li>
+<li class="swiper-slide lis1 lis"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/DrHauschka-MakeUp-TeaserLook-YourNude.jpg" />
+<div class="textbox">
+<p><i>个性裸妆</i></p>
+<p><i>纯净、雅致、和谐。</i></p>
+<a href="#">To the Look</a></div>
+</li>
+</ul>
+</div>
+<div class="next-btn swiper-button-next"></div>
+<div class="prev-btn swiper-button-prev"></div>
+<ol class="swiper-pagination"></ol>
+</div>
+<div class="part10">
+<div class="part10-left">
+<h3>完美的线条</h3>
+
+
+
+			<div class="videowrapper videowrapper8">
+					<div class="video-row8">
+
+							<img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault-5.jpg" /> 
+							<span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span>
+							<div class="shade-bg"></div>
+					</div>
+
+					 <video id="videoPlay8" controls="controls" width="100%" >
+		                <source src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/czvideo-8.mp4" type="video/mp4">
+		            </video>
+
+
+
+			</div>
+</div>
+<div class="part10-right">
+<h3>均衡与塑形</h3>
+
+
+
+		<div class="videowrapper videowrapper9">
+			<div class="video-row9">
+
+					<img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault.jpg" /> 
+					<span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span>
+					<div class="shade-bg"></div>
+			</div>
+
+			<video id="videoPlay9" controls="controls" width="100%">
+                <source src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/czvideo-9.mp4" type="video/mp4">
+            </video>
+
+
+		</div>
+</div>
+<div class="clear"></div>
+<a href="#" class="part10-btn">所有视频</a>
+<div class="part10-footer">点击这里，下载德国世家美妆册页。</div>
+</div>
+
+
+</div>
+
+
+
+
+<div class="all-section nursePart2">
+<div class="section1 part2-1"><img class="pic2" src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/MalveFormPurple.svg" />
+<div class="section1-content">
+<h1>化妆与体验</h1>
+<p>神秘眼神妆、纯净优雅妆、轻松休闲妆、亮丽风情妆和个性裸妆。遵循下面的美妆技巧与指导，您也能够拥有如此美丽的妆容。</p>
+</div>
+</div>
+<div class="part2-2 animate0">
+<div class="part-news">
+<h1>国际专业化妆师<br />Karim Sattar</h1>
+<p>国际专业化妆师Karim Sattar善于瞬间抓住优势与特点， 并将其打造的更加完美。</p>
+<h2>专业化妆师的美妆技巧</h2>
+<p>在这里，他将为我们展示完美妆容的技巧。</p>
+</div>
+
+
+
+
+<div class="allpart mz">
+
+<div class="part2-img"></div>
+
+<div class="hidbox">
+<div class="hidbg"></div>
+<div class="hidcontent">
+        <div class="hidimg1 hidimg"><img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-International-MakeUp-Artist-Eyes.png" /></div>
+        <div class="hidimg2 hidimg"><img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-International-MakeUp-Artist-Lips.png" /></div>
+        <div class="hidimg3 hidimg"><img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-International-MakeUp-Artist-Anthyllis.png" /></div>
+
+
+        <div class="hidtext1 hidtext">
+            <h4>协调搭配眼影色彩</h4>
+            <p>德国世家金石焕彩三色眼影组中，精选调配了三种深、浅、中，眼妆搭配色调。请将组合中最浅的色调涂抹于眼睑至眼眉下方区域。最深的色调涂抹于外眼角至眼褶处，或下眼线下方。中间色调可涂抹于眼睑的中间部位。为了使妆效更加自然，请使用眼影刷将色彩过渡区晕开。</p>
+        </div>
+        <div class="hidpro1 hidpro">
+            <div class="hidpro-news">
+              <h5>金石焕彩三色眼影组</h5>
+              <span>04 玫瑰猫眼</span>
+            </div>
+            <img src="http://cdn.hauschka.com/images/hongkong/tc/products/fullsize/Make-up-Eyeshadow-Trio-04.jpg">
+            <a class="hidpro-link" href="/products/eyeshadow-trio" target="_block">查看产品</a>
+        </div>
+        <div class="hidtext2 hidtext">
+            <h4>悉心打造美丽双唇</h4>
+            <p>请做出微笑姿态。紧绷的双唇更易于色彩描画。请先使用珠瑰点绛唇线笔。如果你希望选择使用较浓重的色彩，请勿只描画唇形，而是整个唇部。随后，尽量使用唇刷将选好的唇膏仔细地涂满双唇。</p>
+        </div>
+        <div class="hidpro2 hidpro">
+            <div class="hidpro-news">
+                <h5>珠瑰点绛双头唇线笔 </h5>
+                <span> 05 檀香木</span>
+            </div>
+            <img src="http://cdn.hauschka.com/images/hongkong/tc/products/fullsize/Make-up-Lip-Liner-05.jpg">
+            <a class="hidpro-link" href="/products/lip-liner" target="_block">查看产品</a>
+        </div>
+        <div class="hidtext3 hidtext">
+            <h4>四种色调打造出均匀的肤色</h4>
+            <p>蜜粉除了定妆外，其实还可以有很多其它的用途。德国世家修容养肤迷彩蜜粉饼拥有四种不同的色调，能轻松减少油光、均匀各种肤色，带来饱满、柔软的“丝绒肌”肤感享受。同时，这款产品也是修饰调整色素沉淀和肌肤红血丝的不二之选。</p>
+        </div>
+        <div class="hidpro3 hidpro">
+            <div class="hidpro-news">
+                <h5>修容养肤迷彩蜜粉饼 </h5>
+                <span></span>
+            </div>
+            <img src="http://cdn.hauschka.com/images/hongkong/tc/products/fullsize/Make-up-Colour-Correcting-Powder.jpg">
+             <a class="hidpro-link" href="/products/colour-correcting-powder" target="_block">查看产品</a>
+        </div>
+        <div class="gradiantRose animColours"></div>
+        <div class="gradiantRose2"></div>
+        <div class="gradiantLilac animColours"></div>
+        <div class="bottombg"></div>
+    </div>
+</div>
+
+
+
+
+<a class="part2-link0"></a>
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="part2-3 animate1 mzbottom">
+<div class="part-news">
+<h1>美妆教程</h1>
+<p>分步化妆指导</p>
+</div>
+
+<div class="wrapper-video">
+
+
+	
+
+	<div class="video-box show">
+
+		<div class="video-hzrow">
+				<span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span>
+				 <img class="video-img" src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault.jpg" />
+				<div class="video-text">
+				<h4>无瑕的肤色</h4>
+				<p>如何用「灵感」、「知识」与「经验」创造出独特的配方及产品。</p>
+			</div>
+
+			<div class="shade-bg"></div>
+		</div>
+
+		<video id="videoPlayhz0" class="videoPlayhz" controls="controls" width="100%" >
+            <source src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/hzvideo-0.mp4" type="video/mp4">
+        </video>
+
+
+
+	</div>
+
+
+
+
+
+
+<div class="video-box">
+
+		<div class="video-hzrow">
+			<span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span> <img class="video-img" src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault-1.jpg" />
+			<div class="video-text">
+			<h4>充满活力的色彩</h4>
+			<p>用「药疗植物萃取精华」与「矿物质色素」打造出闪耀的个性之美。</p>
+			</div>
+			<div class="shade-bg"></div>
+		</div>
+		<video id="videoPlayhz1" class="videoPlayhz" controls="controls" width="100%" >
+            <source src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/hzvideo-1.mp4" type="video/mp4">
+        </video>
+</div>
+
+
+<div class="video-box">
+
+		<div class="video-hzrow">
+			<span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span> <img class="video-img" src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault-2.jpg" />
+			<div class="video-text">
+			<h4>完美无瑕的呈现</h4>
+			<p>德国世家彩妆系列外包装拥有崭新的外形与色彩。</p>
+			</div>
+			<div class="shade-bg"></div>
+
+		</div>
+
+		<video id="videoPlayhz2" class="videoPlayhz" controls="controls" width="100%" >
+            <source src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/hzvideo-2.mp4" type="video/mp4">
+        </video>
+
+</div>
+
+
+
+
+
+<div class="video-box">
+
+		<div class="video-hzrow">
+			<span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span> <img class="video-img" src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault-3.jpg" />
+			<div class="video-text">
+			<h4>完美无瑕的呈现</h4>
+			<p>德国世家彩妆系列外包装拥有崭新的外形与色彩。</p>
+			</div>
+			<div class="shade-bg"></div>
+		</div>
+
+		<video id="videoPlayhz3" class="videoPlayhz" controls="controls" width="100%" >
+            <source src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/hzvideo-3.mp4" type="video/mp4">
+        </video>
+
+</div>
+
+
+
+<div class="video-box">
+		<div class="video-hzrow">
+			<span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span> 
+
+			<img class="video-img" src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault-4.jpg" />
+			<div class="video-text">
+			<h4>完美无瑕的呈现</h4>
+			<p>德国世家彩妆系列外包装拥有崭新的外形与色彩。</p>
+			</div>
+			<div class="shade-bg"></div>
+		</div>
+
+		<video id="videoPlayhz4" class="videoPlayhz" controls="controls" width="100%" >
+            <source src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/czvideo-4.mp4" type="video/mp4">
+        </video>
+
+</div>
+
+
+
+
+
+<div class="video-box">
+		<div class="video-hzrow">
+			<span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span>
+			 <img class="video-img" src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault-5.jpg" />
+			<div class="video-text">
+			<h4>完美无瑕的呈现</h4>
+			<p>德国世家彩妆系列外包装拥有崭新的外形与色彩。</p>
+			</div>
+			<div class="shade-bg"></div>
+		</div>
+
+		<video id="videoPlayhz5" class="videoPlayhz" controls="controls" width="100%" >
+            <source src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/czvideo-5.mp4" type="video/mp4">
+        </video>
+
+
+</div>
+
+
+</div>
+<div class="clear"></div>
+<div class="video-box">
+<div class="videopage">
+<ul>
+<li><span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span> <img class="video-img" src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault.jpg" /></li>
+<li><span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span> <img class="video-img" src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault-1.jpg" /></li>
+<li><span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span> <img class="video-img" src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault-2.jpg" /></li>
+<li><span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span> <img class="video-img" src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault-3.jpg" /></li>
+<li><span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span> <img class="video-img" src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault-4.jpg" /></li>
+<li><span class="play"><img src="http://cdn.hauschka.com/images//system/drhauschkaMakeUp/btnPlayWhite.svg" /></span> <img class="video-img" src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/maxresdefault-5.jpg" /></li>
+</ul>
+<div class="clear"></div>
+<ol>
+<li class="active"></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+</div>
+<div class="btn-right"></div>
+<div class="btn-left"></div>
+</div>
+</div>
+
+
+
+
+<div class="part2-4 animate2">
+<div class="part-news">
+<h1>学画五种不同妆容</h1>
+<p>德国世家彩妆指导</p>
+<h2>轻松休闲妆</h2>
+<p>柔和、均衡、清新。<br />分步打造适合各种场合的简约妆容。</p>
+</div>
+
+
+<div class="allpart xxz">
+
+<div class="part4-img"></div>
+
+<div class="hidbox">
+<div class="LB-box">
+    <div class="part4LB swiper-container1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>轻松休闲妆</h3>
+                  <p>选出与你肤色相配的德国世家粉底，进行打底。随后在粉底上使用修容养肤迷彩蜜粉饼与果芯养肤提亮棒。请使用眉睫生姿造型啫喱为眉毛塑形</p>
+                </div>
+                <div class="slide-box">
+                    <img class="slide-pic" src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-Step0-LookCard.jpg">
+                </div>
+                <div class="slide-box">
+                    <img class="slide-pic" src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-Step0-Mood.jpg">
+                </div>
+            </div>
+                  
+
+
+{% for product in collections.make-up.products %}
+ {% if product.handle == 'eye-definer' %}
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>轻松休闲妆</h3>
+                  <b>1.</b>
+                  <p>使用花样顾盼眼线笔 04 为上眼睑部位打底&小心晕开。</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+                
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>04 绿色</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                 
+            </div>
+
+{% endif %}
+{% endfor %}
+
+
+{% for product in collections.make-up.products %}
+
+ {% if  product.handle == 'eyeshadow-trio' %}
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>轻松休闲妆</h3>
+                  <b>2.</b>
+                  <p>将金石焕彩三色眼影组02 玉翡翠中最深的色调涂抹在上下外眼角</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>02 玉翡翠</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                 
+            </div>
+{% endif %}
+{% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle == 'eyeshadow-trio' %}
+
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>轻松休闲妆</h3>
+                  <b>3.</b>
+                  <p>将金石焕彩三色眼影组02 玉翡翠色的中间色调涂抹于上眼睑中部</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>02 玉翡翠</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+              
+
+            </div>
+   {% endif %}
+   {% endfor %}
+
+{% for product in collections.make-up.products %}
+ {% if product.handle == 'eyeshadow-trio' %}
+
+             <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>轻松休闲妆</h3>
+                  <b>4.</b>
+                  <p>将金石焕彩三色眼影组02 玉翡翠色中的最浅的色调涂抹在眉毛下方</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+               
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>02 玉翡翠</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                
+            </div>
+
+ {% endif %}
+ {% endfor %}
+
+ {% for product in collections.make-up.products %}
+{% if product.handle contains 'liquid-eyeliner' %}
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>轻松休闲妆</h3>
+                  <b>5.</b>
+                  <p>为获得精致的睫毛效果，请用花样丽姿眼线液 01 黑色勾画出一条细致的上眼线</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>01 黑色</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+
+            </div>
+
+ {% endif %}
+ {% endfor %}
+
+ {% for product in collections.make-up.products %}
+{% if product.handle == 'defining-mascara' %}
+             <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>轻松休闲妆</h3>
+                  <b>6.</b>
+                  <p>使用花样丽姿纤长睫毛膏 01 黑色刷涂上、下睫毛</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>01 黑色</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                
+            </div>
+
+ {% endif %}
+ {% endfor %}
+
+ {% for product in collections.make-up.products %}
+{% if product.handle == 'blush-duo' %}
+          <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>轻松休闲妆</h3>
+                  <b>7.</b>
+                  <p>将双色果香腮红组 03 阳光杏桃中的两种色彩进行调和，并以打圈的方式涂抹于上颧骨部位</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>03 阳光杏桃</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                 
+            </div>
+{% endif %}
+{% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle == 'sheer-lipstick' %}
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>轻松休闲妆</h3>
+                  <b>8.</b>
+                  <p>使用玫瑰菁亮唇膏 05 香槟玫瑰色涂抹双唇。</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>05 香槟玫瑰</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                 
+            </div> 
+
+
+{% endif %}
+
+
+{% endfor %}
+
+
+
+        </div>
+
+        <div class="part4LB-dot swiper-pagination"></div>
+        <div class="part4LB-next swiper-button-next"></div>
+        <div class="part4LB-prev swiper-button-prev"></div>
+      </div>
+
+
+
+
+
+  </div>
+
+<div class="part4-text">
+  <a href="#" class="part4-link1">请下载彩妆指导</a>
+  <h2>Fernanda 个人简介</h2>
+  <p>Fernanda 出生于巴西，曾多年生活在爱尔兰，现居住于柏林。<br>我们问Anne：什么使您如此美丽？</p>
+  <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-TeaserFernanda.jpg">
+  <a href="#" class="part4-link2">Fernanda 个人简介</a>
+</div>
+
+
+</div>
+
+<a class="part4-link0"></a>
+
+</div>
+
+
+
+<div class="part-news xxzbottom">
+<h2>魅惑电眼妆</h2>
+<p>魅力深邃，极富表现力与神秘感。<br />分步打造出突显眼部魅力的妆容。</p>
+</div>
+
+
+<div class="allpart yz ">
+
+<div class="part5-img"></div>
+
+<div class="hidbox">
+<div class="LB-box">
+    <div class="part5LB swiper-container2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>魅惑电眼妆</h3>
+                  <p>选出与你肤色相配的德国世家粉底，进行打底。如需要，可同时使用果芯养肤遮瑕棒。随后，使用修容养肤定妆散粉。为获得更加持久的妆效，你可在粉底前后使用两遍定妆粉饼。请使用金石焕彩四色眉粉组中的色彩描画眉毛。</p>
+                </div>
+                <div class="slide-box">
+                    <img class="slide-pic" src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-Step0-LookCard.jpg">
+                </div>
+                <div class="slide-box">
+                    <img class="slide-pic" src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-Step0-Mood.jpg">
+                </div>
+            </div>
+                  
+
+
+{% for product in collections.make-up.products %}
+ {% if  product.handle == 'eye-and-brow-palette' %}
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>魅惑电眼妆</h3>
+                  <b>1.</b>
+                  <p>使用金石焕彩四色眉粉组中最浅的色调为整个眼睑部位打底</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+                
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>四色眉粉组</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                 
+            </div>
+
+{% endif %}
+{% endfor %}
+
+{% for product in collections.make-up.products %}
+ {% if  product.handle == 'eye-definer' %}
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>魅惑电眼妆</h3>
+                  <b>2.</b>
+                  <p>使用花样顾盼眼线笔 05 灰褐色勾画上下，内外眼线。并将勾画好的上眼线向眼褶处晕开</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>05 灰褐</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                 
+            </div>
+{% endif %}
+{% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle == 'eye-and-brow-palette' %}
+
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>魅惑电眼妆</h3>
+                  <b>3.</b>
+                  <p>将金石焕彩四色眉粉组中的最深色调涂抹于上眼睑的外眼角处，并向内晕开</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>四色眉粉组</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+              
+
+            </div>
+   {% endif %}
+{% endfor %}
+
+{% for product in collections.make-up.products %}
+ {% if product.handle == 'eye-and-brow-palette' %}
+
+             <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>魅惑电眼妆</h3>
+                  <b>4.</b>
+                  <p>将金石焕彩四色眉粉组中的第二浅色调涂抹于下眼睑的外眼角处，并向内晕开</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+               
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>四色眉粉组</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                
+            </div>
+
+ {% endif %}
+ {% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle contains 'eye-and-brow-palette' %}
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>魅惑电眼妆</h3>
+                  <b>5.</b>
+                  <p>将金石焕彩四色眉粉组中的第二深色调涂抹于眼睑中部</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>四色眉粉组</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+
+            </div>
+
+ {% endif %}
+ {% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle == 'volume-mascara' %}
+             <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>魅惑电眼妆</h3>
+                  <b>6.</b>
+                  <p>使用花样招展羽扇睫毛膏01黑色涂刷上下睫毛</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>01 黑色</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                
+            </div>
+
+ {% endif %}
+ {% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle == 'eyeshadow' %}
+          <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>魅惑电眼妆</h3>
+                  <b>7.</b>
+                  <p>将火树金石焕彩眼影 03 红碧玺色涂抹于眉毛下方，提亮并增添清新感</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span> 03 红碧玺</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                 
+            </div>
+{% endif %}
+{% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle == 'blush-duo' %}
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>魅惑电眼妆</h3>
+                  <b>8.</b>
+                  <p>双色果香腮红组 02 鲜露蜜桃色种的两个色调进行混合，轻轻扫在外颧骨部位</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>05 玫瑰色</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                 
+            </div> 
+
+{% endif %}
+{% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle == 'sheer-lipstick' %}
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>魅惑电眼妆</h3>
+                  <b>8.</b>
+                  <p>为了与浓烈的眼妆形成色彩呼应，请将玫瑰菁亮唇膏 02 蔷薇红轻点于唇部</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span> 02 蔷薇红轻点于唇部</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                 
+            </div> 
+
+{% endif %}
+
+{% endfor %}
+
+        </div>
+
+        <div class="part5LB-dot swiper-pagination"></div>
+        <div class="part5LB-next swiper-button-next"></div>
+        <div class="part5LB-prev swiper-button-prev"></div>
+      </div>
+  </div>
+
+<div class="part5-text">
+  <a href="#" class="part5-link1">请下载彩妆指导</a>
+  <h2>Verena 个人简介</h2>
+  <p>Verena热爱她的花园和猫咪。她作为演员&导演，居住在科隆。<br>我们问Verena：什么使您如此美丽？</p>
+  <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-MysteriousEyes-TeaserVerena.jpg">
+  <a href="#" class="part5-link2">Verena 个人简介</a>
+</div>
+
+
+</div>
+
+
+<a class="part5-link0"></a>
+
+
+</div>
+
+
+
+<div class="part-news yzbottom">
+<h2>亮丽风情妆</h2>
+<p>极富表现力、现代感及创意<br />分步打造色彩浓郁的晚宴妆。</p>
+</div>
+
+
+
+
+<div class="allpart fqz">
+
+<div class="part6-img"></div>
+
+<div class="hidbox">
+<div class="LB-box">
+    <div class="part6LB swiper-container3">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>亮丽风情妆</h3>
+                  <p>选出与你肤色相配的德国世家粉底，进行打底。随后使用修容养肤迷彩蜜粉饼与果芯养肤提亮棒。请使用金石焕彩四色眉粉组描画眉毛</p>
+                </div>
+                <div class="slide-box">
+                    <img class="slide-pic" src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-Step0-LookCard.jpg">
+                </div>
+                <div class="slide-box">
+                    <img class="slide-pic" src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-Step0-Mood.jpg">
+                </div>
+            </div>
+                  
+
+
+{% for product in collections.make-up.products %}
+ {% if  product.handle == 'eye-definer' %}
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>亮丽风情妆</h3>
+                  <b>1.</b>
+                  <p>使用花样顾盼眼线笔 01 黑色勾画上下，内外眼线，塑造出眼部轮廓，随后将眼线用另一端的海绵刷头轻轻晕开。</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+                
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>01 黑色</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                 
+            </div>
+
+{% endif %}
+{% endfor %}
+
+{% for product in collections.make-up.products %}
+ {% if  product.handle == 'eyeshadow-trio' %}
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>亮丽风情妆</h3>
+                  <b>2.</b>
+                  <p>将金石焕彩三色眼影组 03 紫黄晶色中最浅的色调从上内眼角至上眼睑中部进行涂抹</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>03 紫黄晶</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                 
+            </div>
+{% endif %}
+{% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle == 'eyeshadow-trio' %}
+
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>亮丽风情妆</h3>
+                  <b>3.</b>
+                  <p>为了能打造更具表现力、更深邃的妆效，请将金石焕彩三色眼影组 03 紫黄晶色中最深色调涂抹于上下外眼角部位</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>03 紫黄晶</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+              
+
+            </div>
+   {% endif %}
+{% endfor %}
+
+{% for product in collections.make-up.products %}
+ {% if product.handle == 'eyeshadow-trio' %}
+
+             <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>亮丽风情妆</h3>
+                  <b>4.</b>
+                  <p>请将金石焕彩三色眼影组 03 紫黄晶色的中间色调点在眉骨和上、下眼线部位</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+               
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>03 紫黄晶</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                
+            </div>
+
+ {% endif %}
+ {% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle contains 'eyeshadow' %}
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>亮丽风情妆</h3>
+                  <b>5.</b>
+                  <p>使用火树金石焕彩眼影 01 汉白玉色在眼眉下方进行提亮</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span></span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+
+            </div>
+
+ {% endif %}
+ {% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle == 'volume-mascara' %}
+             <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>亮丽风情妆</h3>
+                  <b>6.</b>
+                  <p>为打造既富有表现力又柔和的眼妆效果，请使用花样招展羽扇睫毛膏 03 紫红色为睫毛上色。</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>03 紫红</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                
+            </div>
+
+ {% endif %}
+ {% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle == 'blush-duo' %}
+          <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>亮丽风情妆</h3>
+                  <b>7.</b>
+                  <p>将双色果香腮红组 03 阳光杏桃色中的两种色彩进行调和，涂抹在上颧骨部位</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>  03 阳光杏桃</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                 
+            </div>
+{% endif %}
+
+
+{% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle == 'lip-gloss' %}
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>亮丽风情妆</h3>
+                  <b>8.</b>
+                  <p>使用浆果水光唇蜜 03 醡浆黑莓色，打造更闪亮的丰润双唇</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span></span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                 
+            </div> 
+
+{% endif %}
+
+{% endfor %}
+
+        </div>
+
+        <div class="part6LB-dot swiper-pagination"></div>
+        <div class="part6LB-next swiper-button-next"></div>
+        <div class="part6LB-prev swiper-button-prev"></div>
+      </div>
+  </div>
+
+<div class="part6-text">
+  <a href="#" class="part6-link1">请下载彩妆指导</a>
+  <h2>Anne 个人简介</h2>
+  <p>Anne居住于阿姆斯特丹，正在接受职业护士培训。<br>我们问Anne：什么使您如此美丽？</p>
+  <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-BigSensation-TeaserAnne.jpg">
+  <a href="#" class="part6-link2">Anne 个人简介</a>
+</div>
+
+
+</div>
+
+
+<a class="part6-link0"></a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="part-news fqzbottom">
+<h2>纯净优雅妆</h2>
+<p>优雅、经典、容光焕发。<br />分步打造每日时尚妆容。</p>
+</div>
+
+
+
+<div class="allpart yyz">
+
+<div class="part7-img"></div>
+
+<div class="hidbox">
+<div class="LB-box">
+    <div class="part7LB swiper-container4">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>纯净优雅妆</h3>
+                  <p>选出与你肤色相配的德国世家粉底，进行打底。如有需要，可继续使用果芯养肤遮瑕棒。随时使用修容养肤定妆散粉进行定妆&补妆。请使用金石焕彩三色眼影组中的色彩描画眉毛</p>
+                </div>
+                <div class="slide-box">
+                    <img class="slide-pic" src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-Step0-LookCard.jpg">
+                </div>
+                <div class="slide-box">
+                    <img class="slide-pic" src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-Step0-Mood.jpg">
+                </div>
+            </div>
+                  
+
+
+{% for product in collections.make-up.products %}
+ {% if  product.handle == 'eyeshadow-trio' %}
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>纯净优雅妆</h3>
+                  <b>1.</b>
+                  <p>使用金石焕彩三色眼影组 01 蓝宝石色中最浅的色调为整个眼睑部位打底 </p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+                
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>01 蓝宝石</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                 
+            </div>
+
+{% endif %}
+{% endfor %}
+
+{% for product in collections.make-up.products %}
+ {% if  product.handle == 'eye-definer' %}
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>纯净优雅妆</h3>
+                  <b>2.</b>
+                  <p>使用花样顾盼眼线笔 03 蓝色勾画下眼线，并将勾画好的上眼线向内部晕开 </p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>03 蓝色</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                 
+            </div>
+{% endif %}
+{% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle == 'eyeshadow-trio' %}
+
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>纯净优雅妆</h3>
+                  <b>3.</b>
+                  <p>将金石焕彩三色眼影组 01 蓝宝石中最深的色调涂抹在上眼睑处</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span></span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+              
+
+            </div>
+   {% endif %}
+{% endfor %}
+
+{% for product in collections.make-up.products %}
+ {% if product.handle == 'eyeshadow-trio' %}
+
+             <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>纯净优雅妆</h3>
+                  <b>4.</b>
+                  <p>将金石焕彩三色眼影组 01 蓝宝石中的中间色调涂抹在眼褶和上方 </p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+               
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span></span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                
+            </div>
+
+ {% endif %}
+ {% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle contains 'defining-mascara' %}
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>纯净优雅妆</h3>
+                  <b>5.</b>
+                  <p>使用花样丽姿纤长睫毛膏 01 黑色涂刷睫毛</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>01 黑色 </span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+
+            </div>
+
+ {% endif %}
+ {% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle == 'blush-duo' %}
+             <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>纯净优雅妆</h3>
+                  <b>6.</b>
+                  <p>将双色果香腮红组 01 娇柔杏果中的浅色扫在颧骨处，深色调扫在颧骨下方</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span></span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                
+            </div>
+
+ {% endif %}
+ {% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle == 'lip-liner' %}
+          <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>纯净优雅妆</h3>
+                  <b>7.</b>
+                  <p>为达到精致的唇部轮廓，请使用珠瑰点绛双头唇线笔 01 郁金香木，从嘴角到嘴唇中部用短促细致的线条进行勾画</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>01 郁金香木 </span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                 
+            </div>
+{% endif %}
+
+
+{% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle == 'lipstick' %}
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>纯净优雅妆</h3>
+                  <b>8.</b>
+                  <p>用花容滋润唇膏 02 红婵水粉色涂抹唇部</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span></span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                 
+            </div> 
+
+{% endif %}
+
+{% endfor %}
+
+        </div>
+
+        <div class="part7LB-dot swiper-pagination"></div>
+        <div class="part7LB-next swiper-button-next"></div>
+        <div class="part7LB-prev swiper-button-prev"></div>
+      </div>
+  </div>
+
+<div class="part7-text">
+  <a href="#" class="part7-link1">请下载彩妆指导</a>
+  <h2>Ailar 个人简介</h2>
+  <p>Ailar出生于伊朗。当她还是小女孩时，便随父母移居到挪威。如今，她居住在奥斯陆与伦敦。<br>我们问Ailar：是什么使你如此美丽？</p>
+  <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-PureElegance-TeaserAilar.jpg">
+  <a href="#" class="part7-link2">Ailar 个人简介</a>
+</div>
+
+
+</div>
+
+
+<a class="part7-link0"></a>
+
+
+</div>
+
+
+
+
+
+<div class="part-news yyzbottom">
+<h2>个性裸妆</h2>
+<p>纯洁、雅致、和谐。<br />分步打造一款极具个性的清新的妆容。</p>
+</div>
+
+
+
+<div class="allpart lz">
+
+<div class="part8-img"></div>
+
+<div class="hidbox">
+<div class="LB-box">
+    <div class="part8LB swiper-container5">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>个性裸妆</h3>
+                  <p>选出与你肤色相配的德国世家粉底，进行打底。如有需要，可继续使用果芯养肤遮瑕棒和修容养肤阴影粉。请使用金石焕彩三色眼影组中的色彩描画眉毛</p>
+                </div>
+                <div class="slide-box">
+                    <img class="slide-pic" src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-Step0-LookCard.jpg">
+                </div>
+                <div class="slide-box">
+                    <img class="slide-pic" src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-Step0-Mood.jpg">
+                </div>
+            </div>
+                  
+
+
+{% for product in collections.make-up.products %}
+ {% if  product.handle == 'eyeshadow-trio' %}
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>个性裸妆</h3>
+                  <b>1.</b>
+                  <p>将金石焕彩三色眼影组 04 玫瑰猫眼色中最深的色调涂抹在外眼角到眼褶上部，以及下眼线的部位</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+                
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>04 玫瑰猫眼</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                 
+            </div>
+
+{% endif %}
+{% endfor %}
+
+{% for product in collections.make-up.products %}
+ {% if  product.handle == 'eyeshadow-trio' %}
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>亮丽风情妆</h3>
+                  <b>2.</b>
+                  <p>将金石焕彩三色眼影组 04 玫瑰猫眼中的中间色涂抹在内眼角到上眼睑的中部</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span></span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                 
+            </div>
+{% endif %}
+{% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle == 'eyeshadow-trio' %}
+
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>亮丽风情妆</h3>
+                  <b>3.</b>
+                  <p>将金石焕彩三色眼影组 04 玫瑰猫眼中最浅的色涂抹到眼眉下方</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span></span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+              
+
+            </div>
+   {% endif %}
+{% endfor %}
+
+{% for product in collections.make-up.products %}
+ {% if product.handle == 'eye-definer' %}
+
+             <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>亮丽风情妆</h3>
+                  <b>4.</b>
+                  <p>用花样顾盼眼线笔02 棕色画出上&下外眼线 </p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+               
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span></span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                
+            </div>
+
+ {% endif %}
+ {% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle contains 'eye-definer-nude' %}
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>亮丽风情妆</h3>
+                  <b>5.</b>
+                  <p>为了打造出闪亮的双眸，建议用花样顾盼眼线笔 00 裸色勾勒出下方的内眼线 </p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span></span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+
+            </div>
+
+ {% endif %}
+ {% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle == 'volume-mascara' %}
+             <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>亮丽风情妆</h3>
+                  <b>6.</b>
+                  <p>为打造出柔和且深邃的眼妆效果，建议使用花样招展羽扇睫毛膏 02 棕色涂刷睫毛</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span> 02 棕色</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                
+            </div>
+
+ {% endif %}
+ {% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle == 'blush-duo' %}
+          <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>亮丽风情妆</h3>
+                  <b>7.</b>
+                  <p>将双色果香腮红组 01 娇柔杏果色中的深色涂抹在颧骨处，浅色涂抹到颧骨上方 </p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>01 娇柔杏果</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                 
+            </div>
+{% endif %}
+
+
+{% endfor %}
+
+{% for product in collections.make-up.products %}
+{% if product.handle == 'lip-gloss' %}
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>亮丽风情妆</h3>
+                  <b>8.</b>
+                  <p>用浆果水光唇蜜 06 阳光圣女果，为双唇增添娇嫩的色彩</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>06 阳光圣女果</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                 
+            </div> 
+
+{% endif %}
+
+{% endfor %}
+
+        </div>
+
+        <div class="part8LB-dot swiper-pagination"></div>
+        <div class="part8LB-next swiper-button-next"></div>
+        <div class="part8LB-prev swiper-button-prev"></div>
+      </div>
+  </div>
+
+<div class="part8-text">
+  <a href="#" class="part8-link1">请下载彩妆指导</a>
+  <h2>Anne 个人简介</h2>
+  <p>Anne居住于阿姆斯特丹，正在接受职业护士培训。<br>我们问Anne：什么使您如此美丽？</p>
+  <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-YourNude-TeaserAnne.jpg">
+  <a href="#" class="part8-link2">Anne 个人简介</a>
+</div>
+
+
+</div>
+
+
+<a class="part8-link0"></a>
+
+
+</div>
+
+
+
+
+<div class="part0-title animate3 lzbottom">
+<h1>#DrHauschkaMakeup</h1>
+<p>是什么使您容光焕发？</p>
+</div>
+<script src="https://walls.io/js/wallsio-widget.js" id="wallsio-widget-script" data-wallurl="https://walls.io/drhauschkamakeup" data-height="400" data-width="100%" data-autoheight="1" data-notscrollable="1"></script>
+<div class="part0-button">加载更多条目</div>
+<div class="part0-footer">点击这里，下载德国世家美妆册页。</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.js"></script>
+<script type="text/javascript" src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+<script type="text/javascript">
+
+var W = document.body.clientWidth || document.documentElement.clientWidth;
+var H = document.documentElement.clientHeight || document.body.clientHeight;
+var index=0;
+
+
+//第二类目
+  
+
+
+
+//头部导航
+$(".nurse-content .nurse-header .header-makeup>li").click(function(){
+  index = $(this).index();
+  $(this).siblings().find("a").removeClass("active")
+  $(this).find("a:first").addClass("active")
+  $(".nurse-content .make-up .all-section").eq(index).stop().fadeIn(500).siblings().fadeOut(500)
+
+  
+
+
+
+
+
+})
+
+$(".nurse-content .nurse-header .header-makeup .Top").click(function(){
+  $("html,body").animate({scrollTop:$("body").offset().top},10)
+
+});
+
+$(".nurse-content .nurse-header .header-makeup>li").hover(function(){
+  $(this).find("ul").stop().fadeIn(500)
+
+},function(){
+  $(this).find("ul").stop().fadeOut(500)
+
+})
+
+$(".nurse-content .nurse-header .header-makeup li:nth-child(1) ul li").click(function(){
+  index = $(this).index();
+  $("html,body").animate({scrollTop:$(".nurse-content .all-section .scroll-top"+index).offset().top-80},2000)
+
+})
+
+$(".nurse-content .nurse-header .header-makeup li:nth-child(2) ul li").click(function(){
+  index = $(this).index();
+
+  $("html,body").animate({scrollTop:$(".nurse-content .all-section .animate"+index).offset().top-80},2000)
+
+})
+
+
+
+
+
+
+
+
+
+
+$(window).scroll(function(){
+
+    if($(window).scrollTop() > 168 && document.documentElement.scrollTop || document.body.scrollTop >= 168){
+
+        $(".nurse-content .nurse-header").css({"position":"fixed","top":"0","z-index":"999"})
+
+
+      }else{
+      $(".nurse-content .nurse-header").css({"position":"static",})
+
+    }
+
+  if(W < 768 && W > 320){ 
+    $("body").on("touchmove",function () {  
+      $('body').on('touchend',function(){
+        let scroll = $(document).scrollTop();  
+        if(scroll > 300){
+          $(".scroll-up").css({"display":"block",})
+
+        }else{
+          $(".scroll-up").css({"display":"none",})
+        }   
+
+      })
+
+    });
+
+  }
+
+if($(".nurse-content .section2").hasClass("row")){
+
+var str = ($(window).scrollTop() - $(".nurse-content .section2 .hidbox").offset().top)*200/W+"%"
+var str0 = ($(window).scrollTop() - $(".nurse-content .section2 .hidbox").offset().top)*150/W+"%"
+  
+
+$(".nurse-content .section2 .hidbox .hidcontent .animColours").css({"transform":"translate3d(0,-"+str+",0)"});
+
+ $(".nurse-content .section2 .hidbox .hidcontent .gradiantBrown").css({"transform":"translate3d(0,"+str+",0)"})
+
+$(".nurse-content .section2 .hidbox .hidcontent .hidtext").css({"transform":"translate3d(0,-"+str0+",0)"})
+
+
+}
+
+
+
+if($(".nurse-content .fuse").hasClass("row")){
+
+var str = ($(window).scrollTop() - $(".nurse-content .fuse .hidbox").offset().top)*200/W+"%"
+var str0 = ($(window).scrollTop() - $(".nurse-content .fuse .hidbox").offset().top)*150/W+"%"
+  
+
+$(".nurse-content .fuse .hidbox .hidcontent .animColours").css({"transform":"translate3d(0,-"+str+",0)"});
+
+ $(".nurse-content .fuse .hidbox .hidcontent .gradiantYellow").css({"transform":"translate3d(0,"+str+",0)"})
+
+$(".nurse-content .fuse .hidbox .hidcontent .hidtext").css({"transform":"translate3d(0,-"+str0+",0)"})
+
+
+}
+
+
+if($(".nurse-content .eyes").hasClass("row")){
+
+var str = ($(window).scrollTop() - $(".nurse-content .eyes .hidbox").offset().top)*200/W+"%"
+var str0 = ($(window).scrollTop() - $(".nurse-content .eyes .hidbox").offset().top)*150/W+"%"
+  
+
+$(".nurse-content .eyes .hidbox .hidcontent .animColours").css({"transform":"translate3d(0,-"+str+",0)"});
+
+ $(".nurse-content .eyes .hidbox .hidcontent .gradiantYellow").css({"transform":"translate3d(0,"+str+",0)"})
+
+$(".nurse-content .eyes .hidbox .hidcontent .hidtext").css({"transform":"translate3d(0,-"+str0+",0)"})
+
+
+}
+
+  
+  
+if($(".nurse-content .chunbu").hasClass("row")){
+
+var str = ($(window).scrollTop() - $(".nurse-content .chunbu .hidbox").offset().top)*200/W+"%"
+var str0 = ($(window).scrollTop() - $(".nurse-content .chunbu .hidbox").offset().top)*150/W+"%"
+  
+
+$(".nurse-content .chunbu .hidbox .hidcontent .animColours").css({"transform":"translate3d(0,-"+str+",0)"});
+
+ $(".nurse-content .chunbu .hidbox .hidcontent .gradiantRose3").css({"transform":"translate3d(0,"+str+",0)"})
+
+$(".nurse-content .chunbu .hidbox .hidcontent .hidtext").css({"transform":"translate3d(0,-"+str0+",0)"})
+
+
+}
+
+  
+  
+if($(".nurse-content .mz").hasClass("row0")){
+
+var str = ($(window).scrollTop() - $(".nurse-content .mz .hidbox").offset().top+1000)*200/W+"%"
+var str0 = ($(window).scrollTop() - $(".nurse-content .mz .hidbox").offset().top+1000)*150/W+"%"
+  
+
+$(".nurse-content .mz .hidbox .hidcontent .animColours").css({"transform":"translate3d(0,-"+str+",0)"});
+
+ $(".nurse-content .mz .hidbox .hidcontent .gradiantRose2").css({"transform":"translate3d(0,"+str+",0)"})
+
+$(".nurse-content .mz .hidbox .hidcontent .hidtext").css({"transform":"translate3d(0,-"+str0+",0)"})
+
+$(".nurse-content .mz .hidbox .hidcontent .hidpro").css({"transform":"translate3d(0,-"+str0+",0)"})
+
+}
+
+
+
+
+
+  
+ 
+})
+
+
+
+
+
+$(".nurse-content .section2 a").click(function(){
+  if($(".nurse-content .section2").hasClass("row")){
+    $(".nurse-content .section2").removeClass("row")
+    $(".nurse-content .section2 .hidbox").fadeIn(500).removeClass("open")
+    $("html,body").animate({scrollTop:$(".nurse-content .section3").offset().top-50},1000)
+    $(".nurse-content .section2 .hidbox .hidcontent .animColours").css({"transform":"translate3d(0,0,0)"});
+
+     $(".nurse-content .section2 .hidbox .hidcontent .gradiantBrown").css({"transform":"translate3d(0,0,0)"})
+
+    $(".nurse-content .section2 .hidbox .hidcontent .hidtext").css({"transform":"translate3d(0,0,0)"})
+
+  }else{
+    $(".nurse-content .section2").addClass("row")
+    $(".nurse-content .section2 .hidbox").fadeOut(500).addClass("open")
+    $("html,body").animate({scrollTop:$(".nurse-content .section2 .hidbox").offset().top},1000)
+  }
+      
+
+})
+
+
+
+
+$(".nurse-content .fuse a").click(function(){
+  if($(".nurse-content .fuse").hasClass("row")){
+    $(".nurse-content .fuse").removeClass("row")
+    $(".nurse-content .fuse .hidbox").fadeIn(500).removeClass("open")
+    $("html,body").animate({scrollTop:$(".nurse-content .fusebottom").offset().top-100},1000)
+    $(".nurse-content .fuse .hidbox .hidcontent .animColours").css({"transform":"translate3d(0,0,0)"});
+
+     $(".nurse-content .fuse .hidbox .hidcontent .gradiantBrown").css({"transform":"translate3d(0,0,0)"})
+
+    $(".nurse-content .fuse .hidbox .hidcontent .hidtext").css({"transform":"translate3d(0,0,0)"})
+
+  }else{
+    $(".nurse-content .fuse").addClass("row")
+    $(".nurse-content .fuse .hidbox").fadeOut(500).addClass("open")
+    $("html,body").animate({scrollTop:$(".nurse-content .fuse .hidbox").offset().top},1000)
+  }
+      
+
+})
+
+$(".nurse-content .eyes a").click(function(){
+  if($(".nurse-content .eyes").hasClass("row")){
+    $(".nurse-content .eyes").removeClass("row")
+    $(".nurse-content .eyes .hidbox").fadeIn(500).removeClass("open")
+    $("html,body").animate({scrollTop:$(".nurse-content .eyesbottom").offset().top-100},1000)
+    $(".nurse-content .eyes .hidbox .hidcontent .animColours").css({"transform":"translate3d(0,0,0)"});
+
+     $(".nurse-content .eyes .hidbox .hidcontent .gradiantBrown").css({"transform":"translate3d(0,0,0)"})
+
+    $(".nurse-content .eyes .hidbox .hidcontent .hidtext").css({"transform":"translate3d(0,0,0)"})
+
+  }else{
+    $(".nurse-content .eyes").addClass("row")
+    $(".nurse-content .eyes .hidbox").fadeOut(500).addClass("open")
+    $("html,body").animate({scrollTop:$(".nurse-content .eyes .hidbox").offset().top},1000)
+  }
+      
+
+})
+
+
+
+$(".nurse-content .chunbu a").click(function(){
+  if($(".nurse-content .chunbu").hasClass("row")){
+    $(".nurse-content .chunbu").removeClass("row")
+    $(".nurse-content .chunbu .hidbox").fadeIn(500).removeClass("open")
+    $("html,body").animate({scrollTop:$(".nurse-content .chunbubottom").offset().top-100},1000)
+    $(".nurse-content .chunbu .hidbox .hidcontent .animColours").css({"transform":"translate3d(0,0,0)"});
+
+     $(".nurse-content .chunbu .hidbox .hidcontent .gradiantBrown").css({"transform":"translate3d(0,0,0)"})
+
+    $(".nurse-content .chunbu .hidbox .hidcontent .hidtext").css({"transform":"translate3d(0,0,0)"})
+
+  }else{
+    $(".nurse-content .chunbu").addClass("row")
+    $(".nurse-content .chunbu .hidbox").fadeOut(500).addClass("open")
+    $("html,body").animate({scrollTop:$(".nurse-content .chunbu .hidbox").offset().top},1000)
+  }
+      
+
+})
+
+
+$(".nurse-content .hzs a").click(function(){
+  if($(".nurse-content .hzs").hasClass("row")){
+    $(".nurse-content .hzs").removeClass("row")
+    $(".nurse-content .hzs .hidbox").fadeIn(500).removeClass("open")
+    $("html,body").animate({scrollTop:$(".nurse-content .hzsbottom").offset().top-100},1000)
+
+  }else{
+    $(".nurse-content .hzs").addClass("row")
+    $(".nurse-content .hzs .hidbox").fadeOut(500).addClass("open")
+    $("html,body").animate({scrollTop:$(".nurse-content .hzs .hidbox").offset().top},1000)
+  }
+      
+
+})
+
+
+// 第二部分
+
+
+
+
+
+$(".nurse-content .mz .part2-link0").click(function(){
+  if($(".nurse-content .mz").hasClass("row0")){
+    $(".nurse-content .mz").removeClass("row0")
+    $(".nurse-content .mz .hidbox").fadeIn(500).removeClass("open")
+    $("html,body").animate({scrollTop:$(".nurse-content .mzbottom").offset().top-100},1000)
+    $(".nurse-content .mz .hidbox .hidcontent .animColours").css({"transform":"translate3d(0,0,0)"});
+
+     $(".nurse-content .mz .hidbox .hidcontent .gradiantRose2").css({"transform":"translate3d(0,0,0)"})
+
+    $(".nurse-content .mz .hidbox .hidcontent .hidtext").css({"transform":"translate3d(0,0,0)"})
+
+  }else{
+    $(".nurse-content .mz").addClass("row0")
+    $(".nurse-content .mz .hidbox").fadeOut(500).addClass("open")
+    $("html,body").animate({scrollTop:$(".nurse-content .mz .hidbox").offset().top-650},1000)
+  }
+      
+
+})
+
+
+
+
+
+$(".nurse-content .xxz .part4-link0").click(function(){
+  if($(".nurse-content .xxz").hasClass("row0")){
+    $(".nurse-content .xxz").removeClass("row0")
+    $(".nurse-content .xxz .hidbox").fadeIn(500).removeClass("open")
+    $("html,body").animate({scrollTop:$(".nurse-content .xxzbottom").offset().top-100},1000)
+
+  }else{
+    $(".nurse-content .xxz").addClass("row0")
+    $(".nurse-content .xxz .hidbox").fadeOut(500).addClass("open")
+    $("html,body").animate({scrollTop:$(".nurse-content .xxz .hidbox").offset().top-800},1000)
+
+
+     var swiper1 = new Swiper('.swiper-container1', {
+      spaceBetween: 0,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+
+  }
+      
+
+})
+
+
+
+
+$(".nurse-content .yz .part5-link0").click(function(){
+  if($(".nurse-content .yz").hasClass("row0")){
+    $(".nurse-content .yz").removeClass("row0")
+    $(".nurse-content .yz .hidbox").fadeIn(500).removeClass("open")
+    $("html,body").animate({scrollTop:$(".nurse-content .yzbottom").offset().top-100},1000)
+
+  }else{
+    $(".nurse-content .yz").addClass("row0")
+    $(".nurse-content .yz .hidbox").fadeOut(500).addClass("open")
+    $("html,body").animate({scrollTop:$(".nurse-content .yz .hidbox").offset().top-800},1000)
+
+
+     var swiper2 = new Swiper('.swiper-container2', {
+      spaceBetween: 0,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+
+  }
+      
+
+})
+
+
+
+
+
+$(".nurse-content .fqz .part6-link0").click(function(){
+  if($(".nurse-content .fqz").hasClass("row0")){
+    $(".nurse-content .fqz").removeClass("row0")
+    $(".nurse-content .fqz .hidbox").fadeIn(500).removeClass("open")
+    $("html,body").animate({scrollTop:$(".nurse-content .fqzbottom").offset().top-100},1000)
+
+  }else{
+    $(".nurse-content .fqz").addClass("row0")
+    $(".nurse-content .fqz .hidbox").fadeOut(500).addClass("open")
+    $("html,body").animate({scrollTop:$(".nurse-content .fqz .hidbox").offset().top-800},1000)
+
+
+     var swiper3 = new Swiper('.swiper-container3', {
+      spaceBetween: 0,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+
+  }
+      
+
+})
+
+
+
+
+$(".nurse-content .yyz .part7-link0").click(function(){
+  if($(".nurse-content .yyz").hasClass("row0")){
+    $(".nurse-content .yyz").removeClass("row0")
+    $(".nurse-content .yyz .hidbox").fadeIn(500).removeClass("open")
+    $("html,body").animate({scrollTop:$(".nurse-content .yyzbottom").offset().top-100},1000)
+
+  }else{
+    $(".nurse-content .yyz").addClass("row0")
+    $(".nurse-content .yyz .hidbox").fadeOut(500).addClass("open")
+    $("html,body").animate({scrollTop:$(".nurse-content .yyz .hidbox").offset().top-800},1000)
+
+
+     var swiper4 = new Swiper('.swiper-container4', {
+      spaceBetween: 0,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+
+  }
+      
+
+})
+
+
+
+
+
+
+$(".nurse-content .lz .part8-link0").click(function(){
+  if($(".nurse-content .lz").hasClass("row0")){
+    $(".nurse-content .lz").removeClass("row0")
+    $(".nurse-content .lz .hidbox").fadeIn(500).removeClass("open")
+    $("html,body").animate({scrollTop:$(".nurse-content .lzbottom").offset().top-100},1000)
+
+  }else{
+    $(".nurse-content .lz").addClass("row0")
+    $(".nurse-content .lz .hidbox").fadeOut(500).addClass("open")
+    $("html,body").animate({scrollTop:$(".nurse-content .lz .hidbox").offset().top-800},1000)
+
+
+     var swiper5 = new Swiper('.swiper-container5', {
+      spaceBetween: 0,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+
+  }
+      
+
+})
+
+
+
+//视频播放
+
+
+$(".nurse-content .section3 .section3-wrapper .wrapper-video .video-box .play").click(function(){
+	index = $(this).parent("").parent(".video-box").index();
+	$(".nurse-content .section3 .section3-wrapper .wrapper-video .video-box").eq(index).find(".video-row").fadeOut(500)
+	var video=document.getElementById("videoPlay"+index);
+	$(".nurse-content .section3 .section3-wrapper .wrapper-video .video-box #videoPlay"+index).css({"opacity":"1","transition":"all 1s"})
+	video.play()
+})
+
+
+
+$(".nurse-content .section5 .videowrapper4 .play").click(function(){
+	$(".nurse-content .section5 .videowrapper4 .video-row4").fadeOut(500)
+	var video=document.getElementById("videoPlay4");
+	$(".nurse-content .section5 .videowrapper4 #videoPlay4").css({"opacity":"1","transition":"all 1s"})
+	video.play()
+})
+
+
+
+
+$(".nurse-content .section5 .videowrapper5 .play").click(function(){
+	$(".nurse-content .section5 .videowrapper5 .video-row5").fadeOut(500)
+	var video=document.getElementById("videoPlay5");
+	$(".nurse-content .section5 .videowrapper5 #videoPlay5").css({"opacity":"1","transition":"all 1s"})
+	video.play()
+})
+
+
+$(".nurse-content .section5 .videowrapper6 .play").click(function(){
+	$(".nurse-content .section5 .videowrapper6 .video-row6").fadeOut(500)
+	var video=document.getElementById("videoPlay6");
+	$(".nurse-content .section5 .videowrapper6 #videoPlay6").css({"opacity":"1","transition":"all 1s"})
+	video.play()
+})
+
+
+$(".nurse-content .section5 .videowrapper7 .play").click(function(){
+	$(".nurse-content .section5 .videowrapper7 .video-row7").fadeOut(500)
+	var video=document.getElementById("videoPlay7");
+	$(".nurse-content .section5 .videowrapper7 #videoPlay7").css({"opacity":"1","transition":"all 1s"})
+	video.play()
+})
+
+
+
+
+$(".nurse-content .part10 .videowrapper8 .play").click(function(){
+	$(".nurse-content .part10 .videowrapper8 .video-row8").fadeOut(500)
+	var video=document.getElementById("videoPlay8");
+	$(".nurse-content .part10 .videowrapper8 #videoPlay8").css({"opacity":"1","transition":"all 1s"})
+	video.play()
+})
+
+
+$(".nurse-content .part10 .videowrapper9 .play").click(function(){
+	$(".nurse-content .part10 .videowrapper9 .video-row9").fadeOut(500)
+	var video=document.getElementById("videoPlay9");
+	$(".nurse-content .part10 .videowrapper9 #videoPlay9").css({"opacity":"1","transition":"all 1s"})
+	video.play()
+})
+
+
+
+
+
+$(".nurse-content .part2-3 .wrapper-video .video-box .play").click(function(){
+	index = $(this).parent("").parent(".video-box").index();
+	$(".nurse-content .part2-3 .wrapper-video .video-box").eq(index).find(".video-hzrow").fadeOut(500)
+	var video=document.getElementById("videoPlayhz"+index);
+	$(".nurse-content .part2-3 .wrapper-video .video-box #videoPlayhz"+index).css({"opacity":"1","transition":"all 1s"})
+	console.log(video)
+	video.play()
+})
+
+
+
+
+
+
+
+$(".nurse-content .section3 .section3-wrapper .videopage ul li").click(function(){
+  index = $(this).index();
+  $(".nurse-content .section3 .section3-wrapper .wrapper-video .video-box").eq(index).stop().fadeIn(500).siblings().fadeOut(500)
+
+})
+
+
+
+$(".nurse-content .part2-3 .video-box .videopage ul li").click(function(){
+  index = $(this).index();
+  $(".nurse-content .part2-3 .wrapper-video .video-box").eq(index).stop().fadeIn(500).siblings().fadeOut(500)
+
+})
+
+
+
+
+
+
+$(".nurse-content .section3 .section3-wrapper .videopage ol li").click(function(){
+  index = $(this).index();
+  $(".nurse-content .section3 .section3-wrapper .videopage ul").animate({"left":-375*index},500,function(){
+    $(".nurse-content .section3 .section3-wrapper .videopage ol li").eq(index).addClass("active").siblings().removeClass("active")
+    $(".nurse-content .section3 .section3-wrapper .wrapper-video .video-box").eq(index).stop().fadeIn(500).siblings().fadeOut(500)
+  })
+
+})
+
+
+
+
+var part_W = $(".nurse-content .part2-3 .videopage").width();
+var num = parseInt(part_W/360)
+$(".nurse-content .part2-3 .videopage ul li").click(function(){
+  index = $(this).index();
+  $(".nurse-content .part2-3 .wrapper-video .video-box").eq(index).stop().fadeIn(500).siblings().fadeOut(500)
+})
+
+$(".nurse-content .part2-3 .videopage ol li").click(function(){
+  index = $(this).index();
+  
+  $(".nurse-content .part2-3 .videopage ul").animate({"left":-part_W*index},500,function(){
+    $(".nurse-content .part2-3 .videopage ol li").eq(index).addClass("active").siblings().removeClass("active")
+    $(".nurse-content .part2-3 .wrapper-video .video-box").eq(index).stop().fadeIn(500).siblings().fadeOut(500)
+  })
+
+})
+
+$(".nurse-content .part2-3 .video-box .btn-right").click(function(){
+  index++;
+  if(index > 6/num-1){
+    index = 6/num-1
+    $(".nurse-content .part2-3 .videopage ul").animate({"left":-part_W*index-150},300,function(){
+      $(this).animate({"left":-part_W*index},300)
+
+    })
+
+  }
+  $(".nurse-content .part2-3 .videopage ol li").eq(index).addClass("active").siblings().removeClass("active")
+  $(".nurse-content .part2-3 .videopage ul").animate({"left":-part_W*index},500)
+
+})
+
+$(".nurse-content .part2-3 .video-box .btn-left").click(function(){
+  index--;
+  if(index < 0){
+    index = 0
+    $(".nurse-content .part2-3 .videopage ul").animate({"left":"150px"},300,function(){
+      $(this).animate({"left":0},300)
+
+    })
+
+  }
+  $(".nurse-content .part2-3 .videopage ol li").eq(index).addClass("active").siblings().removeClass("active")
+  $(".nurse-content .part2-3 .videopage ul").animate({"left":-part_W*index},500)
+
+})
+
+
+
+//section4
+
+
+var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 1,
+      autoHeight:true,
+      loop:true,
+      autoplay: {
+        delay: 8000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+
+window.onresize = function(){
+  pro_lb()
+}
+
+
+
+pro_lb()
+function pro_lb(){
+  if(W>1500){
+    $(".nurse-content .section-pro0 .wrapper-box ul").append("<li class='swiper-slide'></li><li class='swiper-slide'></li>")
+    $(".nurse-content .section-pro1 .wrapper-box ul").append("<li class='swiper-slide'></li>")
+
+  }else if(W>750 && W<1110){
+    $(".nurse-content .section-pro0 .wrapper-box ul").append("<li class='swiper-slide'></li>")
+
+  }
+  var box_w = $(".nurse-content .section5 .wrapper-box").width();
+  var pro_num = parseInt(box_w/220)
+
+var swiper0 = new Swiper('.swiper-container0', {
+      slidesPerView: pro_num,
+    spaceBetween: 15,
+      slidesPerGroup: pro_num,
+      autoHeight:true,
+      loop:true,
+      pagination: {
+        el: '.swiper-pagination0',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next0',
+        prevEl: '.swiper-button-prev0',
+      },
+    });
+
+}
+
+
+
+
+
+
+  
+  </script>
+</body>
+</html>
+  
+  
+  

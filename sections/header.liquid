@@ -1,0 +1,114 @@
+
+<style>
+header{width:100%;height:auto;display: block;background: #fff;}
+.sitelink{width:100%;height:30px;}
+.sitelink .site-nav{width:auto;height:25px;margin-top:2.5px;float:right;}
+.sitelink .site-nav li{margin-right:8px;float:left;}
+.sitelink .site-nav .map-img{width:45px;height:25px;display:block;background:url({{ 'allimg.png' | asset_img_url:'' }}) no-repeat -173px -195px;}
+.sitelink .site-nav .map-p{height:25px;line-height:25px;font-size:14px;color:#333;vertical-align:top;}
+  .sitelink .site-nav .map-p:hover{color:#fff;background:#9b8a7a}
+  
+  
+  
+.sitelink .site-nav .search-icon{width:22px;height:25px;display:inline-block;background:url({{ 'allimg.png' | asset_img_url:'' }}) no-repeat left -219px top -123px !important;display:none;}
+
+.header-menu,.triangle{display:none;}
+
+.logo-wrapper .logo{width: 177px;height: 92px;display:block;background:url({{ 'allimg.png' | asset_img_url:'' }}) no-repeat 0 -101px;margin:0 auto;}
+
+.header-nav{width:100%;height:30px;padding:0.5em 0;}
+.header-nav .left{line-height:30px;float:left;margin-left:30px;}
+.header-nav .left li{float:left;margin-right:15px;}
+.header-nav .left li a{font-size:1em;color:#333;transition:all 0.5s;}
+.header-nav .left li a:hover{color:#a7821d;transition:all 0.5s;}
+.header-nav .right{float:right;margin-right:30px;}
+.header-nav .right .search{width:12em;height:29px;outline:none;border:none;border-bottom:1px solid #d6d6d6 !important;text-indent:5px;}
+.header-nav .right .btn-search{width:22px;height:29px;display:inline-block;background:url({{ 'allimg.png' | asset_img_url:'' }}) no-repeat left -219px top -120px !important;border:none;vertical-align:middle;border-bottom:1px solid #d6d6d6 !important;cursor:pointer;}
+
+  @media screen and (min-width:667px) and (max-width:1024px){
+    .header-nav .left{margin-left:15px;}
+    .header-nav .left li{margin-right:8px;}
+    .header-nav .right{margin-right:15px;}
+  
+  
+  }  
+  
+  
+@media screen and (min-width:300px) and (max-width:667px){
+.sitelink{margin-bottom:10px;}
+.sitelink .site-nav li{margin-right:5px;}
+.sitelink .site-nav .search-icon{display:none;}
+.header-menu{width:95%;text-align:center;color:#897642;font-size:120%;margin:0 auto;margin-top:50px;border-bottom:1px solid #897642;padding:10px 0;display:block;}
+.triangle {width: 0; height: 0; border-left: 0.5em solid transparent; border-right: 0.5em solid transparent; border-top: 0.7em solid #897642; margin:0 auto;display:block;} 
+.header-nav{width:100%;height:auto;}
+.header-nav .left{float: none !important;margin:0;display:none}
+.header-nav .left li{width:100%;height:48px;line-height:48px;border-bottom:1px dotted #bebebe;float: none !important;margin:0;}
+.header-nav .left li a{text-align:center;display:block;}
+.header-nav .right{width:100%;height:48px;line-height:48px;float: none !important;text-align:center;margin:0;position:absolute;top:130px;left:50%;transform:translateX(-50%)}
+}
+
+  
+  #admin_bar_iframe{display:none}
+  
+  
+</style>
+
+<header>
+<div class="sitelink">
+	<ul class="site-nav">
+		<li >
+			<a href="https://liflie.myshopify.com/pages/country" class="map-img"></a>
+		</li>
+		<li>
+			<a href="#" class="map-p">中国</a>
+		</li>
+		<li><a class="search-icon"></a></li>
+	</ul>
+</div>
+<div class="logo-wrapper">
+	<a href="/" class="logo"></a>
+</div>
+<div class="header-menu">Menu</div>
+<div class="triangle"></div>
+<div class="header-nav">
+	<div class="left">
+		<ul>
+			{% for link in linklists.main-menu.links %}
+		    	<li>{{ link.title | link_to: link.url }}</li>
+		  	{% endfor %}
+		</ul>
+	</div>
+	<div class="right">
+		<form action="/search" method="get">
+			<input class="search" type="text" name="q" placeholder="搜索">
+			<input type="submit" value class="btn-search">
+		</form>
+	</div>
+</div>
+</header>
+
+<script type="text/javascript" src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+<script>
+  
+
+$(window).resize(function(){
+  var W = document.body.clientWidth || document.documentElement.clientWidth;
+
+     if(W > 667){
+
+          $(".header-nav .left").css({"display":"block"})
+        }else{
+          
+           $(".header-nav .left").css({"display":"none"})
+        	
+        }
+
+
+})
+
+$(".header-menu").click(function(){
+  $(".header-nav .left").slideToggle(300)
+
+})  
+
+</script>

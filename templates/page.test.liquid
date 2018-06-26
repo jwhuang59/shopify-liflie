@@ -1,0 +1,118 @@
+{% for product in collections.make-up.products %}
+ {% if  product.handle == 'eye-and-brow-palette' %}
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>魅惑电眼妆</h3>
+                  <b>1.</b>
+                  <p>使用金石焕彩四色眉粉组中最浅的色调为整个眼睑部位打底</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+                
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>四色眉粉组</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+                 
+            </div>
+   {% endif %}
+
+  {% endfor %}
+
+{% for product in collections.make-up.products %}
+
+{% if product.handle == 'eye-and-brow-palette' %}
+
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>魅惑电眼妆</h3>
+                  <b>3.</b>
+                  <p>将金石焕彩四色眉粉组中的最深色调涂抹于上眼睑的外眼角处，并向内晕开</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>四色眉粉组</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+              
+
+            </div>
+
+
+    {% endif %}
+
+  {% endfor %}
+
+{% for product in collections.make-up.products %}
+
+
+{% if product.handle == 'eye-and-brow-palette' %}
+
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>魅惑电眼妆</h3>
+                  <b>3.</b>
+                  <p>将金石焕彩四色眉粉组中的最深色调涂抹于上眼睑的外眼角处，并向内晕开</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>四色眉粉组</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+              
+
+            </div>
+
+{% endif %}
+
+  {% endfor %}
+
+
+
+{% for product in collections.make-up.products %}
+
+{% if product.handle == 'eye-and-brow-palette' %}
+
+            <div class="swiper-slide">
+                <div class="slide-box">
+                  <h3>魅惑电眼妆</h3>
+                  <b>3.</b>
+                  <p>将金石焕彩四色眉粉组中的最深色调涂抹于上眼睑的外眼角处，并向内晕开</p>
+                </div>
+                <div class="slide-box">
+                    <img src="http://cdn.hauschka.com/images/system/drhauschkaMakeUp/area_2/DrHauschka-MakeUp-Looks-EffortlesBeauty-Step1-LookCard.jpg">
+                </div>
+
+                
+                <div class="slide-box">
+                    <h4>{{product.title}}</h4>
+                    <span>四色眉粉组</span>
+                    <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title | escape  }}" />   
+                    <a href={{product.url}}>查看产品</a>
+                </div>
+              
+
+            </div>
+  
+{% endif %}
+
+  {% endfor %}
+ 
+
+

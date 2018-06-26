@@ -1,0 +1,388 @@
+
+
+<style>
+*{margin:0;padding:0;}
+body{font-family:MicroSoft YaHei,Arial,Sans-serif;}
+ul,ol,li{list-style:none;}
+img{border:none;vertical-align: middle;}
+a{text-decoration:none;}
+input,button,select,textarea,a{outline:none;}
+  
+.header-nav .left li:nth-child(1) a{color:#a7821d}
+  
+.products{margin:0 14px;background:#f7f2e9;padding:14px 14px 100px 14px;}
+.products .mobile{display:none;}
+.products .nav{width:100%;}
+.products .nav .nav_solid{width:42px;height:530px;display:inline-block;vertical-align: top;}
+.products .nav .nav_solid .products_items{width:32px;height:485px;text-align:center;font-size:16px;text-align:center;color:#333;background: -webkit-linear-gradient(#e5d1c2, #f7f2e9);background:linear-gradient(#e5d1c2, #f7f2e9);background:-o-linear-gradient(#e5d1c2, #f7f2e9);writing-mode:vertical-lr;padding-left:10px;cursor:pointer;}
+
+.products .nav .nav_top{width:80%;height:42px;display:block;margin-bottom:5px;}
+.products .nav .nav_top .product_all{width:42px;height:42px;line-height:42px;background:#e5d1c2;font-size:16px;text-align:center;color:#333;display:inline-block;vertical-align: top}
+.products .nav .nav_top .product_all a{color:#333;}
+.products .nav .nav_top .view_trigger{width:42px;height:42px;display:inline-block;cursor:pointer;position:relative;top:0;overflow:hidden;}
+.products .nav .nav_top .view_trigger a{width:42px;height:84px;background:url({{ 'allimg.png' | asset_img_url:'' }}) no-repeat 0 -355px;position:absolute;top:0px;left:0;transition:all 0.5s;cursor:pointer;}
+.products .nav .nav_top .view_transverse a{background-position:-45px -397px;}
+.products .nav .nav_top .view_portrait a{background-position:0px -354px;}
+.products .nav .nav_top .active a:hover{top:-42px;}
+
+.products .nav .nav_top .search_wrapper{width:240px;height:42px;background:url({{ 'allimg.png' | asset_img_url:'' }}) no-repeat 0 -440px;display:inline-block;position:relative;}
+.products .nav .nav_top .search_wrapper .search_btn{width:42px;height:42px;position:absolute;background:transparent;outline:none;border:0;cursor:pointer;}
+.products .nav .nav_top .search_wrapper .search{width:186px;height:26px;position:absolute;left:40px;top:8px;text-indent:3px;}
+
+  .products .nav .nav_top .nav-bread{display:inline-block;font-size:14px;height:42px;line-height:42px;margin-left:10px;color:#666;vertical-align:top;} 
+  .products .nav .nav_top .nav-bread a{color:#666;transition:all 0.5s;-webkit-transition:all 0.5s;}
+  .products .nav .nav_top .nav-bread a:hover{color:#897642;transition:all 0.5s;-webkit-transition:all 0.5s;} 
+  .products .nav .nav_top .nav-bread span{margin-left:4px;}
+  .products .nav .nav_top .nav-bread .hit{color:#897642}
+
+.products .nav .products_news{height:530px;display:inline-block;}
+.products .nav .products_news .news-content{width:332px;float:left;background:#fefdfc;}
+    .products .nav .products_news .news-content .clear{clear:both;}
+.products .nav .products_news .news-content .news-items{margin:8px 0 12px 8px;}
+.products .nav .products_news .news-content .news-items h2{width:46%;color:#333;font-size:14px;text-align:left;display:inline-block;vertical-align:top}
+.products .nav .products_news .news-content .news-items ul{width:46%;display:inline-block;}
+  .products .nav .products_news .news-content .news-items ul li{height:18px;}
+.products .nav .products_news .news-content .news-items ul li a{font-size:14px;color:#666;transition:all 0.5s;}
+.products .nav .products_news .news-content .news-items ul li a:hover{background:#aca790;color:#fff;transition:all 0.5s;}
+
+  
+.products .nav .products_news .btn-news{width:40px;height:40px;line-height:36px;float:right;display:block;font-size:42px;color:#897642;background:#e5d1c2;text-align:center;cursor:pointer;}
+
+.products .nav .products-list{width:auto;vertical-align:top;padding:10px;position:relative;display:none;}
+.products .nav .products-list .list-details{width:auto;}
+.products .nav .products-list .list-details li{width:100px;height:190px;margin:0 15px 15px 0;transition: all 1s;position:absolute;}
+.products .nav .products-list .list-details li a img{display:block;margin:0 auto;}
+
+.products .nav .products-list .list-details li .product-detail{width:160px;line-height:25px;position:absolute;top:90px;background:#fff;border-radius: 5px;box-shadow: 3px 3px 5px #ccc;padding:5px;z-index:999;display:none;}
+.products .nav .products-list .list-details li .product-detail h2{text-align:center;color:#333;font-size:16px;}
+.products .nav .products-list .list-details li .product-detail p{font-size:14px;color:#333;text-align:center;}
+
+
+.products .nav .products-list0{width:554px;vertical-align:top;padding:10px;display:none;}
+  .products .nav .products-list0 .list-details{width:100%;height:auto;}
+.products .nav .products-list0 .list-details li{width:100%;height:110px;padding:5px 5px 5px 10px;margin:0 0 10px 0;transition:all 1s;}
+.products .nav .products-list0 .list-details li:hover{background:#ece6dc;transition:all 1s;}
+.products .nav .products-list0 .list-details li .detail-link{display:block;float:left;text-align:center;}
+.products .nav .products-list0 .list-details li .detail-link img{max-height:100px;}
+.products .nav .products-list0 .list-details li .list-news{width:480px;float:right;padding:10px 0;border-bottom:1px solid #e5d1c1;}
+.products .nav .products-list0 .list-details li .list-news h2{font-size:16px;font-weight:normal;}
+  .products .nav .products-list0 .list-details li .list-news h2 a{color:#897642;transition:all 0.5s;}
+  .products .nav .products-list0 .list-details li .list-news h2 a:hover{color:#444;transition:all 0.5s;}  
+.products .nav .products-list0 .list-details li .list-news p{height:20px;line-height:20px;color:#333;font-size:14px;margin-bottom:20px;}
+
+.products .nav .products-list0 .list-details li .list-news .list-price span{width:50%;text-align:left;display:block;float:left;color:#666;font-size:14px;}
+
+
+
+@media screen and (min-width:300px) and (max-width:740px){
+
+.products{padding:30px 0px;margin:-10px 0 0 0;}
+
+.products .nav .nav_top .search_wrapper{width:200px;}
+.products .nav .nav_top .search_wrapper .search{width:146px;}
+.products .nav .mobile{width:100%;height:40px;line-height:40px;display:block;background: -webkit-linear-gradient(#e5d1c2, #f7f2e9);background:linear-gradient(#e5d1c2, #f7f2e9);background:-o-linear-gradient(#e5d1c2, #f7f2e9);text-align:center;}
+.products .nav .mobile a{color:#333;font-size:14px;background: url({{ 'arrow-right.gif' | asset_img_url:'' }}) no-repeat right;padding:0 2em 0 0;}
+.products .nav .nav_top{width:100%;}
+.products .nav .nav_top .product_all,.products .nav .nav_solid,.products .nav .products_news .btn-news{display:none;}
+  
+.products .nav .products_news{position:static;}
+
+.products .nav .products_news{width:100%;height:auto;display:block;margin:0 auto;}
+.products .nav .products_news .news-content{width:90%;margin:0 3%;padding:2%;float:none;}
+
+
+.products .nav .products_news .news-content .news-items{width:50%;height:180px;float:left;margin:0;}
+.products .nav .products_news .news-content .news-items h2{width:100%;display:block;}
+.products .nav .products_news .news-content .news-items ul{width:100%;display:block;}
+.products .nav .products-list{padding:0 0 0 10px;}
+.products .nav .products-list .list-details li{width:auto;display:inline-block;position:static;margin:15px;}
+
+
+.products .nav .products-list0{padding:0;margin:0 auto;}
+.products .nav .products-list0 .list-details li{padding:5px;margin:0 3%;width:auto;max-width:100%;max-height:auto;}
+.products .nav .products-list0 .list-details li .detail-link{width:13%;}
+.products .nav .products-list0 .list-details li .list-news{width:82%;border-bottom:1px solid #e5d1c1;}
+
+
+}
+
+
+
+
+</style>
+<div class="products">
+	<div class="nav">
+		<div class="nav_top">
+			<div class="product_all"><a href="">全部</a></div>
+			<div class="view_trigger view_transverse">
+				<a></a>
+			</div>
+			<div class="view_trigger view_portrait active">
+				<a></a>
+			</div>
+			<div class="search_wrapper">
+              	<form action="/search" method="get">
+                    <input class="search_btn" type="submit" value="">
+                    <input class="search" value="" placeholder="搜寻产品" name="q">
+                </form>
+			</div>
+          <div class="nav-bread">
+            {{collection.description}}
+            
+          </div>
+          
+		</div>
+		<div class="nav_solid">
+			<div class="products_items">搜寻您所需的产品</div>
+		</div>
+		<div class="mobile">
+			<a>Find your product</a>
+		</div>
+		<ul class="products_news">
+			<div class="news-content">
+				<div class="product-lines news-items">
+					<h2>产品类别</h2>
+					<ul>
+                      	{% for link in linklists.collection-part-1.links %}
+                    	<li>{{ link.title | link_to: link.url }}</li>
+                		{% endfor %} 
+                    
+					</ul>
+				</div>
+				<div class="care-for news-items">
+					<h2>护理区域</h2>
+					<ul>
+                      	{% for link in linklists.collection-part-2.links %}
+                    	<li>{{ link.title | link_to: link.url }}</li>
+                		{% endfor %} 
+					</ul>
+				</div>
+				<div class="care-steps news-items">
+					<h2>护理步骤</h2>
+					<ul>
+						{% for link in linklists.collection-part-3.links %}
+                    	<li>{{ link.title | link_to: link.url }}</li>
+                		{% endfor %} 
+					</ul>
+				</div>
+				<div class="skin-type news-items">
+					<h2>我的皮肤状态</h2>
+					<ul>
+						{% for link in linklists.collection-part-4.links %}
+                    	<li>{{ link.title | link_to: link.url }}</li>
+                		{% endfor %} 
+					</ul>
+				</div>
+              <div class="clear"></div>
+			</div>
+			<a class="btn-news">×</a>
+		</ul>
+		<div class="products-list">
+			<ul class="list-details">
+              {% paginate collection.products by 200 %}
+              {% for product in collection.products %}
+                {% for image in product.images limit:1 %}
+              	<li>
+                  	<a href={{ product.url }}><img src="{{ product.images.last | product_img_url: ' ' }}" /></a>
+              		<div class="product-detail">
+						<h2>{{ product.title | replace: '.','<br>· '}}</h2>
+						<p>{{ product.tags | last }}</p>
+                      <p></p>
+					</div>
+              	</li>
+
+                {% endfor %}
+              {% endfor %} 
+              {% endpaginate %}
+			</ul>
+		</div>
+		
+      <div class="products-list0">
+			<ul class="list-details">
+              {% paginate collection.products by 200 %}
+               {% for product in collection.products %}
+              {% for image in product.images limit:1 %}
+				<li>
+					<a href={{ product.url }} class="detail-link"><img src="{{ product.images.last | product_img_url: ' ' }}"></a>
+					<div class="list-news">
+                      <h2><a href={{ product.url }}>{{product.title}}</a></h2>
+						<p>{{ product.tags | last  }}</p>
+						<div class="list-price">
+							<span>{% for variant in product.variants %} {{ variant.title }} {% endfor %}</span>
+                          
+							<span>
+<!-- 								HK<label>{{ product.price | money_without_trailing_zeros }}</label> -->
+							</span>
+						</div>
+					</div>
+				</li>
+              {% endfor %}
+				{% endfor %}
+              {% endpaginate %}
+			</ul>
+		</div>
+      
+	</div>
+</div>
+
+<script type="text/javascript" src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+<script>
+
+
+$(window).on("load",function(){
+   
+  var html = $(".products .nav .products-list .list-details li .product-detail p").text();
+  
+//    $(".products .nav .products-list .list-details li .product-detail p").html(html.replace(/[\s""]/gi,"，"))
+  
+  urlredirect();
+  function urlredirect() {
+    var sUserAgent = navigator.userAgent.toLowerCase(); 
+    if ((sUserAgent.match(/(ipod|iphone os|midp|ucweb|android|windows ce|windows mobile)/i))) {
+      $(".products .nav .nav_top .view_portrait").removeClass("active").siblings().addClass("active")
+      $(".products .nav .nav_top .view_transverse a").css({"background-position":"-45px -354px"})
+      $(".products .nav .nav_top .view_portrait a").css({"background-position":"0px -397px"})
+      $(".products .nav .products-list").css({"display":"none"})
+      $(".products .nav .products-list0").css({"display":"inline-block"})
+
+    }else{
+      
+      setTimeout(function(){
+        $(".products .nav .nav_top .view_transverse").removeClass("active").siblings().addClass("active")
+        $(".products .nav .nav_top .view_transverse a").css({"background-position":"-45px -397px"})
+        $(".products .nav .nav_top .view_portrait a").css({"background-position":"0 -354px"})
+        $(".products .nav .products-list0").css({"display":"none"})
+        $(".products .nav .products-list").fadeIn(500).css({"display":"inline-block"})
+
+      },500)
+      
+    }
+  }
+  
+  
+$(".products .nav .nav_top .view_portrait").click(function(){
+	$(this).removeClass("active").siblings().addClass("active")
+	$(".products .nav .nav_top .view_transverse a").css({"background-position":"-45px -354px"})
+	$(".products .nav .nav_top .view_portrait a").css({"background-position":"0px -397px"})
+	$(".products .nav .products-list").css({"display":"none"})
+	$(".products .nav .products-list0").fadeIn(500)
+	$(".products .nav .products-list0").css({"display":"inline-block"})
+	init();
+})
+
+$(".products .nav .nav_top .view_transverse").click(function(){
+	$(this).removeClass("active").siblings().addClass("active")
+	$(".products .nav .nav_top .view_transverse a").css({"background-position":"-45px -397px"})
+	$(".products .nav .nav_top .view_portrait a").css({"background-position":"0 -354px"})
+	$(".products .nav .products-list0").css({"display":"none"})
+    $(".products .nav .products-list").fadeIn(500).css({"display":"inline-block"})
+	init();
+})
+
+
+
+$(".products .nav .products_items").click(function(){
+	$(".products .nav .products_news").fadeIn(800);
+	$(".products .nav .products_news").css({"width":"372px"});
+	$(".products .nav .products_news .news-content").stop().animate({"width":"332px"},500);
+	init();
+		
+})
+
+$(".products .nav .products_news .btn-news").click(function(){
+	
+	$(".products .nav .products_news").stop().animate({"width":"0px",},500,function(){
+		$(".products .nav .products_news").fadeOut(0)
+		$(".products .nav .products_news .news-content").css({"width":"0px"});
+		init();
+
+	})
+
+})
+
+
+$(".products .nav .mobile").click(function(){
+	$(".products .nav .products_news").stop().slideToggle();
+
+})
+
+
+init();
+
+
+})
+
+$(window).resize(function(){
+	init();
+
+})
+
+
+function init(){
+  var W = document.body.clientWidth || document.documentElement.clientWidth;
+	var news_width = $(".products .nav .products_news").width();
+	if( W < 740){
+
+      
+      $(".products .nav .products-list").css({"height":"auto"})
+		$(".products .nav .products-list").css({"width":W-20})
+		$(".products .nav .products-list0").css({"width":W})
+
+	}else{  
+      
+      var index="";
+      $(".products .nav .products-list .list-details li").hover(function(){
+          index=$(this).index();
+          $(".products .nav .products-list .list-details li .product-detail").eq(index).stop().fadeIn(500)
+      },function(){
+          $(".products .nav .products-list .list-details li .product-detail").eq(index).stop().fadeOut(500)
+
+      })
+
+      
+		$(".products .nav .products-list .list-details li .product-detail").css({"left":"80px"})
+		$(".products .nav .products-list").css({"width":W-news_width-90-56})
+        $(".products .nav .products-list0").css({"width":"554px"})
+		var nodeWidth = $(".products .nav .products-list .list-details li").outerWidth(true),
+			colNum = parseInt( $(".products .nav .products-list").width()/ nodeWidth ),
+			colSumHeight = [],
+            num = $(".products .nav .products-list .list-details li").length;
+		for (var i=0;i<colNum;i++) {
+			colSumHeight.push(0);
+		}
+        var count = colSumHeight.length
+
+          for(var i=1;i <= parseInt(num / count);i++){
+
+              $(".products .nav .products-list .list-details li .product-detail").eq(i*count-1).css({"left":"-150px"})
+
+          }
+
+		$(".products .nav .products-list .list-details li").each(function(){
+			var $cur = $(this),
+				idx = 0,
+				minSumHeight = colSumHeight[0];
+
+			for (var i=0;i<colSumHeight.length;i++) {
+				if (minSumHeight > colSumHeight[i]) {
+					minSumHeight = colSumHeight[i];
+					idx = i;
+					
+				}
+
+			}
+
+          $cur.animate({left:nodeWidth*idx,top: minSumHeight},100)
+
+			colSumHeight[idx] = colSumHeight[idx] + $cur.outerHeight(true);
+			$(".products .nav .products-list").css({"height":colSumHeight[idx]})
+
+		})	
+	}
+    
+  
+}
+
+
+
+</script>

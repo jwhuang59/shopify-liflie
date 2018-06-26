@@ -1,0 +1,367 @@
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<style>
+*{margin:0;padding:0;}
+body{font-family:MicroSoft YaHei,Arial,Sans-serif;color:#444;}
+ul,ol,li{list-style:none;}
+img{border:none;vertical-align: middle;}
+a{text-decoration:none;}
+input,button,select,textarea,a{outline:none;}
+
+
+.header-nav .left li:nth-child(3) a {color: #a7821d;}
+.know-bg{position:fixed;top:0;left:0;z-index:-1;}
+.know{margin:0 14px;padding:16px 16px 100px 16px;}
+.know .know-content{max-width:955px;}
+.know .know-content .topcont{width:315px;height:190px;margin:0 2px 5px 0;float:left;}
+.know .know-content .part1{width:285px;height:160px;padding:15px;background:rgba(255,255,255,0.9);position:relative;}
+.know .know-content .part1 .part1-topnav{width:285px;position:absolute;top:15px;}
+.know .know-content .part1 .part1-bottomnav{padding:8px 5px 0 5px;border-top:1px dotted #bebebe;position:absolute;bottom:15px;}
+.know .know-content .part1 li{font-size:13px;display:inline;}
+.know .know-content .part1 li .active{color:#a7821d;}
+.know .know-content .part1 li a{color:#3e3d40;font-size:13px;transition:all 0.5s;}
+.know .know-content .part1 li a:hover{color:#a7821d;transition:all 0.5s;}
+
+.know .know-content .part1 .part1-bottomnav .part1-icon{background:url("http://cdn.hauschka.com/images/system/sys/arrow-ternavi.png") no-repeat 0 3px;padding-left:15px;}
+.know .know-content .part2,.know .know-content .part3{cursor:pointer;position:relative;}
+.know .know-content .part2 .part2-icon,.know .know-content .part3 .part3-icon{width:30px;height:26px;background:url("http://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/allimg.png?11883750667968453192") no-repeat -152px -385px;position:absolute;bottom:5px;right:12px;z-index:9;opacity:0;transition:all 0.5s;}
+.know .know-content .topcont:hover .part2-icon,.know .know-content .topcont:hover .part3-icon{opacity:1;transition:all 0.5s;}
+.know .know-content .part3{margin:0}
+
+.know .know-content .bottomcont{float:left;}
+.know .know-content .part4{width:917px;padding:15px;background:rgba(255,255,255,0.9);}
+.know .know-content .part4 h1{font-size:22px;font-weight:normal;margin-bottom:15px;}
+.know .know-content .part4 p{font-size:15px;}
+.know .know-content .part5{width:917px;padding:5px 15px;background:#c5bdb6;text-align:center;}
+.know .know-content .part5 .nav-letter{width:800px;margin:0 auto;padding-left:20px;}
+.know .know-content .part5 .nav-letter li{height:30px;line-height:30px;float:left;color:#fff;margin-right:20px;cursor:pointer;display:inline-block;}
+.know .know-content .part5 .nav-letter .available{color:#a7821d;}
+.know .know-content .part5 .nav-letter .disable{pointer-events: none;cursor: default;opacity:0.4;}
+
+.know .know-content table td:nth-child(1),.know .know-content table td:nth-child(2){width:25%;}
+.know .know-content table td:nth-child(3){width:18%;}
+.know .know-content table td:nth-child(4){width:32%;}
+
+.know .know-content .part6-nav table{width:950px;}
+.know .know-content .part6-nav td{margin:0 3px 3px 0;background:#aea79c;text-align:center;color:#fff;font-size:20px;padding:10px;}
+
+.know .know-content .part6 .letter{float:left;margin-right:-100%;display:none;}
+.know .know-content .part6 .letter table{width:950px;}
+.know .know-content .part6 .letter table td{background:rgba(255,255,255,0.9);margin:0 3px 3px 0;padding:12px;vertical-align: top;color:#666;}
+
+
+.know .know-content .part6 .letter table td ul li{background: url("http://cdn.hauschka.com/images/system/sys/bullet.gif") no-repeat 0 0.5em;
+    padding: 0 0 0 0.8em;}
+.know .know-content .part6 .letter table td p{margin-bottom:15px;}
+.know .know-content .part6 .letter table td ul li a{color:#897642;transition:all 0.5s;}
+.know .know-content .part6 .letter table td ul li a:hover{color:#666;transition:all 0.5s;}
+.know .know-content .part6 .show{display:block;}
+
+
+ 
+
+
+
+
+@media screen and (min-width:667px) and (max-width:1024px){
+.know{margin:0;}
+.know-left,.know-right{display:none;}
+
+.know .know-content .topcont{width:auto;height:auto;float:none;margin:0;}
+
+.know .know-content .part1{width:auto;height:100px;margin-bottom:5px;}
+.know .know-content .part1 .part1-topnav{width:94%;}
+.know .know-content .part1 .part1-bottomnav{width:94%;}
+.know .know-content .part1 li{font-size:16px;}
+.know .know-content .part1 li a{font-size:16px;}
+.know .know-content .part1 .part1-bottomnav .part1-icon{background:none;padding:0;}
+
+.know .know-content .part2,.know .know-content .part3{width:50%;float:left;}
+.know .know-content .part2 img,.know .know-content .part3 img{width:100%;height:auto;}
+
+.know .know-content .part4,.know .know-content .part5,.know .know-content .part5 .nav-letter{width:auto;}
+
+
+.know .know-content .part6-nav table,.know .know-content .part6 .letter table{width:100%;border-collapse: separate;}
+/*.know .know-content .part6-nav table td{padding:10px 0;}*/
+.know .know-content .part6 .letter table td{width:25%;}
+.know .know-content .part6 .letter{width:100%;}
+
+}
+
+@media screen and (min-width:300px) and (max-width:667px){
+
+.know{padding:15px 10px;margin:0;}
+.know-left,.know-right{display:none;}
+
+.know .know-content .topcont{width:auto;height:auto;float:none;margin:0;}
+
+.know .know-content .part1{width:auto;height:100px;margin-bottom:5px;}
+.know .know-content .part1 .part1-topnav{width:93%;}
+.know .know-content .part1 .part1-bottomnav{width:93%;padding:8px 0 0 0;}
+.know .know-content .part1 li{font-size:15px;}
+.know .know-content .part1 li a{font-size:15px;}
+.know .know-content .part1 .part1-bottomnav .part1-icon{background:none;padding:0;}
+
+.know .know-content .part2{width:100%;float:left;}
+.know .know-content .part2 img{width:100%;height:auto;}
+
+.know .know-content .part3{display:none;}
+
+.know .know-content .part4,.know .know-content .part5,.know .know-content .part5 .nav-letter{width:auto;}
+
+
+
+.know .know-content .part6-nav table,.know .know-content .part6 .letter table{width:100%; }
+
+.know .know-content .part6 .letter{width:100%;overflow-y:auto;}
+
+.know .know-content .part6-nav table td{font-size:16px;width:25%;}
+
+}
+
+
+.know .know-content .clear{clear:both;}
+.know-left{width:14px;background:#fff;position:fixed;bottom:0;top:0;left:0;z-index:99;}
+.know-right{width:14px;background:#fff;position:fixed;bottom:0;top:0;right:0;z-index:99;}
+</style>
+<div class="know">
+<div class="know-content">
+<div class="part1 topcont">
+<ul class="part1-topnav">
+<li><a href="/pages/knowledge-base-raw-materials" class="active">原料</a> /</li>
+<li><a href="/pages/knowledge-base-medicinal-plant-facts">药疗植物知识</a> /</li>
+<li><a href="/pages/knowledge-base-natural-organic-cosmetics">品质认证</a> /</li>
+<li><a href="/pages/knowledge-base-research">科研</a> /</li>
+<li><a href="/pages/knowledge-base-development">研发</a> /</li>
+<li><a href="/pages/knowledge-base-manufacture">萃取精华</a> /</li>
+<li><a href="/pages/knowledge-base-no-animal-testing">无动物实验</a> /</li>
+<li><a href="/pages/knowledge-base-questions-and-answers">疑问解答</a></li>
+</ul>
+<ul class="part1-bottomnav">
+<li class="part1-icon"><a href="/pages/knowledge-base-raw-materials-the-wala-herb-garden">WALA植物园</a> /</li>
+<li><a href="/pages/knowledge-base-raw-materials-cultivation-projects">种植项目</a> /</li>
+<li><a href="/pages/knowledge-base-raw-materials-ingredients-glossary" class="active">成分词汇表</a></li>
+</ul>
+<div class="clear"></div>
+</div>
+<div class="part2 topcont"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/the-wala-herb-garden-1.jpg" /></div>
+<div class="part3 topcont"><img src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/the-wala-herb-garden-2.jpg" /></div>
+<div class="clear"></div>
+
+<div class="part4">
+	<h1>成分词汇表</h1>
+	<P>请根据成分名称的开头字母查询有关德国世家产品成分的资料。</P>
+	<p>详细资料请以各产品中的成分说明为准。</p>
+</div>
+
+<div class="part5">
+	<ul class="nav-letter">
+		<li class="available">A</li>
+		<li>B</li>
+		<li>C</li>
+		<li>D</li>
+		<li>E</li>
+		<li>F</li>
+		<li>G</li>
+		<li>H</li>
+		<li>I</li>
+		<li>J</li>
+		<li class="disable">K</li>
+		<li>L</li>
+		<li>M</li>
+		<li>N</li>
+		<li>O</li>
+		<li>P</li>
+		<li>Q</li>
+		<li>R</li>
+		<li>S</li>
+		<li>T</li>
+		<li>U</li>
+		<li>V</li>
+		<li>W</li>
+		<li>X</li>
+		<li class="disable">Y</li>
+		<li>Z</li>
+	</ul>
+	<div class="clear"></div>
+</div>
+
+
+
+
+<div class="part6-nav">
+	<table>
+		<tbody>
+			<tr>
+				<td>英文名称</td>
+				<td>相关产品</td>
+				<td>INCI-国际化妆品原料命名</td>
+				<td>说明</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div class="part6">
+    <div class="letter show">
+        <table>
+        	{{ page.metafields.page.aaa }}
+        </table>
+    </div>
+    <div class="letter">
+
+      <table>
+
+          {{ page.metafields.page.bbb }}
+      </table>
+    </div>
+    <div class="letter">
+        <table>
+        {{ page.metafields.page.ccc }}
+        </table>
+    </div>
+    <div class="letter">
+
+      <table>
+          {{ page.metafields.page.ddd }}
+      </table>
+    </div>
+    <div class="letter">
+        <table>
+        {{ page.metafields.page.eee }}
+        </table>
+    </div>
+    <div class="letter">
+
+      <table>
+          {{ page.metafields.page.fff }}
+      </table>
+    </div>
+    <div class="letter">
+        <table>
+        {{ page.metafields.page.ggg }}
+        </table>
+    </div>
+    <div class="letter">
+
+      <table>
+          {{ page.metafields.page.hhh }}
+      </table>
+    </div>
+    <div class="letter">
+        <table>
+        {{ page.metafields.page.iii }}
+        </table>
+    </div>
+    <div class="letter">
+      <table>
+          {{ page.metafields.page.jjj }}
+      </table>
+    </div>
+    <div class="letter">
+      <table>
+          {{ page.metafields.page.kkk }}
+      </table>
+    </div>
+    <div class="letter">
+      <table>
+          {{ page.metafields.page.lll }}
+      </table>
+    </div>
+    <div class="letter">
+      <table>
+          {{ page.metafields.page.mmm }}
+      </table>
+    </div>
+    <div class="letter">
+        <table>
+        {{ page.metafields.page.nnn }}
+        </table>
+    </div>
+    <div class="letter">
+      <table>
+          {{ page.metafields.page.ooo }}
+      </table>
+    </div>
+    <div class="letter">
+      <table>
+          {{ page.metafields.page.ppp }}
+      </table>
+    </div>
+    <div class="letter">
+      <table>
+          {{ page.metafields.page.qqq }}
+      </table>
+    </div>
+    <div class="letter">
+      <table>
+          {{ page.metafields.page.rrr }}
+      </table>
+    </div>
+    <div class="letter">
+        <table>
+        {{ page.metafields.page.sss }}
+        </table>
+    </div>
+    <div class="letter">
+      <table>
+          {{ page.metafields.page.ttt }}
+      </table>
+    </div>
+    <div class="letter">
+      <table>
+          {{ page.metafields.page.uuu }}
+      </table>
+    </div>
+    <div class="letter">
+      <table>
+          {{ page.metafields.page.vvv }}
+      </table>
+    </div>
+    <div class="letter">
+      <table>
+          {{ page.metafields.page.www }}
+      </table>
+    </div>
+    <div class="letter">
+      <table>
+          {{ page.metafields.page.xxx }}
+      </table>
+    </div>
+    <div class="letter">
+      <table>
+          {{ page.metafields.page.yyy }}
+      </table>
+    </div>
+    <div class="letter">
+      <table>
+          {{ page.metafields.page.zzz }}
+      </table>
+    </div>
+	<div class="clear"></div>
+  
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="know-left"></div>
+<div class="know-right"></div>
+<img class="know-bg" src="https://cdn.shopify.com/s/files/1/0012/3391/1873/t/1/assets/white-flower.jpg" />
+<script type="text/javascript" src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+<script>
+var W = document.body.clientWidth || document.documentElement.clientWidth;
+var x = 0;
+
+$(".know .know-content .part5 .nav-letter li").click(function(){
+	x = $(this).index();
+	$(this).addClass("available").siblings().removeClass("available")
+	$(".know .know-content .part6 .letter").eq(x).fadeIn(300).siblings().fadeOut(300)
+
+})
+
+
+
+</script>
+
