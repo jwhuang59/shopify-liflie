@@ -1,6 +1,6 @@
 
 
-Shopify liflie
+Shopify-liflie
 =====================
 
 线上商店
@@ -41,7 +41,7 @@ Shopify liflie
 
 
 
-其他资源
+文档资源
 ---------------------
 - [主题文档][http://help.shopify.com/themes].
 - [液体小抄][https://www.shopify.ca/partners/shopify-cheat-sheet].
