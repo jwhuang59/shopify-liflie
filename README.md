@@ -18,8 +18,6 @@ Shopify-liflie
 │   └── optional alternate layouts
 ├── snippets
 │   └── custom code snippets
-├── spec
-│   └── tests and helpers
 ├── templates
 │   ├── 404.liquid
 │   ├── article.liquid
